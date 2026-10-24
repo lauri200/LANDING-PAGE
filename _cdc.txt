@@ -1,0 +1,757 @@
+
+===== PAGE 1 =====
+CAHIER DES CHARGES 
+ 
+Landing Page « APTIC-R International Volunteers » 
+ 
+Projet : Plateforme internationale de recrutement de volontaires 
+Organisation : APTIC-R — Association pour la Promotion des TIC en milieu Rural au Togo 
+Localisation : Agbélouvé, Togo 
+Public cible : Jeunes étudiants, diplômés et professionnels d'Europe et d'autres pays 
+souhaitant réaliser une mission de volontariat au Togo 
+Langues : Français 🇫🇷 — Anglais 🇬🇧 — Allemand 🇩🇪 
+Durée des missions : 6 à 12 mois 
+Objectif principal : Générer des candidatures qualifiées et développer des partenariats avec 
+des organisations européennes d'envoi de volontaires. 
+1. CONTEXTE DU PROJET 
+APTIC-R souhaite développer un programme international de volontariat permettant 
+d'accueillir au Togo des volontaires étrangers, notamment : 
+• 🇩🇪 Allemands 
+• 🇫🇷 Français 
+• 🇧🇪 Belges 
+• 🇪🇺 autres Européens 
+Les volontaires participeront à des projets liés à : 
+• L’innovation numérique ; 
+• L’agriculture ; 
+• La technologie low-tech ; 
+• L’inclusion numérique ; 
+• La formation ; 
+• L’entrepreneuriat rural ; 
+• La conception de solutions adaptées aux communautés rurales. 
+La landing page doit constituer le point d'entrée officiel du programme international de 
+volontariat APTIC-R. 
+2. OBJECTIFS DE LA LANDING PAGE 
+Objectif principal 
+Transformer les visiteurs intéressés en : 
+ Candidats 
+En les conduisant vers : 
+APPLY NOW / POSTULER 
+Objectifs secondaires 
+===== PAGE 2 =====
+La page doit également permettre de : 
+• Présenter APTIC-R ; 
+• Présenter les missions disponibles ; 
+• Rassurer les candidats étrangers ; 
+• Expliquer la vie au Togo ; 
+• Présenter les conditions d'accueil ; 
+• Expliquer le processus de candidature ; 
+• Attirer des organisations partenaires européennes ; 
+• Collecter des candidatures ; 
+• Collecter des demandes de partenariat ; 
+• Constituer une base de contacts ; 
+• Mesurer les performances de la campagne. 
+ 
+3. NOM ET URL 
+Nom officiel 
+APTIC-R International Volunteers 
+URL recommandée 
+aptic-r.org/international-volunteers 
+Alternative : 
+aptic-r.org/volunteers 
+Je recommande plutôt : 
+/international-volunteers 
+car cette URL est plus explicite pour un public international. 
+4. POSITIONNEMENT 
+Le volontaire ne vient pas seulement aider. Il vient apprendre, créer et construire des 
+solutions avec les communautés. 
+Slogan principal 
+VOLUNTEER IN TOGO. 
+BUILD TECHNOLOGY FOR RURAL COMMUNITIES. 
+Sous-titre : 
+6–12 months | Agbélouvé, Togo 
+Message complémentaire : 
+Use your skills to create practical digital and low-tech solutions with rural communities. 
+5. PERSONAS CIBLES 
+Persona 1 — Étudiant européen 
+18–25 ans 
+Recherche : 
+• Expérience internationale ; 
+• Développement personnel ; 
+• Expérience professionnelle ; 
+===== PAGE 3 =====
+• Découverte de l'Afrique ; 
+• Engagement social. 
+ 
+Persona 2 — Jeune diplômé 
+22–30 ans 
+Domaines : 
+• Informatique ; 
+• Data ; 
+• Développement web/mobile ; 
+• Agronomie ; 
+• Design ; 
+• Communication ; 
+• Ingénierie ; 
+• Innovation sociale. 
+ 
+Persona 3 — Jeune professionnel 
+25–35 ans 
+Recherche : 
+• Expérience terrain ; 
+• Projet à impact ; 
+• Reconversion ; 
+• Expérience africaine ; 
+• Développement de compétences. 
+ 
+Persona 4 — Organisation européenne 
+Recherche : 
+• Organisation d'accueil fiable ; 
+• Mission structurée ; 
+• Partenaire local ; 
+• Accompagnement des volontaires ; 
+• Projet à impact. 
+ 
+6. STRUCTURE GÉNÉRALE DE LA PAGE 
+La landing page sera organisée comme suit : 
+1. Header 
+2. Hero 
+3. Pourquoi cette mission ? 
+4. Le projet 
+5. Ce que vous allez faire 
+6. Profils recherchés 
+7. Une expérience concrète 
+===== PAGE 4 =====
+8. Une semaine type 
+9. Pourquoi le Togo ? 
+10. Agbélouvé 
+11. Conditions d'accueil 
+12. Accompagnement 
+13. Processus de candidature 
+14. Témoignages 
+15. FAQ 
+16. Appel à candidature 
+17. Partenariat européen 
+18. Footer 
+ 
+7. HEADER 
+Le header doit être simple et fixe. 
+Logo 
+APTIC-R 
+Menu 
+• About APTIC-R 
+• The Mission 
+• Activities 
+• Life in Togo 
+• Application 
+• FAQ 
+• Partners 
+Sélecteur de langue 
+FR | EN | DE 
+Bouton principal 
+APPLY NOW 
+Le bouton doit être visible dès le header. 
+ 
+8. HERO SECTION 
+C'est la partie la plus importante. 
+Titre 
+Volunteer in Togo. 
+Build technology for rural communities. 
+Sous-titre 
+6–12 months | Agbélouvé, Togo 
+===== PAGE 5 =====
+Rejoignez APTIC-R et travaillez avec les communautés rurales pour développer des solutions 
+numériques et low-tech pratiques pour l'agriculture, l'éducation et l'entrepreneuriat local 
+CTA principal 
+APPLY NOW → 
+CTA secondaire 
+DISCOVER THE MISSION 
+Visuel Hero 
+Photographie premium montrant : 
+• Jeune volontaire européen ; 
+• Agriculteur togolais ; 
+• Smartphone/tablette ; 
+• Environnement rural ; 
+• Agriculture ; 
+• Technologie accessible. 
+Le visuel doit montrer la collaboration, et non une relation « expert étranger / bénéficiaire ». 
+Message visuel 
+Europe + Togo + Technologie + Communauté 
+ 
+9. SECTION « POURQUOI CETTE MISSION ? » 
+Titre 
+Pourquoi faire du bénévolat avec APTIC-R ? 
+Présenter quatre cartes. 
+• Impact rural 
+Travailler directement avec les communautés rurales. 
+• Innovation numérique 
+Utiliser la technologie pour résoudre des problèmes concrets. 
+• Technologie simple 
+Concevoir des solutions abordables, réparables et accessibles. 
+• Échange culturel 
+Découvrez le Togo tout en apprenant auprès des communautés locales. 
+ 
+10. SECTION « LE DÉFI » 
+Titre 
+La technologie devrait être accessible à tous. 
+Texte : 
+Dans de nombreuses communautés rurales, l'accès à l'information, aux outils numériques 
+et aux technologies appropriées reste limité. 
+===== PAGE 6 =====
+APTIC-R estime que l'innovation ne doit pas toujours être complexe ou coûteuse. 
+Parfois, un simple système de SMS, une application hors ligne, un capteur à bas coût ou un 
+programme de formation numérique peuvent faire toute la différence. 
+Créer une section visuellement forte avec : 
+PROBLÈME → INNOVATION → IMPACT 
+ 
+11. SECTION « LA MISSION » 
+Titre 
+Votre mission 
+Présenter les principales activités. 
+01 — DIAGNOSTIC SUR LE TERRAIN 
+Rencontrer les agriculteurs et coopératives. 
+02 — HACKATHONS RURAUX 
+Organisateur d'ateliers de co-création. 
+03 — PROTOTYPAGE 
+Créer des solutions low-tech. 
+04 — FORMATION 
+Anciens relais locaux. 
+05 — DOCUMENTATION OPEN SOURCE 
+Documenter les solutions développées. 
+12. SECTION « WHAT COULD YOU BUILD? » 
+Cette section doit être très visuelle. 
+11. SECTION « LA MISSION » 
+Titre 
+Votre mission 
+Présenter les principales activités. 
+01 — DIAGNOSTIC SUR LE TERRAIN 
+Rencontrer les agriculteurs et coopératives. 
+02 — HACKATHONS RURAUX 
+Organisateur d'ateliers de co-création. 
+03 — PROTOTYPAGE 
+Créer des solutions low-tech. 
+04 — FORMATION 
+Anciens relais locaux. 
+05 — DOCUMENTATION OPEN SOURCE 
+===== PAGE 7 =====
+Documenter les solutions développées. 
+ 
+12. SECTION « QUE POURRIEZ-VOUS CONSTRUIRE ? » 
+Cette section doit être très visuelle. 
+Exemples : 
+ Système d'alerte météorologique 
+Système d'information météo par SMS. 
+ Irrigation intelligente 
+Capteurs simples pour le suivi de l'humidité. 
+ Outils mobiles hors ligne 
+Applications fonctionnant avec une connectivité limitée. 
+ Tableaux de bord agricoles 
+Tableaux de bord simples pour les données agricoles. 
+ Gestion des stocks 
+Solutions numériques de gestion des stocks. 
+13. SECTION « QUI RECHERCHONS-NOUS ? » 
+Titre 
+Et si c'était vous ? 
+Profils : 
+ Numérique et informatique 
+• Informatique ;  
+• Développement ;  
+• Données ;  
+• Systèmes ;  
+• Cybersécurité ;  
+• Outils numériques.  
+ Agriculture 
+• Agronomie ;  
+• Agriculture ;  
+• Environnement ;  
+• Développement rural.  
+Créatif 
+• Graphisme ;  
+• Communication ;  
+• Création de contenu ;  
+• UX/UI.  
+===== PAGE 8 =====
+Ingénierie / Fabrication 
+• Arduino ;  
+• Raspberry Pi ;  
+• IoT ;  
+• Électronique ;  
+• Page prototype.  
+ 
+14. SECTION « VOUS N'AVEZ PAS BESOIN D'ÊTRE UN EXPERT » 
+Très important pour élargir le recrutement. 
+Texte principal 
+Vous n'êtes pas obligé de tout savoir. 
+Il suffit d'avoir envie d'apprendre. 
+Puis : 
+Nous recherchons avant tout des personnes : 
+• Curieuses ;  
+• Autonomes ;  
+• Patients ;  
+• Créatifs ;  
+• Ouverts à la découverte ;  
+• Capable de travailler en équipe ;  
+• Intéressées par le terrain.  
+ 
+15. SECTION « UNE SEMAINE AVEC APTIC-R » 
+Présenter une chronologie. 
+Jour Activité 
+Lundi Innovation numérique 
+Mardi Visite sur le terrain 
+Mercredi Prototypage 
+Jeudi Entraînement 
+Vendredi Laboratoire d'innovation rurale 
+Samedi Découverte culturelle 
+Dimanche Repos 
+Cette section permet au candidat de se projeter dans sa future vie . 
+16. SECTION « LA VIE AU TOGO » 
+Titre 
+===== PAGE 9 =====
+Bien plus qu'une mission de bénévolat. 
+Une expérience de vie. 
+Présentateur : 
+- 🇹🇬 Culture togolaise  
+-  Environnement tropical  
+-  Communautés rurales  
+-  Gastronomie  
+-  Rencontres  
+-  Langues  
+- Découverte culturelle 
+Ajouter des photographies authentiques du Togo. 
+ 
+17. SECTION « AGBÉLOUVÉ » 
+Titre 
+Votre base : Agbélouvé, Togo 
+Présentateur : 
+• Localisation ;  
+• Environnement ;  
+• Accès ;  
+• Communautés ;  
+• Agriculture ;  
+• Proximité de Lomé ;  
+• Conditions de vie.  
+Ajouter une carte simple. 
+18. SECTION « SOUTIEN ET HÉBERGEMENT » 
+Cette partie est indispensable pour rassurer les volontaires étrangers. 
+Titre 
+Vous ne serez pas seul. 
+Présenter clairement : 
+- Hébergement  
+- Alimentation  
+- Transport local  
+- Mentor / référent 
+-  Communication  
+- Sécurité  
+- Orientation santé  
+- Accompagnement 
+Les modalités réelles seront précisées par APTIC-R avant publication. 
+19. SECTION « QU'EST-CE QUI EST INCLUS ? » 
+===== PAGE 10 =====
+Créez un tableau transparent. 
+Élément Information 
+Mission 6 à 12 mois 
+Hébergement À préciser 
+Repas À préciser 
+Transport local À préciser 
+Assurance Selon le programme 
+Voyage international Selon le programme 
+Visa Selon le dispositif 
+Indemnité Selon le programme 
+Accompagnement Oui / à préciser 
+20. SECTION « LE PROCESSUS DE DEMANDE » 
+Titre 
+Comment postuler 
+Étape 1 
+Découvrir 
+Découvrez la mission. 
+Étape 2 
+Appliquer 
+le formulaire. 
+Étape 3 
+Entretien 
+Entretien en ligne. 
+Étape 4 
+Sélection 
+Évaluation et sélection. 
+Étape 5 
+Préparation 
+Préparation au départ. 
+Étape 6 
+===== PAGE 11 =====
+Bienvenue au Togo 
+Accueil et intégration. 
+ 
+21. FORMULAIRE DE CANDIDATURE 
+Le bouton APPLIQUER MAINTENANT doit conduire vers un formulaire intégré ou une page 
+dédiée. 
+Informations 
+• Prénom  
+• Nom  
+• E-mail  
+• Téléphone  
+• Pays  
+• Ville  
+• Date de naissance  
+Profil 
+• Formation  
+• Domaine d'études  
+• Profession  
+• Niveau d'expérience  
+• Compétences numériques  
+Compétences 
+Cases à cocher : 
+- Informatique  
+- Données  
+-  Développement web  
+-  Développement mobile  
+-  Agriculture  
+-  Conception graphique  
+-  Communication  
+- Création de contenu  
+-  Arduino  
+-  Raspberry Pi  
+-  Internet des objets (IoT)  
+-  Éducation numérique  
+-  Gestion de projet 
+Disponibilité 
+• Date souhaitée d'arrivée  
+• Durée  
+• 6 mois  
+• 9 mois  
+• 12 mois  
+Motivation 
+===== PAGE 12 =====
+« Pourquoi souhaitez-vous faire du bénévolat auprès d'APTIC-R ? » 
+Champ texte. 
+Expérience 
+« Parlez-nous d'un projet sur lequel vous avez travaillé. » 
+Documents 
+• CV  
+• Lettre de motivation  
+• Portefeuille — optionnel  
+22. QUESTION STRATÉGIQUE 
+Ajouter : 
+Comment avez-vous entendu parler d'APTIC-R ? 
+Options : 
+• Google  
+• LinkedIn  
+• Instagram  
+• Facebook  
+• Université  
+• Organisation de bénévoles  
+• France Volontaires  
+• weltwärts  
+• Corps de solidarité européen  
+• Ami  
+• Autre  
+ 
+23. PARTENAIRES EUROPÉENS 
+ÊTES-VOUS UNE ORGANISATION DE BÉNÉVOLES ? 
+APTIC-R recherche des organisations européennes intéressées par le développement de 
+partenariats de volontariat à long terme au Togo. 
+Bouton : 
+DEVENEZ PARTENAIRE 
+Ce bouton ouvre un formulaire spécifique. 
+24. FORMULAIRE PARTENAIRE 
+Champions : 
+• Organisation  
+• Pays  
+• Site web  
+• Personne de contact  
+===== PAGE 13 =====
+• Courriel professionnel  
+• Type d'organisation  
+• Nombre potentiel de volontaires  
+• Pays concernés  
+• Programme de volontariat  
+• Message  
+• Document de présentation  
+ 
+ENVOYER UNE DEMANDE DE PARTENARIAT 
+25. TÉMOIGNAGES 
+HISTOIRES DE BÉNÉVOLES 
+Format : 
+🇩🇪 Jonas — Allemagne 
+Bénévole en innovation numérique 
+Photo + témoignage. 
+ 
+Claire — France 
+Bénévole en technologie rurale 
+Photo + témoignage. 
+ 
+🇧🇪 Thomas — Belgique 
+Bénévole en agriculture à faible technologie 
+Photo + témoignage. 
+Cette section deviendra progressivement un élément majeur de confiance . 
+ 
+26. FAQ 
+Questions minimales 
+Dois-je parler français ? 
+Ai-je besoin d'une expérience de bénévolat préalable ? 
+Dois-je être un expert en informatique ? 
+Où vais-je habiter ? 
+L'hébergement est-il fourni ? 
+Quelle est la durée de la mission ? 
+Combien coûte le programme ? 
+===== PAGE 14 =====
+Qui paie le billet d'avion ? 
+Et l'assurance ? 
+De quel visa ai-je besoin ? 
+Agbélouvé est-il en sécurité ? 
+Aurais-je un mentor local ? 
+Puis-je postuler si je ne suis pas européen ? 
+Que se passe-t-il après avoir soumis ma candidature ? 
+ 
+27. CTA FINAL 
+PRÊT À AVOIR UN IMPACT ? 
+Vos compétences peuvent devenir des outils précieux pour les communautés rurales. 
+Votre expérience peut devenir une opportunité pour quelqu'un d'autre. 
+Votre prochaine aventure pourrait commencer au Togo. 
+Bouton 
+POSTULEZ DÈS MAINTENANT → 
+ 
+DEVENEZ PARTENAIRE → 
+ 
+28. PIED DE PAGE 
+APTIC-R 
+Association pour la Promotion des TIC en milieu Rural au Togo 
+Navigation 
+• À propos  
+• Mission  
+• Appliquer  
+• Partenaires  
+• FAQ  
+• Contact  
+Réseaux sociaux 
+Facebook  
+LinkedIn  
+Instagram  
+YouTube 
+Contact 
+===== PAGE 15 =====
+Email : à définir  
+Téléphone : à définir  
+Agbélouvé — Togo 
+Langues 
+🇫🇷 Français  
+🇬🇧 English  
+🇩🇪 Deutsch 
+ 
+29. CONCEPTION D'INTERFACE UTILISATEUR/D'EXPÉRIENCE UTILISATEUR 
+Style 
+Institutionnel + humain + africain + technologique 
+Éviter : 
+    design trop corporate froid  
+    science-fiction  
+    supplément d'éléments numériques  
+    stock photos trop artificielles 
+Privilégier : 
+-  Photographie documentaire africaine  
+-  Espaces blancs  
+- Grandes typographies  
+-  Cartes simples  
+-  Icônes minimalistes  
+- Animations légères  
+- Couleurs APTIC-R 
+ 
+30. PALETTE 
+À adaptateur au logo officiel APTIC-R. 
+Couleurs principales 
+Bleu institutionnel 
+Bleu clair 
+Vert naturel 
+Blanc 
+Gris très clair 
+Le vert doit rappeler : 
+- Agriculture  
+- Développement  
+===== PAGE 16 =====
+- Environnement 
+Le bleu : 
+- Technologie  
+-  Numérique  
+-  Confiance 
+31. CONCEPTION ADAPTATIVE 
+La page doit être parfaitement adaptée à : 
+Ordinateur de bureau 
+1920 × 1080 
+Ordinateur portable 
+1366 × 768 
+Comprimé 
+768 × 1024 
+Smartphone 
+375 × 812 
+Le mobile est prioritaire car une grande partie des visiteurs provenant des réseaux sociaux 
+arriveront depuis leur téléphone. 
+ 
+32. PERFORMANCE 
+Page rapide 
+Optimisation : 
+• WebP/AVIF ;  
+• Compression des images ;  
+• Chargement paresseux ;  
+• Minification CSS/JS ;  
+• Cache ;  
+• Un CDN est nécessaire.  
+Objectif recommandé : 
+Google PageSpeed > 85 
+sur mobile et ordinateur, autant que possible. 
+ 
+33. SEO 
+Titre 
+Volontariat au Togo | Volontaires internationaux d'APTIC-R 
+===== PAGE 17 =====
+Méta-description 
+Rejoignez APTIC-R au Togo pour une expérience de volontariat de 6 à 12 mois dans les 
+domaines de l'innovation numérique, de l'agriculture à faible technologie et du 
+développement rural. 
+Mots-clés 
+• Volontariat au Togo  
+• Bénévolat en Afrique  
+• Bénévolat en Afrique  
+• Bénévolat au Togo  
+• Volontariat numérique en Afrique  
+• Volontariat technologique en Afrique  
+• Volontariat agricole au Togo  
+• Bénévole peu technologique  
+• Bénévole en développement rural  
+• Volontariat international au Togo  
+• Volontariat Togo  
+• Volontariat Afrique  
+Créer également des versions SEO en français et allemand. 
+ 
+34. MULTILINGUE 
+La traduction ne doit pas être une simple traduction automatique non vérifiée. 
+🇫🇷 Français 
+Version principale pour les partenaires francophones. 
+🇬🇧 Anglais 
+Version internationale. 
+🇩🇪 Allemand 
+Version destinée notamment au marché allemand. 
+Chaque langue doit avoir une URL propre : 
+/fr/volontaires-internationaux 
+/en/bénévoles-internationaux 
+/de/bénévoles-internationaux 
+ou une architecture équivalente. 
+ 
+35. ANALYTIQUE 
+Installateur : 
+• Google Analytics 4 ;  
+• Google Search Console ;  
+===== PAGE 18 =====
+• Suivi des conversions ;  
+• Suivi des clics CTA ;  
+• Suivi des formulaires ;  
+• Suivi des téléchargements ;  
+• Suivi des langues.  
+Événements à mesurer 
+apply_now_click 
+application_started 
+application_submitted 
+partner_request 
+volunteer_guide_download 
+language_switch 
+contact_click 
+ 
+36. TABLEAU DE BORD APTIC-R 
+À terme, je recommande de connecter les candidatures à un tableau de bord. 
+Indicateurs clés de performance (KPI) 
+Visiteurs 
+→ Candidatures 
+→ Candidatures qualifiées 
+→ Entretiens 
+→ Sélections 
+→ Volontaires accueillent 
+Par : 
+• Pays ;  
+• Langue ;  
+• Campagne ;  
+• Source ;  
+• Métier ;  
+• Durée souhaitée.  
+ 
+37. BACK-OFFICE 
+L'administrateur APTIC-R doit pouvoir : 
+• Voir les candidatures ;  
+• Filtre par paie ;  
+• Filtrer par compétence ;  
+===== PAGE 19 =====
+• Filtre par disponibilité ;  
+• Télécharger les CV ;  
+• Changer le statut d'une candidature ;  
+• Envoyer un email ;  
+• Ajouter une note ;  
+• Exportateur Excel/CSV.  
+Statuts 
+NOUVEAU 
+↓ 
+RÉVISION 
+↓ 
+SÉLECTIONNÉ 
+↓ 
+ENTRETIEN 
+↓ 
+CHOISI 
+↓ 
+VALIDATION DES PARTENAIRES 
+↓ 
+PRÉPARATION 
+↓ 
+ARRIVÉ 
+↓ 
+COMPLÉTÉ 
+ 
+39. TECHNIQUE D'ARCHITECTURE RECOMMANDÉE 
+Développement sur mesure 
+L'extrémité avant : 
+• Next.js / React  
+Serveur dorsal : 
+• Node.js ou API équivalente  
+Base de données : 
+• PostgreSQL  
+Formulaires : 
+===== PAGE 20 =====
+• Système sécurisé avec stockage des candidatures  
+ 
+40. PERSONNES ATTENDUES 
+Le prestataire devra fournir : 
+1. Maquette UX 
+Ordinateur de bureau + mobile. 
+2. Conception de l'interface utilisateur 
+Toutes les sections. 
+3. Version française 
+4. Version anglaise 
+5. Version allemande 
+6. Formulaire candidat 
+7. Formuler partenaire 
+8. FAQ 
+9. Système Analytics 
+10. SEO 
+11. Politique de confidentialité 
+12. Services administratifs 
+13. Administrateur de documentation 
+14. Formation APTIC-R 
+15. Mise en production 
+ 
+41. STRUCTURE FINALE EN UNE PHRASE 
+Le parcours utilisateur idéal doit être : 
+DÉCOUVRIR APTIC-R → COMPRENDRE LA MISSION → SE PROJETER AU TOGO → ÊTRE 
+RASSURÉ → VÉRIFIER SON ÉLIGIBILITÉ → POSTULER → ÊTRE CONTACTÉ. 
+Et pour les organisations : 
+DÉCOUVRIR APTIC-R → COMPRENDRE LE PROJET → ÉVALUER LA FIABILITÉ → VOIR LES 
+CONDITIONS DE PARTENARIAT → CONTACTER APTIC-R. 
+ 
+Recommandation stratégique 
+Je ferais de cette landing page bien plus qu'une simple page de recrutement. 
+===== PAGE 21 =====
+À terme, elle devrait devenir le portail international des volontaires APTIC-R : 
+Les volontaires internationaux d'APTIC-R  
+mettent en relation des compétences globales et un impact local. 
+Avec deux parcours immédiatement visibles : 
+ JE VEUX DEVENIR VOLONTAIRE See More 
+POSTULEZ DÈS MAINTENANT → 
+JE REPRÉSENTE UNE ORGANISATION 
+DEVENEZ PARTENAIRE → 
+C'est cette architecture qui permettra à APTIC-R de construire progressivement un réseau 
+Allemagne–France–Belgique–Togo , plutôt que de dépendre uniquement des publications 
+sur les réseaux sociaux. 
+ 

@@ -1,0 +1,29 @@
+exclusivement  française.  Charge  de  travail  d’un  développement  full  stack  mené 
+essentiellement en individuel.
+Ces difficultés n’ont pas été stériles : elles ont constitué un apprentissage professionnel 
+(diagnostic, recherche de causes, correctif, redéploiement), au cœur des compétences  
+visées par la formation.
+4.3. Suggestions et perspectives
+Nous formulons des suggestions actionnables, assorties d’un horizon.
+Suggestion 1 — Module CMS léger (actualités et galerie).  Ajouter les tables articles 
+et  medias, un éditeur dans le dashboard, et des pages publiques  /actualites et  /galerie. 
+Horizon : avant l’ouverture des inscriptions grand public, pour animer la phase amont  
+et documenter la phase aval. C’est le chaînon manquant de la couverture « complète ».
+Suggestion 2 — Programme dynamique. Migrer le programme en base, avec CRUD  
+admin, afin que l’équipe puisse déplacer une séance sans déploiement. Horizon : court  
+terme.
+Suggestion  3  —  Sécurité  des  comptes  et  du  scan. Unifier  l’authentification 
+participant sur Supabase Auth (ou un hash bcrypt), remplacer la récupération en clair  
+par  un  lien  à  usage  unique,  protéger  /admin/scan comme  le  dashboard,  déclarer 
+CAMERA dans le manifeste Android. Horizon :  immédiat, avant toute montée en  
+charge réelle.
+Suggestion 4 — Source unique d’identité de l’événement.  Extraire nom, lieu, dates,  
+slogan et coordonnées dans un module de configuration unique, consommé par la  
+vitrine, le badge et les e-mails. Horizon : immédiat (correctif d’image).
+Suggestion 5 — Politique de données et pages légales.  Créer  /mentions-legales et  
+/confidentialite, un consentement explicite à l’inscription, une durée de conservation  
+(CNIL, 2021).
+Suggestion 6 — Tests automatisés, CI et correctifs de formulaires.  Lier les selects  
+région  et  sujet,  exposer  le  renvoi  d’e-mail,  tracer  les  statuts,  tester  les  parcours 
+d’inscription. Horizon : court terme.
+52

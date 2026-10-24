@@ -1,0 +1,12 @@
+Annexe D. Charte des badges
+Profil Couleur Code approximatif Usage
+Agriculteur Émeraude #10b981 Producteurs, coopératives
+Startup Bleu #3b82f6 Exposants, pitch
+Partenaire Ambre / or #f59e0b Sponsors
+Visiteur Violet #8b5cf6 Grand public, invités
+Média Jaune #eab308 Accréditation presse
+Format du badge : PDF A6, orientation paysage, QR JSON { id: <uuid> }.
+Annexe E. Scénario d’utilisation — jour d’ouverture
+1. Le participant présente son badge papier ou mobile à l’entrée.
+2. Le staff ouvre l’application FIAA, menu Scanner.
+VII

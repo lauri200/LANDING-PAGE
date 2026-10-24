@@ -1,0 +1,29 @@
+•  les  institutions  et  organisations  ayant  besoin  d’un  accompagnement 
+informatique ;
+• les porteurs d’événements et de projets sectoriels, comme le FIAA, qui ont  
+besoin d’une visibilité et d’outils de gestion.
+Dans un environnement marqué par la transformation digitale, APTIC-R contribue  
+ainsi à faciliter l’accès aux technologies et à accompagner les acteurs locaux dans  
+l’adoption des outils numériques. Le FIAA illustre ce positionnement : un festival  
+agricole  n’est  pas,  a  priori,  une  entreprise  TIC  ;  il  a  néanmoins  besoin  d’une 
+plateforme professionnelle pour exister durablement auprès de ses publics.
+1.2.2. Déroulement du stage
+Le stage qui constitue le fondement de ce mémoire professionnel s’est déroulé au sein  
+d’APTIC-R, sur une période de six mois, du 5 décembre 2025 au 15 mai 2026.
+Durant cette période, nous avons été intégré au pôle de développement des solutions,  
+sous la supervision directe de monsieur DAGNON Edmund, Directeur général. Les  
+principales missions confiées s’inscrivaient dans le cadre du développement d’une  
+plateforme  agritech pour l’événement  FIAA (Festival  des Innovations Agricole  et 
+Agritech).
+Plus précisément, les activités ont inclus :
+•  l’analyse  des  besoins  des  utilisateurs  cibles  à  travers  des  échanges  avec 
+l’encadrement  et  l’observation  des  parcours  types  (agriculteur,  startup, 
+partenaire, visiteur, média) ;
+• la conception de l’architecture fonctionnelle et technique de la plateforme ;
+•  le  développement  du  frontend  sous  forme  d’application  web  (React, 
+TypeScript) ;
+•  le  développement  du  backend  sous  forme  d’API  REST  (Supabase  / 
+PostgreSQL) et de fonctions serverless pour les courriels ;
+• les tests fonctionnels, les correctifs et le déploiement, ainsi que le packaging  
+Android via Capacitor.
+11

@@ -1,0 +1,18 @@
+Le champ  specific_data (superficie, production, stage, pitchDeck) évite  
+d’exploser  le  schéma  en  tables  trop  nombreuses  dès  la  première  version,  tout  en 
+conservant la richesse métier. Le statut prend les valeurs PENDING, APPROVED,  
+REJECTED. En pratique, l’insert d’inscription ne pose pas explicitement  status :  
+l’absence de valeur est traitée comme « en attente » dans le dashboard ( !status 
+assimilé à PENDING).
+Deux attributs du MCD sont prévus mais mal branchés dans l’interface  : le  
+sélecteur de région n’écrit pas dans l’état React, si bien que  region part vide ; le  
+champ fonction est envoyé mais n’a pas de saisie à l’écran. Le sujet du formulaire  
+contact présente le même défaut de liaison. Ces écarts conception / implémentation  
+sont des résultats de l’analyse du code ; ils figurent au chapitre 4 parmi les limites.
+Figure 6: Modèle conceptuel de données (MCD) pour l’inscription
+MCD simplifié
+INSCRIPTION (id, nom, prenom, email, telephone, region, organisation,
+            fonction, besoins, profile, password, specific_data,
+            status, badge_id, email_sent, email_sent_at, created_at)
+CONTACT (id, nom, email, sujet, message, created_at)
+33

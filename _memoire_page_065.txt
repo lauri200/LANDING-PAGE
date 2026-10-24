@@ -1,0 +1,31 @@
+CONCLUSION GÉNÉRALE :
+Au départ de ce mémoire, une constatation s’imposait : les événements d’envergure  
+comme le Festival d’Innovation Agroalimentaire et Agritech souffrent souvent d’une  
+visibilité numérique limitée, d’informations éparpillées et d’une faible accessibilité  
+pour le public, avant, pendant et après l’événement. La question posée était donc  
+précise  :  comment  concevoir  et  développer  une  plateforme  web  permettant  une 
+couverture complète, structurée et interactive du FIAA, de sa promotion jusqu’à son  
+compte rendu post-événement ?
+Pour y répondre, le travail a été mené au sein d’APTIC-R, du 5 décembre 2025 au 15  
+mai 2026, sous l’encadrement de monsieur DAGNON Edmund. Nous avons d’abord  
+situé  le  problème  dans  son  cadre  théorique  et  organisationnel.  La  couverture 
+événementielle numérique a été définie comme un dispositif continu, qui ne se réduit  
+ni à un site vitrine ni à un fil de réseaux sociaux. Les plateformes web y jouent un rôle  
+d’information,  de  relation,  de  transaction,  d’opération  et  de  mémoire.  Le  FIAA, 
+première  édition  prévue  à  Badja  en  2026,  offre  un  terrain  exigeant  :  publics 
+hétérogènes,  besoin  de  légitimité,  contrainte  de  moyens,  enjeu  agricole  et 
+technologique. La revue de littérature a montré que les billetteries génériques, les  
+event apps internationales et les CMS classiques laissent un espace : celui d’une  
+application métier, adaptée aux profils du festival.
+Dans le cadre empirique, une méthodologie hybride a été retenue : modélisation UML  
+et MERISE pour la clarté, itérations agiles pour l’adaptation. L’analyse des besoins a  
+priorisé l’inscription différenciée, le badge, l’administration et le scan, tout en classant  
+actualités  et  galerie  comme  extensions.  La  mise  en  œuvre  s’est  appuyée  sur  une 
+architecture  contemporaine  React,  TypeScript,  Tailwind,  Supabase,  fonctions 
+serverless, Capacitor dans laquelle HTML et CSS demeurent le langage de rendu. Les  
+modules livrés couvrent la vitrine, le programme, l’inscription et l’accréditation par  
+profil, l’espace participant, les sponsors, le contact, le back-office, les e-mails et le  
+contrôle d’accès par QR.
+La réponse que nous apportons à la problématique est donc la suivante.  Oui, une  
+plateforme  web  peut  assurer  une  couverture  structurée  et  interactive  du  FIAA,  à 
+54

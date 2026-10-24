@@ -1,0 +1,28 @@
+3. La caméra lit le QR.
+4. Le système affiche nom, prénom, profil, organisation et statut.
+5.  Si  APPROVED,  l’accès  est  autorisé  ;  sinon,  orientation  vers  le  point 
+inscription.
+6.  Les  statistiques  du  dashboard  se  mettent  à  jour  au  fil  des  validations 
+d’inscription  effectuées  en  amont,  pas  nécessairement  au  fil  des  scans 
+(évolution possible : journaliser chaque scan).
+Annexe F. Extrait du modèle d’e-mail d’approbation
+Objet : FIAA 2026 - Inscription Validée !
+Le message félicite le participant, confirme la validation, joint le badge PDF, rappelle  
+les  informations  pratiques  et  invite  à  conserver  le  document  sur  téléphone  ou  à 
+l’imprimer. L’expéditeur transactionnel est configuré via Resend. Dans le code actuel,  
+l’adresse  d’envoi  est  encore  onboarding@resend.dev.  Les  e-mails  d’approbation 
+mentionnent Lomé et les dates du 15 au 20 avril 2026.
+Annexe G. Stack technique récapitulative
+Frontend : React 18, TypeScript, Vite, React Router 6, Tailwind CSS, shadcn/ui,  
+Framer Motion, Recharts, html5-qrcode, PDFKit, qrcode.
+Backend / services : Supabase (PostgreSQL, Auth), Vercel/Netlify Functions, Resend.
+Mobile : Capacitor 8, application Android com.fiaa.app.
+Qualité : ESLint, Git.
+Annexe H. Guide de reprise (pour l’équipe FIAA)
+1. Cloner le dépôt et installer Node.js.
+2.  Créer  un  fichier  .env avec  VITE_SUPABASE_URL et  
+VITE_SUPABASE_ANON_KEY.
+3. Configurer les tables inscriptions et contacts dans Supabase.
+4. Définir RESEND_API_KEY sur l’hébergeur.
+5. npm install puis npm run dev en local, npm run build pour la production.
+VIII

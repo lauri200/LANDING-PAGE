@@ -1,0 +1,27 @@
+C’est dans ce cadre qu’APTIC-R a accueilli le projet de plateforme de couverture du  
+FIAA, événement consacré à l’innovation agricole et agritech. Le festival trouve ainsi  
+un porteur technique capable de relier expertise TIC et enjeu sectoriel.
+1.2.1.2. Organisation administrative
+APTIC-R fonctionne selon une organisation orientée autour des métiers du numérique  
+et de l’accompagnement technologique. Bien que son organigramme officiel complet  
+ne soit pas publié, la structure regroupe différents profils techniques intervenant dans  
+les domaines du développement informatique, du support technique et de la formation.
+Son fonctionnement repose généralement sur plusieurs pôles.
+La Direction et l’administration assurent :
+• la définition des orientations stratégiques ;
+• la gestion administrative de la structure ;
+• la coordination des différents projets et activités.
+Le pôle développement informatique est chargé de :
+• la conception et le développement d’applications web et mobiles ;
+• la création de solutions numériques adaptées aux besoins des clients ;
+• la maintenance et l’amélioration des applications existantes.
+Le pôle réseaux et maintenance informatique intervient dans :
+• l’installation et la configuration des équipements informatiques ;
+• la maintenance des systèmes ;
+• l’assistance technique aux utilisateurs.
+Le pôle formation et accompagnement numérique participe à :
+• la formation des utilisateurs aux outils informatiques ;
+• l’initiation aux technologies numériques ;
+• l’accompagnement des structures souhaitant intégrer le numérique dans leurs  
+activités.
+8

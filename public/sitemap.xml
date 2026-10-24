@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://aptic-r.org/fr/volontaires-internationaux</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aptic-r.org/fr/volontaires-internationaux"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aptic-r.org/en/international-volunteers"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aptic-r.org/de/internationale-freiwillige"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aptic-r.org/en/international-volunteers"/>
+  </url>
+  <url>
+    <loc>https://aptic-r.org/en/international-volunteers</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aptic-r.org/fr/volontaires-internationaux"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aptic-r.org/en/international-volunteers"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aptic-r.org/de/internationale-freiwillige"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aptic-r.org/en/international-volunteers"/>
+  </url>
+  <url>
+    <loc>https://aptic-r.org/de/internationale-freiwillige</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aptic-r.org/fr/volontaires-internationaux"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aptic-r.org/en/international-volunteers"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aptic-r.org/de/internationale-freiwillige"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aptic-r.org/en/international-volunteers"/>
+  </url>
+  <url><loc>https://aptic-r.org/fr/about</loc></url>
+  <url><loc>https://aptic-r.org/en/about</loc></url>
+  <url><loc>https://aptic-r.org/de/about</loc></url>
+  <url><loc>https://aptic-r.org/fr/mission</loc></url>
+  <url><loc>https://aptic-r.org/en/mission</loc></url>
+  <url><loc>https://aptic-r.org/de/mission</loc></url>
+  <url><loc>https://aptic-r.org/fr/activities</loc></url>
+  <url><loc>https://aptic-r.org/en/activities</loc></url>
+  <url><loc>https://aptic-r.org/de/activities</loc></url>
+  <url><loc>https://aptic-r.org/fr/life</loc></url>
+  <url><loc>https://aptic-r.org/en/life</loc></url>
+  <url><loc>https://aptic-r.org/de/life</loc></url>
+  <url><loc>https://aptic-r.org/fr/eligibility</loc></url>
+  <url><loc>https://aptic-r.org/en/eligibility</loc></url>
+  <url><loc>https://aptic-r.org/de/eligibility</loc></url>
+  <url><loc>https://aptic-r.org/fr/guide</loc></url>
+  <url><loc>https://aptic-r.org/en/guide</loc></url>
+  <url><loc>https://aptic-r.org/de/guide</loc></url>
+  <url><loc>https://aptic-r.org/fr/apply</loc></url>
+  <url><loc>https://aptic-r.org/en/apply</loc></url>
+  <url><loc>https://aptic-r.org/de/apply</loc></url>
+  <url><loc>https://aptic-r.org/fr/partners</loc></url>
+  <url><loc>https://aptic-r.org/en/partners</loc></url>
+  <url><loc>https://aptic-r.org/de/partners</loc></url>
+  <url><loc>https://aptic-r.org/fr/faq</loc></url>
+  <url><loc>https://aptic-r.org/en/faq</loc></url>
+  <url><loc>https://aptic-r.org/de/faq</loc></url>
+  <url><loc>https://aptic-r.org/fr/privacy</loc></url>
+  <url><loc>https://aptic-r.org/en/privacy</loc></url>
+  <url><loc>https://aptic-r.org/de/privacy</loc></url>
+</urlset>

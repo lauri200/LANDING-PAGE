@@ -1,0 +1,33 @@
+ANNEXES
+Annexe A. Cahier des charges synthétique
+Objet. Concevoir et développer une plateforme web de couverture du FIAA 2026.
+Publics. Agriculteurs  et  coopératives,  startups  agritech,  partenaires  et  sponsors, 
+visiteurs et institutions, médias.
+Fonctions minimales. Vitrine, programme, inscription par profil, badges QR, espace  
+participant, administration, scan d’accès, contact, page sponsors.
+Contraintes. Interface en français, usage mobile, délai de stage, hébergement cloud,  
+identité visuelle du festival (vert, or, photographies agricoles).
+Hors  périmètre  de  la  première  itération. Paiement  en  ligne,  matching  B2B 
+automatique, CMS éditorial complet, application iOS native distincte.
+Annexe B. Dictionnaire de données
+Attribut Entité Type Obligatoire Description
+id inscriptions UUID oui Identifiant unique
+nom inscriptions texte oui Nom de famille
+prenom inscriptions texte oui Prénom
+email inscriptions texte oui Courriel de contact 
+et de login
+telephone inscriptions texte oui Numéro, format libre 
+(+228…)
+region inscriptions texte non Select UI non lié : 
+toujours vide en 
+base
+organisation inscriptions texte non Structure 
+d’appartenance
+fonction inscriptions texte non Aucun champ de 
+saisie dans le 
+formulaire
+besoins inscriptions texte non Attentes vis-à-vis de 
+l’événement
+profile inscriptions texte oui agriculteur / startup / 
+partenaire / visiteur / 
+V

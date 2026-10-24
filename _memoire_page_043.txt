@@ -1,0 +1,13 @@
+Figure 5:  Diagramme de séquence : validation administrative
+Diagramme de classes et MCD
+Les principales classes / entités sont :
+•  Inscription :  id  (UUID),  nom,  prenom,  email,  telephone,  region, 
+organisation,  fonction,  besoins,  profile,  password,  specific_data  (JSON), 
+status, badge_id, email_sent, email_sent_at, created_at ;
+• Contact : id, nom, email, sujet, message, created_at ;
+• AdminUser : géré par le service d’authentification (email, session) ;
+• Badge : vue dérivée de l’inscription (identité, profil, QR contenant l’id) ;
+•  ProgrammeJour  /  Evenement :  pour  cette  itération,  données  de 
+présentation  (côté  client),  destinées  à  être  persistées  dans  une  itération 
+ultérieure.
+32

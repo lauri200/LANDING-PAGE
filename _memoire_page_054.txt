@@ -1,0 +1,9 @@
+Univers interne. Le dashboard fournit une vision de pilotage : volumes, inscriptions,  
+messages,  graphiques  (profils,  top  régions).  Les  actions  groupées  répondent  à  un 
+besoin  d’échelle,  mais  sans  notification  e-mail.  Le  scanner  relie  le  système 
+d’information au contrôle d’accès, sous réserve des limites d’authentification et de  
+permission caméra.
+Application Android. Le packaging Capacitor permet au staff de disposer d’une icône 
+FIAA sur téléphone, particulièrement utile pour le scan.
+Figure 8: Page d’accueil de la plateforme FIAA 2026
+43

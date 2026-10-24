@@ -1,0 +1,28 @@
+CHAPITRE 3 : MÉTHODOLOGIE ET MISE EN ŒUVRE DE 
+LA RÉALISATION
+Introduction du chapitre
+Après avoir posé le cadre théorique et organisationnel, il convient de rendre compte de  
+la  manière  dont  le  système  a  été  conçu  et  réalisé.  Ce  chapitre  constitue  le  cœur 
+technique du mémoire. Il présente d’abord l’approche méthodologique, l’analyse des  
+besoins et la justification des choix. Il décrit ensuite la conception (UML, MCD,  
+architecture),  la  pile  technologique  retenue,  puis  le  développement  effectif  des 
+modules.
+3.1. Méthodologie
+3.1.1. Approche et méthodes adoptées
+Le développement d’un logiciel de couverture événementielle, dans un temps de stage  
+limité et avec des spécifications encore mouvantes (identité, lieu, intitulés), se prête  
+mal à un cycle en cascade intégral, où l’on figerait toutes les exigences avant d’écrire  
+la première ligne de code (Royce, 1970 ; Sommerville, 2016). Nous avons donc adopté 
+une approche hybride, combinant :
+• une  analyse préalable  inspirée de MERISE et d’UML, afin de clarifier les  
+acteurs, les données et les cas d’utilisation ;
+• un développement itératif et incrémental , proche de l’esprit agile (Beck et  
+al.,  2001),  avec  des  livraisons  successives  :  vitrine,  inscription,  backend, 
+badges, administration, e-mails, scanner, application Android.
+Cette hybridation n’est pas un relâchement méthodologique. Elle reconnaît que, dans  
+un  festival  de  première  édition,  certains  besoins  n’apparaissent  qu’au  contact  du 
+prototype (par exemple la récupération de mot de passe, les actions groupées sur les  
+inscriptions, ou un espace participant distinct du back-office).
+Sur le plan de la recherche, le travail relève d’une  recherche-action appliquée  :  
+l’étudiant n’observe pas un système déjà là ; il le construit avec la structure d’accueil,  
+21

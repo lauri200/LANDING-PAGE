@@ -1,0 +1,21 @@
+condition  de  traiter  ensemble  communication  publique  et  système  d’information 
+(inscriptions, badges, accès).  Cette couverture n’est complète, au sens éditorial du  
+terme, que si l’on y ajoute les modules de publication (actualités, galerie, compte  
+rendu). Le présent travail livre le socle opérationnel (vitrine, inscription par profil,  
+espace  participant, back-office, e-mails, scan). Il  laisse  aussi  une  dette  explicite  : 
+sécurité des comptes, cohérence d’identité (Badja / Lomé, trois jours / 15–20 avril),  
+formulaires mal liés, pages légales manquantes.
+Les  limites  n’invalident  pas  le  résultat  ;  elles  définissent  le  travail  restant.  Les 
+perspectives s’organisent en trois horizons. À court terme, sécuriser l’authentification,  
+protéger  le  scan,  unifier  nom,  lieu  et  dates  dans  une  source  unique,  corriger  les 
+formulaires. À moyen terme, doter l’équipe communication d’un CMS léger. À plus  
+long  terme,  mesurer  l’impact  de  l’édition  et,  le  cas  échéant,  internationaliser 
+l’interface. Ainsi, le FIAA disposera non seulement d’un site de promotion, mais  
+d’une plateforme capable de grandir avec le festival lui-même.
+Ce stage aura été, pour nous, le lieu d’une confrontation féconde entre les méthodes  
+enseignées  et  la  réalité  d’un  projet  :  spécifications  qui  bougent,  intégrations  qui 
+résistent, exigence d’une image professionnelle. Concevoir pour un festival agricole,  
+c’est aussi se souvenir que le premier utilisateur peut être un producteur muni d’un  
+téléphone,  et  que  la  qualité  d’un  badge  scanné  à  l’entrée  fait  autant  partie  de  la 
+couverture que la beauté d’une page d’accueil.
+55

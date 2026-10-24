@@ -1,0 +1,30 @@
+Le travail s’est organisé en plusieurs phases, conformément à une démarche itérative :  
+immersion et analyse ; conception (acteurs, cas d’utilisation, modèle de données) ;  
+développement par incréments (vitrine, inscription, badges, administration, e-mails,  
+scanner) ; tests, correctifs d’identité (logo, lieu, intitulé) et mise en production.
+Cette expérience a permis de mettre en pratique les connaissances théoriques acquises  
+durant  le  cursus  à  l’ESIG,  tout  en  développant  des  compétences  techniques  et 
+professionnelles dans le développement web : diagnostic d’incidents (routage SPA,  
+CORS, génération PDF), arbitrage de périmètre et exigence de qualité perçue.
+1.2.3. Justification du choix du sujet
+Le choix du sujet est directement lié à l’expérience vécue durant le stage. Au cours de  
+l’immersion  au  sein  d’APTIC-R,  il  est  apparu  qu’un  festival  de  première  édition 
+comme  le  FIAA  ne  pouvait  pas  s’appuyer  uniquement  sur  des  canaux  dispersés. 
+L’information devait être centralisée ; les inscriptions, différenciées selon les profils ;  
+les badges, produits de manière homogène ; le contrôle d’accès, outillé.
+Les échanges avec  l’encadrement  ont  confirmé  un besoin réel  d’accompagnement 
+numérique intégré : une vitrine professionnelle, un parcours d’inscription, un back-
+office de validation et un dispositif de scan le jour J. Les outils génériques (formulaires 
+en ligne, pages de réseaux sociaux) ont été jugés trop fragmentés et insuffisamment  
+adaptés  au  métier  de  l’événement  (profils,  badges  colorés,  accréditation  presse, 
+packages sponsors).
+Par ailleurs, le sujet permet de mobiliser l’ensemble des compétences développées à  
+l’ESIG : analyse des besoins, conception UML et MERISE, développement web, bases 
+de données, tests et documentation. Il constitue une démonstration concrète de la  
+capacité à mener un projet de génie logiciel de bout en bout, de l’idée à un prototype  
+fonctionnel déployable, dans une structure réelle et sous encadrement professionnel.
+Enfin, le sujet s’inscrit dans un enjeu plus large que l’outil lui-même : donner une  
+existence  numérique  crédible  à  un  festival  agricole  togolais,  accessible  depuis  un 
+téléphone, y compris pour des publics peu « digitaux ». C’est cette rencontre entre  
+TIC, événementiel et agritech qui justifie le thème retenu.
+12

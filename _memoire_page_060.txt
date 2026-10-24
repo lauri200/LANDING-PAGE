@@ -1,0 +1,32 @@
+La relecture du code a donc servi de  revue de recette  : elle confirme les parcours  
+heureux et documente des défauts que des tests de surface (simple clic « ça s’affiche ») 
+auraient laissés de côté. Les correctifs d’identité (logo, lieu Badja sur le site, intitulé)  
+ont été intégrés en fin de projet sur la vitrine, sans être répercutés  partout (badge, e-
+mails). La validation n’est pas seulement technique : elle est aussi institutionnelle.
+4.2. Discussion des résultats
+4.2.1. Interprétation et comparaison avec les attentes
+La  problématique  demandait  une  plateforme  permettant  une  couverture  complète, 
+structurée et interactive, de la promotion au compte rendu.
+Tableau 7: Écarts entre les attentes initiales et les livrables
+Attente Niveau de couverture Commentaire
+Promotion / vitrine Atteint Accueil, identité, zones, CTA
+Programme structuré Atteint partiellement Trois jours lisibles, mais données 
+statiques
+Inscription interactive Atteint Parcours par profil ; région non 
+enregistrée
+Accréditations médias Atteint partiellement Profil media + badge ; pas de 
+workflow presse
+Administration Atteint partiellement Dashboard et stats utiles ; pas de 
+suppression ni de renvoi d’e-mail 
+exposé ; lots sans mail
+Contrôle d’accès Atteint partiellement QR + scanner ; scan non authentifié 
+; pas de journal
+Couverture pendant l’événement Atteint partiellement Programme + scan ; onglet 
+Activités vide ; pas de live
+Actualités / galerie / CMS Non livré Priorisés souhaitables
+Paiement sponsors / matching Non livré Argumentaire commercial 
+seulement
+Pages légales Non livré Liens morts
+Compte rendu post-événement Non livré comme module Les données persistent ; l’éditorial 
+manque
+49

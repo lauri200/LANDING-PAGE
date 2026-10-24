@@ -1,0 +1,18 @@
+HTML5 et CSS3 demeurent le langage de rendu du navigateur. React ne les remplace  
+pas : il les compose. Le CSS utilitaire de Tailwind compile vers du CSS classique.  
+Dire que le projet « n’utilise pas HTML/CSS » serait donc inexact.
+Le rejet de PHP (Laravel, Symfony ou PHP natif) n’est pas un jugement de valeur.  
+PHP reste pertinent pour de nombreux CMS et sites institutionnels. Il a été écarté ici  
+pour trois raisons : l’équipe et le prototype initial s’inscrivaient déjà dans l’écosystème  
+JavaScript  ;  le  besoin  d’interfaces  riches  (dashboard,  scan,  animations)  s’accorde 
+naturellement avec React ; Supabase fournissait Auth + PostgreSQL sans nécessiter  
+l’écriture  d’un  backend  PHP  complet  dans  le  temps  imparti.  Un  équivalent  PHP 
+(Laravel + Blade ou Inertia) aurait été viable ; il n’était pas le chemin le plus court  
+compte tenu du contexte.
+Les outils d’environnement ont compris Git pour le versionnage, un éditeur de code,  
+les tableaux de bord Supabase, Vercel et Resend, et Android Studio / Gradle pour le  
+build natif. Le serveur de développement Vite écoute le port 8080. Des bibliothèques  
+présentes dans  package.json (TanStack Query, react-hook-form, zod) ne sont pas le  
+cœur des pages métier : les formulaires sont des états React locaux et les appels  
+Supabase sont directs.
+36

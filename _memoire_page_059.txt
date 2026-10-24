@@ -1,0 +1,63 @@
+session
+T11 Approbation d’une 
+inscription
+Statut APPROVED + e-
+mail
+Conforme (sous réserve 
+des clés Resend)
+T12 Refus d’une inscription Statut REJECTED + e-
+mail
+Conforme
+T13 Actions groupées Mise à jour de n lignes Conforme sans envoi d’e-
+mails
+T14 Scan d’un badge 
+APPROVED
+Message de succès, 
+identité affichée
+Conforme (parcours 
+caméra)
+T15 Scan d’un badge non 
+approuvé
+Avertissement Conforme
+T16 Scan d’un QR invalide Message d’erreur, reprise 
+du scan
+Conforme
+T17 Envoi du formulaire 
+contact
+Ligne dans contacts Conforme, sujet vide 
+(select non lié)
+T18 Espace participant sans 
+session
+Redirection /login Conforme
+T19 Build de production Vite Compilation sans erreur Conforme
+T20 Variables Supabase 
+absentes
+L’app ne crash pas ; log 
+d’erreur
+Conforme (client de repli)
+T21 Saisie d’une région à 
+l’inscription
+region persistée Échec : select non bindé
+T22 Accès /admin/scan sans 
+session
+Refus ou redirection Échec : page ouverte
+T23 Badge à l’inscription vs 
+statut en base
+Badge seulement si validé Écart : PDF provisoire 
+forcé APPROVED
+T24 Liens mentions légales / 
+confidentialité
+Pages dédiées Échec : 404
+T25 Récupération mot de passe Lien de réinitialisation Écart : mot de passe 
+renvoyé en clair
+T26 Cohérence lieu / dates site 
+vs badge vs e-mail
+Même identité partout Échec : Badja / 3 jours vs 
+Lomé / 15–20 avril
+T27 html lang et page 404 Français Écart : lang="en", 404 en 
+anglais
+T28 Analytics sponsor dans 
+Mon espace
+Données réelles Écart : valeurs simulées
+Source : élaboration personnelle (2026).
+48

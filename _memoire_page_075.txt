@@ -1,0 +1,28 @@
+6. Pour Android : npx cap sync android puis ouverture dans Android Studio.
+Annexe I. Maquettes et captures (à insérer dans la version Word)
+Les captures d’écran suivantes sont à coller dans la version imprimée, une par page ou  
+deux par page, avec légende :
+• Figure A. Page d’accueil (hero FIAA 2026)
+• Figure B. Sélection du profil d’inscription
+• Figure C. Formulaire d’inscription
+• Figure D. Badge PDF généré
+• Figure E. Programme jour 2
+• Figure F. Tableau de bord administrateur
+• Figure G. Scanner de badge
+• Figure H. Espace participant
+• Figure I. Page sponsors
+• Figure J. Application Android (icône et écran d’accueil)
+*Consigne : lancer l’application ( npm run dev ), parcourir chaque écran, capturer (outil  
+Capture d’écran) et coller ici en haute résolution.*
+Annexe J. Inventaire : ce qui existe / ce qui n’existe pas
+Livré. Vitrine,  programme  statique,  inscription  5  profils,  badges  PDF+QR,  login 
+participant,  espace  participant,  dashboard  admin,  stats  (profils,  régions),  messages 
+contact,  e-mails  (validation,  refus,  récupération),  scanner,  wrapper  Android,  page 
+sponsors (vitrine), déploiement Vercel.
+Non livré.  Actualités, galerie, CMS, paiement, matching B2B, messagerie interne,  
+journal de scans, pages légales, i18n, application iOS, programme en base, analytics  
+sponsors réels.
+Présent dans le marketing, absent du code métier.  Matching intelligent, dashboard  
+analytics  sponsors,  messagerie  B2B,  base  de  données  participants  pour  les  packs 
+Gold/Platinum.
+IX

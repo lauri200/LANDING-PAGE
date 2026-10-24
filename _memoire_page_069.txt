@@ -1,0 +1,27 @@
+ISO/IEC  25010:2011.  (2011).  Systems  and  software  engineering  —  Systems  and 
+software  quality  requirements  and  evaluation  (SQuaRE)  —  System  and  software 
+quality models. International Organization for Standardization.
+ISO  9241-11:2018.  (2018).  Ergonomics  of  human-system  interaction  —  Part  11: 
+Usability: Definitions and concepts. International Organization for Standardization.
+Kotler, P., & Keller, K. L. (2016). Marketing management (15th ed.). Pearson.
+Malavolta, I., Procaccianti, G., Noorland, P., & Vukmirovic, P. (2017). Assessing the  
+impact  of  service  workers  on  the  energy  efficiency  of  progressive  web  apps. 
+Proceedings of the 4th International Conference on Mobile Software Engineering and  
+Systems, 35–44.
+Masterman,  G.,  &  Wood,  E.  H.  (2006).  Innovative  marketing  communications: 
+Strategies for the events industry. Elsevier.
+Nielsen, J. (2012). Usability 101: Introduction to usability. Nielsen Norman Group.  
+https://www.nngroup.com/articles/usability-101-introduction-to-usability/
+OECD/Eurostat. (2018). Oslo manual 2018: Guidelines for collecting, reporting and  
+using data on innovation (4th ed.). OECD Publishing.
+Osmani, A. (2017). Learning JavaScript design patterns. O’Reilly.
+Pressman,  R.  S.,  &  Maxim,  B.  R.  (2014).  Software  engineering:  A  practitioner’s 
+approach (8th ed.). McGraw-Hill.
+Reason, P., & Bradbury, H. (Eds.). (2008). The Sage handbook of action research (2nd  
+ed.). Sage.
+Royce,  W.  W.  (1970).  Managing  the  development  of  large  software  systems. 
+Proceedings of IEEE WESCON, 1–9.
+SARA.  (2023).  Salon  international  de  l’agriculture  et  des  ressources  animales 
+d’Abidjan. https://www.sara-africa.com
+Sommerville, I. (2016). Software engineering (10th ed.). Pearson.
+III

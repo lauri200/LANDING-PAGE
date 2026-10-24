@@ -1,0 +1,53 @@
+Tableau 2: Besoins fonctionnels de la plateforme FIAA
+Code Besoin Acteur Priorité
+BF01 Consulter l’identité, le 
+lieu, les dates et les 
+publics du festival
+Visiteur Essentielle
+BF02 Consulter le programme 
+jour par jour
+Visiteur Essentielle
+BF03 S’inscrire selon un profil 
+(agriculteur, startup, 
+partenaire, visiteur, média)
+Participant Essentielle
+BF04 Fournir des données 
+spécifiques au profil 
+(superficie, pitch deck, 
+etc.)
+Participant Importante
+BF05 Obtenir un badge PDF 
+avec QR code
+Participant Essentielle
+BF06 Suivre le statut du dossier 
+(en attente, approuvé, 
+refusé)
+Participant Essentielle
+BF07 Contacter l’organisation Visiteur Importante
+BF08 Consulter les packages 
+sponsors
+Partenaire Importante
+BF09 Authentifier les 
+administrateurs
+Admin Essentielle
+BF10 Lister, filtrer, approuver 
+ou refuser les inscriptions
+Admin Essentielle
+BF11 Envoyer un e-mail de 
+validation avec badge, ou 
+un e-mail de refus
+Admin / Système Essentielle
+BF12 Consulter des statistiques 
+(profils, statuts, régions)
+Admin Importante
+BF13 Scanner un badge et 
+vérifier le statut d’accès
+Admin / Accueil Essentielle
+BF14 Gérer les messages de 
+contact
+Admin Importante
+BF15 Publier des actualités Communication Souhaitable
+BF16 Publier une galerie et un 
+compte rendu post-
+Communication Souhaitable
+23

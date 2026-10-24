@@ -1,0 +1,26 @@
+3.2.3.2. Module inscriptions et accréditations
+C’est le module central. Le parcours comporte trois étapes.
+1.  Choix  du  profil. Cinq  cartes  :  Agriculteur,  Startup  Agritech,  
+Partenaire/Sponsor,  Visiteur,  Média/Presse.  Le  profil  média  matérialise 
+l’accréditation presse, souvent traitée à part dans les grands salons.
+2. Saisie des informations. Champs communs (identité, e-mail, téléphone, mot  
+de  passe  d’espace,  région,  organisation,  attentes)  et  champs  spécifiques 
+(agriculteur : superficie, production ; startup : stade, lien pitch deck).
+3. Confirmation. Message de succès, possibilité de télécharger un badge.
+Les données sont persistées dans Supabase. Un identifiant de badge ( badge_id) est  
+associé à l’enregistrement. Le générateur PDF ( badgeGenerator.ts) produit un document 
+A6 paysage, aux couleurs du profil, avec nom, organisation et QR JSON  { id } . Le  
+pied du badge imprime encore « 15–20 AVRIL 2026 • LOMÉ, TOGO », alors que le  
+site public indique Badja et trois jours : reliquat d’une version antérieure de l’identité,  
+non aligné.
+3.2.3.3. Module espace participant
+La connexion ( UserLogin.tsx) compare e-mail et mot de passe en base, puis mémorise  
+le participant dans sessionStorage. L’espace ( MySpace.tsx) rafraîchit les données par id 
+afin de refléter une validation admin. Trois onglets : vue d’ensemble (statut, blocs  
+spécifiques agriculteur / startup / partenaire), profil (coordonnées, attentes), activités 
+(placeholder : « Aucune activité récente »). Le badge n’est téléchargeable ici que si 
+status === 'APPROVED' . Pour un profil partenaire, trois indicateurs (vues stand, leads,  
+scans) sont affichés avec la mention explicite « données simulées pour la démo ». Un  
+dialogue « mot de passe oublié » déclenche l’e-mail PASSWORD_RECOVERY.
+3.2.3.4. Module administration
+38

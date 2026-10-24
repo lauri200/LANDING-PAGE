@@ -1,0 +1,15 @@
+LISTE DES FIGURES :
+Figure 1: Organigramme fonctionnel d’APTIC-R..................................................................... 9
+Figure 2: Architecture de FIAA................................................................................................. 29
+Figure 3: Diagramme de cas d’utilisation de FIAA................................................................ 30
+Figure 4: Modèle conceptuel de données..............................................................................31
+Figure 5: Diagramme de séquence : validation administrative...........................................32
+Figure 6: Modèle conceptuel de données (MCD) pour l’inscription....................................33
+Figure 7: Diagramme de séquence : inscription................................................................... 34
+Figure 8: Page d’accueil de la plateforme FIAA 2026............................................................43
+Figure 9: Page d’inscription : choix du profil..........................................................................44
+Figure 10: Page programme....................................................................................................44
+Figure 11: Page de connexion administrateur...................................................................... 45
+Figure 12: Page de connexion participant............................................................................. 45
+Figure 13: Accueil en affichage mobile...................................................................................46
+v

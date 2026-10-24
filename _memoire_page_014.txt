@@ -1,0 +1,18 @@
+Le sujet se justifie d’abord par un besoin opérationnel d’APTIC-R et du FIAA : doter 
+la première édition d’un canal numérique unique, professionnel et exploitable. Il se 
+justifie ensuite sur le plan pédagogique : il permet de passer des enseignements de 
+licence (analyse, conception, développement web, bases de données, tests) à une 
+réalisation concrète, menée sous encadrement professionnel. Il se justifie enfin sur le 
+plan sectoriel : outiller un festival agricole, c’est contribuer, modestement, à la 
+diffusion de l’innovation auprès de publics hétérogènes, y compris des producteurs peu 
+familiers des outils numériques. 
+Le mémoire s’organise en deux parties. La première partie pose le cadre théorique et 
+organisationnel ; le chapitre 1 présente les généralités sur la couverture d’événements 
+par le web, puis la structure d’accueil APTIC-R, le déroulement du stage et la 
+justification du sujet et le chapitre 2 définit les concepts clés et propose une revue des 
+travaux et solutions similaires. La seconde partie est consacrée au cadre empirique ; le 
+chapitre 3 expose la méthodologie, l’analyse des besoins, puis la conception et la mise 
+en œuvre et enfin le chapitre 4 présente les résultats, les discutes, identifie les limites 
+et formule des suggestions. Une conclusion générale rappelle la problématique, 
+synthétise les apports, précise les limites et ouvre des perspectives.
+3

@@ -1,0 +1,30 @@
+besoin d’interactivité, de l’équipe, du délai et de l’hébergement. Nous y reviendrons au 
+chapitre 3.
+CMS  (Content  Management  System). Un  CMS  est  un  système  de  gestion  de 
+contenus qui permet à des non-informaticiens de créer, modifier et publier des pages,  
+des articles, des médias, sans écrire de code (Boiko, 2005). WordPress, Drupal ou  
+Joomla  illustrent  cette  famille. Pour  un festival, un CMS est  séduisant  :  l’équipe 
+communication  peut  publier  des  actualités  et  une  galerie  sans  dépendre  du 
+développeur. Toutefois, un CMS généraliste couvre mal, à lui seul, des processus  
+métier spécifiques : workflow de validation d’inscriptions, badges PDF personnalisés,  
+scan  d’accès,  packages  sponsors,  statistiques  par  profil.  Deux  stratégies  s’offrent 
+alors : étendre un CMS par des plugins, au risque de la complexité et de la dette  
+technique ; ou développer une application métier, éventuellement enrichie plus tard  
+d’un  module  éditorial.  C’est  la  seconde  voie  qui  a  été  retenue,  le  CMS  éditorial 
+(actualités, galerie) étant reporté aux perspectives.
+Couverture événementielle.  Nous avons défini cette notion au chapitre 1. Pour la  
+revue  de  littérature,  il  importe  de  la  distinguer  de  trois  concepts  voisins.  La 
+communication événementielle désigne les actions de promotion (publicité, relations  
+presse, réseaux sociaux). Le live streaming désigne la retransmission audiovisuelle. Le  
+knowledge  management  post-événement  désigne  l’archivage  et  la  réutilisation des 
+contenus. La couverture, telle que nous l’entendons, englobe ces dimensions mais y  
+ajoute les services numériques de participation : s’inscrire, obtenir un badge, être  
+scanné  à  l’entrée,  suivre  son  dossier.  C’est  cette  acception  large  qui  justifie  un 
+développement applicatif, et non seulement un blog.
+2.1.2. Innovation agroalimentaire et Agritech
+Innovation  agroalimentaire. L’innovation,  au  sens  de  Schumpeter  repris  par 
+l’OCDE, n’est pas l’invention isolée : c’est l’introduction d’un produit, d’un procédé,  
+d’une organisation ou d’un marketing nouveaux, susceptibles de créer de la valeur  
+(OECD/Eurostat, 2018). Dans l’agroalimentaire, elle recouvre la transformation des  
+produits locaux, l’amélioration de la qualité et de la conservation, le conditionnement,  
+15

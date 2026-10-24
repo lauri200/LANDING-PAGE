@@ -1,0 +1,26 @@
+3.1.3. Justification des choix méthodologiques
+Le choix d’une approche hybride se justifie par trois arguments.
+D’abord, l’incertitude du métier . Un festival de première édition n’a pas encore de  
+procédures stables. Figer un cahier des charges exhaustif au jour 1 aurait produit un  
+document vite obsolète (changement de lieu, d’intitulé, de logo). L’itération a permis  
+d’absorber ces évolutions.
+Ensuite, la nécessité d’un livrable démontrable . La structure d’accueil a besoin de  
+voir, de cliquer, de juger l’image. Les maquettes UML, indispensables, ne suffisent  
+pas à valider un badge ou un parcours mobile. D’où l’importance des incréments  
+exécutables.
+Enfin,  l’alignement  pédagogique.  UML  et  MERISE  restent  des  langages  de 
+communication avec le jury et avec l’encadrement. L’agilité, de son côté, correspond à  
+la pratique réelle du développement web contemporain. Les combiner, c’est relier le  
+cadre académique et le terrain (Sommerville, 2016 ; Booch et al., 2005).
+Nous n’avons pas retenu un processus lourd de type RUP complet, trop coûteux pour  
+un stage individuel. Nous n’avons pas non plus retenu le « code d’abord sans modèle  
+», qui aurait nui à la cohérence des données et à la qualité du mémoire.
+3.2. Mise en œuvre
+3.2.1. Conception (diagrammes UML, MCD, architecture)
+Acteurs et cas d’utilisation
+Les acteurs identifiés sont :
+• Visiteur : consulte le site sans compte ;
+• Participant : s’inscrit, se connecte à son espace (email + mot de passe stockés  
+dans la table inscription), télécharge son badge, peut demander une récupération 
+d’identifiants ;
+25

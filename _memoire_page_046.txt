@@ -1,0 +1,33 @@
+bien présents, mais générés et organisés via une pile contemporaine, plus adaptée à  
+une SPA interactive. PHP n’a pas été retenu comme langage d’implémentation, au  
+profit de JavaScript/TypeScript côté client et de services managés côté serveur. Ce  
+choix est assumé et justifié ci-dessous.
+Tableau 4: Justification des choix technologiques
+Couche Choix Justification
+Langage UI TypeScript, React 18 Composants réutilisables, typage, 
+écosystème, SPA fluide
+Build Vite Démarrage rapide, build de 
+production
+Styles Tailwind CSS, shadcn/ui Design cohérent, mobile-first, gain 
+de temps
+Routage React Router Navigation multi-pages dans la SPA
+Animations Framer Motion Qualité perçue de la vitrine
+Données client fetch Supabase direct TanStack Query est installé et un 
+QueryClient enveloppe l’app, mais 
+les pages métier n’utilisent pas ce 
+cache
+Backend Supabase (PostgreSQL + Auth 
+admin)
+BaaS, délais de stage, SQL réel
+PDF / QR PDFKit standalone, qrcode Badges A6 ; polyfills Node (vite-
+plugin-node-polyfills) pour le 
+navigateur
+Scan html5-qrcode Caméra du navigateur
+E-mail Resend via /api/send-email Types APPROVAL, REJECTION, 
+PASSWORD_RECOVERY
+Mobile Capacitor 8 (Android com.fiaa.app) Un code web, un apk ; permission 
+CAMERA absente du manifeste
+Hébergement Vercel (principal) + config Netlify SPA + serverless ; URL de prod 
+citée : fiaa-nine.vercel.app
+Qualité ESLint, Git Revue, historique, collaboration
+35

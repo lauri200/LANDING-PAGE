@@ -1,0 +1,27 @@
+CHAPITRE 4 : RÉSULTATS DE L’ÉTUDE
+Introduction du chapitre
+Un logiciel n’a de valeur que s’il répond, de manière vérifiable, aux besoins identifiés.  
+Ce chapitre présente les livrables (interfaces et fonctionnalités), rend compte des tests  
+et de la validation, discute les résultats au regard des attentes, expose les limites et  
+difficultés, puis formule des suggestions et des perspectives.
+4.1. Présentation et analyse des résultats
+4.1.1. Interfaces et fonctionnalités livrées
+La  plateforme  livrée  est  une  application  web  responsive,  déclinée  en  application 
+Android, déployable sur un hébergeur de SPA. Elle s’organise en deux univers :  
+l’univers public (couverture et participation) et l’univers interne (pilotage).
+Univers public. L’accueil donne immédiatement l’identité du FIAA 2026 : première  
+édition,  slogan,  lieu  (Badja),  durée,  jauge.  Les  sections  suivantes  répondent  à  la 
+question « pour qui ? » par cinq profils, puis « quoi ? » par le programme de trois jours  
+et le village en quatre zones. L’appel à l’action principal demeure l’inscription. Cette  
+architecture de page suit les recommandations d’utilisabilité : information essentielle  
+au-dessus, progression narrative, CTA répétés (Nielsen, 2012).
+Le  programme  détaillé,  sur  une  page  dédiée,  permet  de  planifier  sa  venue.  Les 
+sponsors rendent visibles les niveaux de partenariat. Le contact offre un formulaire  
+(nom, e-mail, sujet, message) enregistré en base, avec un délai de réponse annoncé de  
+48 heures, et les coordonnées (Badja, région Maritime, Togo).
+L’inscription, en trois étapes, constitue le résultat le plus structurant. Elle matérialise  
+l’accréditation différenciée (cinq profils opérationnels). Un badge PDF est proposé dès  
+la confirmation,  avant validation admin — point que nous discutons comme limite.  
+L’espace participant referme la boucle une fois le statut rafraîchi depuis la base : le  
+dossier n’est plus une information opaque.
+42

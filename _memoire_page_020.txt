@@ -1,0 +1,17 @@
+Cette organisation permet à APTIC-R de répondre aux besoins liés à la transformation  
+digitale tout en favorisant le développement des compétences numériques. Le stage  
+s’est déroulé au sein du pôle développement, sous la supervision du Directeur général.
+Figure 1: Organigramme fonctionnel d’APTIC-R
+1.2.1.3. Activités de la structure
+APTIC-R intervient principalement dans le secteur des technologies numériques. Ses  
+activités couvrent plusieurs domaines.
+a) Développement de solutions numériques. La structure accompagne les organisations 
+dans  la  création  de  solutions  informatiques  telles  que  des  applications  web,  des 
+plateformes numériques et des outils de gestion informatisés. Ces solutions permettent  
+aux utilisateurs d’améliorer leurs processus de travail et d’optimiser la gestion de leurs  
+activités. La plateforme FIAA s’inscrit dans cette ligne : il s’agit d’une application  
+web métier, et non d’un simple site vitrine.
+b) Services informatiques et maintenance. APTIC-R propose également des services  
+liés à l’infrastructure informatique, notamment l’installation et la configuration de  
+matériels, ainsi que la maintenance des équipements.
+9

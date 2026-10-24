@@ -1,0 +1,16 @@
+RÉSUMÉ : 
+Le présent mémoire professionnel porte sur la conception et le développement d’une  
+plateforme  web  de  couverture  du  Festival  des  Innovations  Agricole  et  Agritech 
+(FIAA), réalisés au sein d’APTIC-R du 5 décembre 2025 au 15 mai 2026. Face à la  
+dispersion  de  l’information  événementielle  et  à  l’absence  d’un  canal  unique 
+d’inscription, de badges et de contrôle d’accès, l’objectif était de livrer un système  
+structuré et interactif, de la promotion à la gestion des participants. La démarche a  
+combiné analyse des besoins, modélisation UML et MERISE, puis développement  
+itératif d’une application React, TypeScript et Supabase, déclinée en Android. Les  
+résultats comprennent une vitrine, un programme, une inscription par profil, un espace  
+participant, un back-office, des badges QR et un scanner. La couverture éditoriale  
+(actualités, galerie) n’est pas encore livrée. Les perspectives portent d’abord sur la  
+sécurité des comptes et l’unification de l’identité de l’événement.
+Mots clés : plateforme web ; couverture événementielle ; agritech ; FIAA ; APTIC-R ;  
+React ; Supabase.
+vii

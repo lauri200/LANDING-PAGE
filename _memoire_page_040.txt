@@ -1,0 +1,10 @@
+Figure 2: Architecture de FIAA
+Cette  architecture  présente  l’avantage  de  limiter  l’administration  serveur  tout  en 
+conservant une séparation claire des responsabilités. Le client ne contient pas la clé  
+d’API Resend ; seul le backend serverless la possède.
+Les cas d’utilisation principaux du visiteur / participant sont : consulter l’accueil,  
+consulter  le  programme,  consulter  les  sponsors,  s’inscrire,  se  connecter,  voir  son 
+dossier, télécharger le badge, envoyer un message. Ceux de l’administrateur sont : se  
+connecter, lister les inscriptions, changer un statut, traiter en lot, renvoyer un e-mail,  
+consulter les statistiques, lire les messages, scanner un QR
+29

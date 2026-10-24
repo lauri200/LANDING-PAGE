@@ -1,0 +1,25 @@
+le PDF, alors que le dossier en base n’est pas encore validé. En cas d’échec, un toast  
+d’erreur s’affiche.
+Validation administrative (figure 6).  L’administrateur, déjà authentifié, clique sur  
+Approuver. Le client met à jour le statut, génère un blob PDF, appelle la fonction  
+serverless  /api/send-email (type APPROVAL) , qui s’appuie sur Resend. Le champ  
+email_sent est  alors  positionné  à  vrai.  Le  refus  unitaire  déclenche  un  e-mail 
+REJECTION. L’approbation groupée met à jour les statuts sans envoyer les e-mails.
+Connexion participant. Le client interroge inscriptions avec .eq('email').eq('password'), 
+puis stocke l’objet dans  sessionStorage ( current_user). La récupération d’accès relit le  
+mot de passe et l’envoie en clair par e-mail (PASSWORD_RECOVERY).
+Scan (figure 10).  L’opérateur ouvre  /admin/scan (sans contrôle de session dans le  
+composant),  la  caméra  décode  le  QR  (JSON  contenant  l’id),  le  client  interroge 
+inscriptions par id, et affiche le statut : accès autorisé si APPROVED, avertissement  
+sinon. Aucun journal de scan n’est persisté.
+Architecture
+L’architecture retenue est une architecture client-serveur en trois couches logiques , 
+déployée de manière moderne :
+1. Présentation : application React (SPA) + interface Android Capacitor ;
+2. Services : API Supabase (PostgreSQL + Auth admin) et fonction serverless  
+Vercel api/send-email.ts (le client appelle /api/send-email). Une fonction Netlify  
+existe aussi  (netlify/functions/send-email.ts) mais elle est  incomplète (pas de  
+type PASSWORD_RECOVERY) ;
+3.  Données : base PostgreSQL hébergée (tables  inscriptions et contacts ). Les  
+politiques RLS ne sont pas versionnées dans le dépôt.
+28

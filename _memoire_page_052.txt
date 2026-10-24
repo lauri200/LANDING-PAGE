@@ -1,0 +1,9 @@
+La méthodologie hybride a permis de concilier rigueur de conception et adaptation au 
+terrain. Les besoins ont été formalisés, priorisés, et traduits en modèles UML et MCD. 
+L’architecture SPA + BaaS + serverless a été choisie pour sa rapidité de livraison et sa 
+maintenabilité. HTML et CSS restent le socle de rendu ; React, TypeScript, Tailwind, 
+Supabase, Capacitor et Resend en constituent l’outillage contemporain. Les modules 
+livrés couvrent le cycle inscription–validation–badge–accès, ainsi que la vitrine, le 
+programme, les sponsors et le contact. Il reste à présenter les résultats obtenus, à les 
+tester et à les discuter.
+41

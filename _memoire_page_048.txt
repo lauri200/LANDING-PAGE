@@ -1,0 +1,29 @@
+3.2.3. Développement des modules
+Tableau 5: Modules développés et correspondance avec les besoins
+Module Routes / composants Besoins couverts
+Vitrine / accueil /, Hero, Profiles, Program, Zones, 
+CTA
+BF01
+Programme /programme BF02
+Inscription /inscription BF03, BF04, BF05
+Sponsors /sponsors BF08
+Contact /contact BF07, BF14
+Espace participant /login, /mon-espace BF06, BF05, BF17
+Administration /admin, /admin/dashboard BF09 à BF12, BF14
+Scanner /admin/scan BF13
+Notifications api/send-email.ts BF11, BF17
+Application Android Capacitor com.fiaa.app BNF06
+.
+3.2.3.1. Module vitrine et programme
+La page d’accueil construit le récit du festival : visuel agricole, slogan, informations  
+clés (trois jours, Badja, 600 participants), barre de statistiques (startups, agriculteurs  
+formés, partenariats, investissements), publics cibles, aperçu du programme, zones du  
+village, appel à l’inscription. Le header fixe assure la navigation (Accueil, Programme,  
+S’inscrire, Sponsors, Espace participant, Contact). Le footer reprend l’identité, les  
+liens,  contact@fiaa2026.tg et deux liens légaux ( /mentions-legales,  /confidentialite)  sans 
+pages correspondantes dans le routeur — ils aboutissent à la page 404.
+Le module programme présente trois onglets (Jour 1 Ouverture, Jour 2 Innovation,  
+Jour 3 Clôture). Chaque séance indique horaire, titre, description, type (cérémonie,  
+atelier, B2B, etc.) et lieu. Les données sont codées en dur dans Programme.tsx (détail) 
+et ProgramSection.tsx (résumé d’accueil) : il n’existe pas de table evenements.
+37

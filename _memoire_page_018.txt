@@ -1,0 +1,30 @@
+• une fonction transactionnelle : gérer, le cas échéant, paiements, stands ou  
+accréditations  ;  même  sans  paiement,  l’inscription  est  déjà  une  transaction 
+informationnelle ;
+• une fonction opérationnelle : outiller les organisateurs (validation, badges,  
+scan, statistiques) ;
+• une fonction mémorielle : archiver l’édition et préparer la suivante.
+Le  web  présente,  par  rapport  aux  applications  natives  exclusives,  un  avantage 
+d’universalité : aucune installation n’est requise et les liens se partagent facilement.  
+Les applications mobiles conservent un intérêt pour le scan et l’usage sur le terrain.  
+C’est  pourquoi  de  nombreuses  organisations  adoptent  une  stratégie  hybride  :  une 
+application web encapsulée dans un conteneur natif afin de disposer d’un apk Android  
+sans dupliquer la logique métier (Malavolta et al., 2017).
+Enfin, le rôle des plateformes s’apprécie à l’aune de la confiance. Un formulaire qui  
+perd les données, un badge illisible ou un back-office inaccessible le jour J ruinent la  
+crédibilité de l’événement. La qualité logicielle — fiabilité, sécurité, utilisabilité —  
+fait partie de la communication (ISO/IEC 25010, 2011 ; Pressman et Maxim, 2014).
+1.2. PRÉSENTATION DE LA STRUCTURE D’ACCUEIL
+1.2.1. Cadre organisationnel
+1.2.1.1. Historique de la structure
+APTIC-R est une structure togolaise spécialisée dans le domaine des Technologies de  
+l’Information et de la Communication (TIC). Elle s’inscrit dans une dynamique de  
+promotion du numérique et d’accompagnement des populations, des organisations et  
+des entreprises dans l’adoption des outils technologiques.
+La structure a été créée dans l’objectif de contribuer à la réduction de la fracture  
+numérique,  notamment  par  la  démocratisation  de  l’accès  aux  technologies,  la 
+sensibilisation  aux  usages  du  numérique  et  le  développement  des  compétences 
+informatiques. Son orientation s’inscrit dans un contexte où la transformation digitale  
+représente un levier important pour le développement économique et social du Togo et  
+de l’Afrique.
+7

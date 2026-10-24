@@ -1,0 +1,28 @@
+CHAPITRE 2 : REVUE DE LITTÉRATURE
+Introduction du chapitre
+Une revue de littérature a pour fonction de préciser le vocabulaire, de situer le travail  
+dans un champ de connaissances et d’identifier ce qui a déjà été tenté, avec quels  
+apports et quelles limites (Hart, 2018). Ce chapitre s’organise en deux temps. Nous  
+définissons d’abord les concepts clés mobilisés tout au long du mémoire : plateforme  
+web, CMS, couverture événementielle, innovation agroalimentaire et agritech. Nous  
+proposons  ensuite  une  synthèse  des  solutions  et  travaux  similaires,  afin  de  faire 
+apparaître les lacunes auxquelles le projet FIAA entend répondre.
+2.1. Définition des concepts clés
+2.1.1. Plateforme web, CMS, couverture événementielle
+Plateforme  web. Dans  le  langage  courant,  le  terme  «  plateforme  »  est  souvent 
+employé de manière vague, comme synonyme de site Internet. En ingénierie logicielle, 
+une plateforme désigne un socle technique et fonctionnel sur lequel plusieurs services,  
+plusieurs types d’utilisateurs et plusieurs flux de données coexistent (Tiwana, 2014).  
+Une plateforme web se caractérise par : un accès via le navigateur ; une architecture  
+client-serveur ; une persistance des données ; des interfaces distinctes selon les rôles ;  
+des possibilités d’évolution par modules. Dans le cas du FIAA, la plateforme n’est pas  
+une  page  unique  de  présentation  :  elle  articule  un  front  office  public,  un  espace 
+participant  authentifié,  un  back-office  administrateur  et  des  services  annexes 
+(génération de PDF, envoi d’e-mails, scan QR, application Android).
+On distingue classiquement les sites statiques, les applications web dynamiques et les  
+applications  monopages  (SPA).  Un  site  statique  convient  à  une  brochure.  Une 
+application dynamique, historiquement développée en PHP, ASP ou JSP, génère les  
+pages  côté  serveur.  Une  SPA,  souvent  développée  avec  React,  Vue  ou  Angular, 
+déplace une partie de la logique vers le navigateur et communique avec le serveur par  
+API (Osmani, 2017). Le choix entre ces familles n’est pas idéologique : il dépend du  
+14

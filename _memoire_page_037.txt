@@ -1,0 +1,27 @@
+•  Administrateur : authentifié via  Supabase Auth  (JWT) pour le tableau de  
+bord ; le scanner d’accès, en l’état du code, n’applique pas cette garde ;
+• Système de notification : acteur technique chargé de l’envoi des e-mails.
+Il existe donc deux mécanismes d’authentification distincts , ce qui est un choix de  
+conception à documenter : l’admin relève d’un service d’identité ; le participant relève  
+d’une  comparaison  directe  sur  la  table  métier.  Cette  séparation  a  accéléré  le 
+développement ; elle est aussi la principale dette de sécurité du projet.
+Les cas d’utilisation principaux du visiteur / participant sont : consulter l’accueil,  
+consulter  le  programme,  consulter  les  sponsors,  s’inscrire,  se  connecter,  voir  son 
+dossier, télécharger le badge, envoyer un message. Ceux de l’administrateur sont : se  
+connecter, lister les inscriptions, changer un statut, traiter en lot, renvoyer un e-mail,  
+consulter les statistiques, lire les messages, scanner un QR.
+Le système « Plateforme FIAA » est entouré de quatre acteurs. Le Visiteur se relie à  
+Consulter accueil, Consulter programme, Consulter sponsors, Contacter. Le Participant 
+hérite  du  Visiteur  et  se  relie  à  S’inscrire,  Se  connecter,  Consulter  mon  espace, 
+Télécharger  badge.  L’Administrateur  se  relie  à  Authentifier,  Gérer  inscriptions, 
+Consulter statistiques, Gérer messages, Scanner badge. Le cas « Changer statut »  
+inclut « Envoyer e-mail », réalisé avec le Système de notification.
+Diagramme de classes et MCD
+Les principales classes / entités sont :
+• Inscription : id (UUID), nom, prenom, email, telephone, region, organisation,  
+fonction, besoins, profile, password, specific_data (JSON), status, badge_id,  
+email_sent, email_sent_at, created_at ;
+• Contact : id, nom, email, sujet, message, created_at ;
+• AdminUser : géré par le service d’authentification (email, session) ;
+• Badge : vue dérivée de l’inscription (identité, profil, QR contenant l’id) ;
+26

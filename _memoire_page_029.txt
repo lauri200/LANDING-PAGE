@@ -1,0 +1,35 @@
+Tableau 1: Comparaison des principales familles de solutions
+Famille Forces Limites pour le FIAA
+Billetterie générique (Eventbrite, 
+formulaires)
+Rapidité, faible coût Peu de métier, badges et scan 
+limités, marque diluée
+Event apps internationales Réseautage, notifications, 
+programme riche
+Coût, dépendance, inadaptation au 
+contexte local
+CMS vitrine (WordPress) Éditorial, galerie, autonomie 
+communication
+Faible couverture opérationnelle
+Grands salons (SIA, SARA) Couverture complète, notoriété Non transposable en l’état (moyens, 
+maturité)
+Développement spécifique Alignement métier, maîtrise des 
+données, image
+Charge de développement, 
+maintenance
+2.2.2. Identification des lacunes ou limitations des travaux existants
+Premièrement,  le  fossé  entre  communication  et  opération.  Beaucoup  de  sites 
+d’événements informent, mais ne gèrent pas. Or, pour le FIAA, l’inscription n’est pas  
+un détail : elle conditionne le badge, le contrôle d’accès, les statistiques et la relation  
+avec les médias.
+Deuxièmement, l’indifférenciation des publics. Un formulaire unique « nom, e-mail,  
+téléphone » ignore que l’agriculteur, la startup et le journaliste n’ont pas les mêmes  
+données à fournir, ni les mêmes droits. L’opportunité est de concevoir un parcours par  
+profil, matérialisé par un badge coloré.
+Troisièmement, la faible prise en compte du mobile et du terrain . Un back-office  
+utilisable uniquement sur ordinateur de bureau est insuffisant le jour de l’événement.  
+Le scan des badges, l’accès Android et la lisibilité sur petit écran sont des exigences,  
+non des options.
+Quatrièmement,  la discontinuité temporelle . Les sites s’animent avant l’événement  
+puis s’éteignent. Une couverture complète suppose d’anticiper, dès la conception, les  
+18

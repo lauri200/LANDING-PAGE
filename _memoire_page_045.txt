@@ -1,0 +1,15 @@
+ADMIN (géré par le prestataire d’authentification)
+Un administrateur TRAITE 0,n INSCRIPTION
+Une INSCRIPTION est TRAITÉE par 0,1 administrateur (via le statut)
+Un visiteur ENVOIE 0,n CONTACT
+La  cardinalité  importante  est  celle  du  cycle  de  vie  :  une  inscription  naît  à  l’état 
+PENDING, peut être APPROVED (déclenchant badge + e-mail) ou REJECTED (e-
+mail d’information). Le badge n’est pas une table séparée : il est généré à la volée à  
+partir de l’inscription, ce qui évite les incohérences (un badge toujours à jour du statut  
+et de l’identité).
+Figure 7:  Diagramme de séquence : inscription
+3.2.2. Technologies et outils utilisés
+Le plan académique évoque classiquement HTML, CSS et PHP. Ces technologies  
+restent le socle du web : le HTML structure les pages, le CSS les habille, et un langage  
+serveur (historiquement PHP) persiste les données. Dans ce projet, HTML et CSS sont  
+34

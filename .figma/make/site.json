@@ -1,0 +1,12 @@
+{
+  "title": "Volontariat au Togo | Volontaires internationaux d'APTIC-R",
+  "description": "Rejoignez APTIC-R au Togo pour une mission de volontariat de 6 a 12 mois dans l'innovation numerique, l'agriculture low-tech et le developpement rural.",
+  "language": "fr",
+  "robots": {
+    "index": true
+  },
+  "accessibility": {
+    "addBypassLinks": true,
+    "ignoreReducedMotion": false
+  }
+}

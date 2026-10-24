@@ -1,0 +1,30 @@
+les accès, à offrir un espace participant riche et un back-office aligné sur le workflow  
+de l’organisateur (Eventbrite, 2023).
+Les applications d’événement (event apps). Whova, Swapcard, Brella ou EventMobi 
+proposent programme interactif, networking, notifications et, parfois, matchmaking  
+B2B. Elles sont puissantes pour les congrès internationaux, mais leur coût, leur courbe  
+d’apprentissage et leur dépendance vis-à-vis d’un éditeur étranger les rendent peu  
+adaptées à une première édition togolaise, dont le budget et l’équipe sont contraints.  
+De plus, elles externalisent la donnée et la marque.
+Les  CMS  et  sites  vitrines. De  nombreux  festivals  africains  disposent  d’un  site 
+WordPress présentant les éditions passées, un formulaire de contact et une galerie.  
+C’est le cas, à des degrés divers, de salons agricoles de la sous-région. Ces sites  
+remplissent la fonction informationnelle, rarement la fonction opérationnelle (badges,  
+scan,  validation).  La  couverture  s’arrête  souvent  à  la  promotion,  sans  continuum 
+pendant et après l’événement.
+Les grands salons de référence. Le Salon International de l’Agriculture (SIA) à Paris, 
+le SARA à Abidjan ou le SIA à Bamako disposent de dispositifs numériques aboutis,  
+fruit  d’années  d’institutionnalisation  et  de  moyens  importants  :  sites  multilingues, 
+applications mobiles, accréditations presse, plans interactifs, replay. Ils constituent des  
+modèles d’inspiration, non des solutions reproductibles à l’identique pour un festival  
+naissant (SARA, 2023).
+Les travaux académiques.  La littérature en génie logiciel documente de nombreux  
+mémoires et projets de « plateforme de gestion d’événements » : inscription en ligne,  
+paiement,  planning,  notifications.  Ces  travaux  confirment  l’intérêt  d’UML,  des 
+architectures trois-tiers et des tests fonctionnels (Sommerville, 2016). Ils montrent  
+aussi un écueil fréquent : un trop grand nombre de modules promis, un trop faible  
+niveau de finition, et une absence de lien avec un événement réel. Notre travail se  
+distingue par son ancrage : un festival identifié, des profils métier, un badge opérable,  
+un scanner, un déploiement effectif.
+Le tableau 1 synthétise cette comparaison.
+17

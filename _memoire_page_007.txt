@@ -1,0 +1,11 @@
+LISTE DES TABLEAUX : 
+Tableau 1: Comparaison des principales familles de solutions.......................................... 18
+Tableau 2: Besoins fonctionnels de la plateforme FIAA.......................................................23
+Tableau 3: Besoins non fonctionnels......................................................................................24
+Tableau 4: Justification des choix technologiques................................................................ 35
+Tableau 5: Modules développés et correspondance avec les besoins...............................37
+Tableau 6: Cas de tests réalisés et résultats.......................................................................... 47
+Tableau 7: Écarts entre les attentes initiales et les livrables................................................49
+Tableau 8: Incohérences d’identité observées dans le code............................................... 50
+Tableau 9: Plan de mise en œuvre des suggestions.............................................................53
+iv

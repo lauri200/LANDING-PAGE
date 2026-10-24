@@ -1,0 +1,31 @@
+Suggestion  7  —  Couverture  live. Fil  d’actualités  et  galerie  modérée  le  jour  J, 
+s’appuyant sur le CMS de la suggestion 1.
+Suggestion  8  —  Mesure  d’impact. Journaliser  les  scans,  croiser  inscriptions  et 
+entrées, enquête de satisfaction après l’édition.
+Tableau 9: Plan de mise en œuvre des suggestions
+Horizon Actions Priorité
+Immédiat Auth unifiée, scan protégé, source 
+unique d’identité, formulaires 
+région/sujet
+Haute
+Court terme Programme en base, pages légales, 
+tests automatisés
+Haute
+Moyen terme CMS actualités et galerie, journal 
+des scans
+Moyenne
+Long terme Live, mesure d’impact, langue 
+internationale si besoin
+Souhaitable
+Le plan de mise en œuvre suggéré est incrémental : sécurité et cohérence d’identité  
+d’abord, puis programme dynamique et formulaires, puis CMS éditorial, puis live et  
+impact.
+Conclusion du chapitre
+Les résultats montrent qu’une plateforme métier, centrée sur les profils, les badges et  
+le pilotage, peut être livrée dans le cadre d’un stage et constituer déjà une couverture  
+structurée  et  interactive  du  FIAA.  Les  tests  valident  les  parcours  critiques  et 
+documentent des écarts (sécurité, identité, formulaires). L’écart avec une couverture  
+éditoriale complète est réel, assumé, et convertible en feuille de route. Les suggestions  
+visent d’abord à sécuriser et à unifier l’identité, puis à faire grandir le système avec le  
+festival.
+53

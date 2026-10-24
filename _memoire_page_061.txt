@@ -1,0 +1,30 @@
+L’interprétation  que  nous  proposons  est  la  suivante.  Le  projet  répond  à  la 
+problématique  sur  le  plan  systémique :  il  centralise  l’information,  structure  les 
+contenus essentiels et rend l’interaction possible (inscription, suivi, badge, contact,  
+pilotage). Il ne répond pas encore à une définition maximaliste de la « couverture  
+complète  »,  qui  inclurait  rédaction  en  continu,  photothèque,  vidéos  et  livre  post-
+événement. Cette distinction est importante pour ne pas sur-promettre.
+Comparé aux familles du chapitre 2, le livrable se situe entre le CMS vitrine (qu’il  
+dépasse par le métier) et l’event app internationale (qu’il n’égale pas en networking).  
+C’est précisément la niche identifiée : un outil souverain, adapté au FIAA, livrable  
+dans un stage.
+Les attentes de qualité perçue (badge « de conférence », dashboard, e-mails HTML)  
+ont  été  largement  satisfaites,  au  prix  d’un  effort  d’itération  (PDFKit  standalone, 
+CORS, fonctions serverless). Les attentes de volume éditorial n’ont pas été le focus,  
+par  choix  de  priorisation  (MoSCoW  :  Must  pour  inscription/badge,  Should  pour 
+stats/scan, Could pour galerie/actualités).
+L’analyse du dépôt fait en outre apparaître une  dette d’identité . Le tableau 8 la  
+synthétise.
+Tableau 8: Incohérences d’identité observées dans le code
+Élément Vitrine (site) Badge PDF / e-mails
+Intitulé Festival des Innovations Agricole et 
+Agritech
+Festival International… / Forum 
+International…
+Lieu Badja, région Maritime Lomé
+Durée / dates 3 jours 15–20 avril 2026 (six jours)
+Profils Institutions (accueil) Visiteur (inscription)
+Ces  écarts  s’expliquent  par  l’histoire  du  projet  (commits  de  changement  de  lieu 
+Agbélouvé → Badja, de nom, de logo) : les surfaces « marketing » ont été mises à jour  
+en dernier, les artefacts générés (PDF, HTML d’e-mail) plus tôt. Pour un jury, cela  
+50

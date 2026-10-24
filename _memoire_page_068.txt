@@ -1,0 +1,27 @@
+BIBLIOGRAPHIE
+.
+Beck, K., Beedle, M., van Bennekum, A., Cockburn, A., Cunningham, W., Fowler,  
+M., Grenning, J., Highsmith, J., Hunt, A., Jeffries, R., Kern, J., Marick, B., Martin, R.  
+C., Mellor, S., Schwaber, K., Sutherland, J., & Thomas, D. (2001). Manifesto for agile  
+software development. https://agilemanifesto.org
+Boiko, B. (2005). Content management bible (2nd ed.). Wiley.
+Booch, G., Rumbaugh, J., & Jacobson, I. (2005). The unified modeling language user  
+guide (2nd ed.). Addison-Wesley.
+Bowdin,  G.,  Allen,  J.,  O’Toole,  W.,  Harris,  R.,  &  McDonnell,  I.  (2011).  Events 
+management (3rd ed.). Routledge.
+CNIL.  (2021).  Guide  du  développeur  :  la  sécurité  des  données  personnelles. 
+Commission nationale de l’informatique et des libertés.
+Cohn, M. (2004). User stories applied: For agile software development. Addison-
+Wesley.
+Eventbrite.  (2023).  Event  marketing  and  ticketing  platform.  
+https://www.eventbrite.com
+FAO.  (2022).  The  state  of  food  and  agriculture  2022:  Leveraging  automation  in 
+agriculture for transforming agrifood systems. Food and Agriculture Organization of  
+the United Nations.
+Getz,  D.  (2008).  Event  tourism:  Definition,  evolution,  and  research.  Tourism 
+Management, 29(3), 403–428. https://doi.org/10.1016/j.tourman.2007.07.017
+Goldblatt,  J.  (2014).  Special  events:  Creating  and  sustaining  a  new  world  for 
+celebration (7th ed.). Wiley.
+Hart, C. (2018). Doing a literature review: Releasing the research imagination (2nd  
+ed.). Sage.
+II

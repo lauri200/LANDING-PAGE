@@ -1,0 +1,48 @@
+Collectivement, ces livrables couvrent les trois temps de la couverture, à des degrés  
+divers.  Avant :  promotion,  programme,  inscription,  sponsors,  contact.  Pendant :  
+programme, badge, scan, espace participant. Après : les données restent, le site peut  
+servir  de  vitrine  de  l’édition  ;  en  revanche,  le  compte  rendu  éditorial  (galerie, 
+actualités, replay) n’est pas encore un module à part entière.
+4.1.2. Tests et validation
+Les tests ont été principalement fonctionnels et exploratoires, complémentaires d’une 
+validation de build ( npm run build ) et d’un linting ESLint. L’absence d’une batterie  
+automatisée complète (tests unitaires React Testing Library, tests E2E Cypress ou  
+Playwright) est une limite, compensée par des scénarios manuels répétés à chaque  
+incrément.
+Tableau 6: Cas de tests réalisés et résultats
+N° Scénario Résultat attendu Résultat observé
+T01 Affichage de l’accueil sur 
+mobile et desktop
+Mise en page lisible, CTA 
+visibles
+Conforme
+T02 Navigation entre les pages 
+du header
+Changement de vue sans 
+rechargement complet
+Conforme
+T03 Rafraîchissement d’une 
+URL profonde 
+(/programme)
+Pas d’erreur 404 Conforme après mise en 
+place des redirects SPA
+T04 Inscription agriculteur 
+avec champs spécifiques
+Enregistrement + étape 
+confirmation
+Conforme
+T05 Inscription startup avec 
+stade et pitch
+JSON specific_data 
+renseigné
+Conforme
+T06 Inscription incomplète (e-
+mail manquant)
+Blocage HTML5 required Conforme
+T07 Téléchargement du badge PDF A6, QR lisible Conforme
+T08 Connexion admin 
+identifiants erronés
+Toast d’erreur Conforme
+T09 Connexion admin valides Accès dashboard Conforme
+T10 Accès dashboard sans Redirection /admin Conforme
+47

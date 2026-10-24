@@ -1,0 +1,22 @@
+SIGLES ET ABRÉVIATIONS : 
+API : Application Programming Interface
+B2B : Business to Business
+BaaS : Backend as a Service
+CMS : Content Management System
+CSS : Cascading Style Sheets
+ESIG : Ecole Supérieure d’Informatique et de Gestion
+FAO : Food and Agriculture Organization of the United Nations
+FIAA : Festival des Innovations Agricole et Agritech
+HTML : HyperText Markup Language
+IoT : Internet of Things
+ISO : International Organization for Standardization
+JSON : JavaScript Object Notation
+MCD : Modèle Conceptuel de Données
+PDF : Portable Document Format
+QR : Quick Response
+REST : Representational State Transfer
+SPA : Single Page Application
+SQL : Structured Query Language
+TIC : Technologies de l’Information et de la Communication
+UML : Unified Modeling Language
+vi

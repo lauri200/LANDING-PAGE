@@ -1,0 +1,28 @@
+Cette  couverture  n’est  pas  réductible  à  la  publication  d’articles.  Elle  combine 
+communication, services transactionnels (inscription, badge) et outils d’exploitation  
+(back-office, scan, tableaux de bord). Autrement dit, elle relève autant du système  
+d’information que du marketing.
+Plusieurs caractéristiques distinguent une couverture numérique réussie. La première  
+est  la  centralisation  :  un  point  d’entrée  unique  évite  la  dispersion  entre  affiches, 
+groupes de messagerie et pages de réseaux sociaux. La deuxième est la structuration :  
+le  programme,  les  profils  et  les  contacts  doivent  être  lisibles.  La  troisième  est 
+l’interactivité  :  l’utilisateur  s’inscrit,  télécharge  un  badge  et  suit  le  statut  de  son 
+dossier. La quatrième est la continuité : le site ne s’éteint pas le lendemain de la  
+clôture ; il devient archive et vitrine de l’édition suivante.
+Dans le contexte togolais, ces exigences prennent une dimension particulière. L’accès  
+à l’information passe massivement par le téléphone mobile. Les débits, les coûts de  
+connexion et l’hétérogénéité des équipements imposent des interfaces légères. Les  
+publics d’un festival agricole sont hétérogènes : un agriculteur, une startup, un cadre  
+d’institution  et  un  journaliste  n’ont  ni  les  mêmes  attentes  ni  le  même  niveau  de 
+familiarité  avec  les  outils  numériques.  Une  couverture  pertinente  doit  donc  être 
+inclusive (Nielsen, 2012 ; ISO, 2018).
+1.1.2. Rôle des plateformes web dans la communication événementielle
+Une plateforme web n’est pas un simple site vitrine. Elle constitue un socle de services  
+partagés, accessible par navigateur, éventuellement décliné en application mobile, et  
+adossé à une base de données. Dans la communication événementielle, elle remplit au  
+moins cinq fonctions (Kotler et Keller, 2016 ; Bowdin et al., 2011) :
+•  une  fonction  informationnelle  :  présenter  l’événement,  son  identité,  son 
+programme et ses publics ;
+• une fonction relationnelle : permettre l’inscription, le contact et le suivi de  
+dossier ;
+6

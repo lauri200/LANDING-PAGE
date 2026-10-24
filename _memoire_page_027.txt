@@ -1,0 +1,29 @@
+la certification, la logistique du froid, la réduction des pertes post-récolte et la création  
+de chaînes de valeur (FAO, 2022). Pour un pays comme le Togo, dont une part  
+importante  de  la  production  agricole  est  encore  commercialisée  à  l’état  brut, 
+l’innovation agroalimentaire est un levier de souveraineté, d’emplois et d’exportations.
+Agritech (ou agtech).  Le terme désigne l’ensemble des technologies appliquées à  
+l’agriculture : capteurs et IoT, drones, imagerie, logiciels de conseil agronomique,  
+marketplaces, fintech rurale, biotechnologies, mécanisation adaptée, traçabilité par QR  
+ou blockchain (Trendov et al., 2019 ; World Bank, 2019). L’agritech n’est pas une fin  
+en  soi.  Son  utilité  se  mesure  à  l’adoption  par  les  producteurs,  à  l’accessibilité 
+économique, à la formation et à l’adéquation aux contextes locaux (faible connectivité,  
+parcelles  de  petite  taille,  diversité  des  cultures).  Un  festival  comme  le  FIAA  a 
+précisément vocation à réduire le fossé entre l’offre technologique et la demande des  
+agriculteurs, en organisant la rencontre, la démonstration et la formation.
+Le  croisement  de  ces  deux  champs  —  agroalimentaire  et  agritech  —  n’est  pas 
+anecdotique. Beaucoup de salons agricoles historiques mettent l’accent sur les intrants,  
+les machines ou les produits du terroir. Les forums tech, de leur côté, parlent parfois  
+d’agriculture sans producteurs. Le FIAA cherche à tenir les deux bouts : la terre et la  
+tech, la transformation et le numérique. La plateforme web doit refléter cette dualité  
+dans son identité, ses profils d’inscription et son programme.
+2.2. Synthèse des travaux similaires
+2.2.1. Études antérieures, modèles théoriques et solutions existantes
+Plusieurs familles de solutions visent, de près ou de loin, la couverture et la gestion  
+d’événements.
+Les plateformes généralistes de billetterie et d’inscription.  Eventbrite, Billetweb,  
+Evenbrite-like  africains  ou  Google  Forms  permettent  de  collecter  des  inscriptions 
+rapidement.  Leur  force  est  la  simplicité  et,  parfois,  le  paiement  en  ligne.  Leur 
+faiblesse,  pour  un  festival  multi-profils,  est  le  caractère  générique  :  difficulté  à 
+différencier agriculteurs, startups et médias, à produire des badges métier, à scanner  
+16

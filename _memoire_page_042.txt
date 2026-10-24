@@ -1,0 +1,8 @@
+Le système « Plateforme FIAA » est entouré de quatre acteurs. Le Visiteur se relie à  
+Consulter accueil, Consulter programme, Consulter sponsors, Contacter. Le Participant 
+hérite  du  Visiteur  et  se  relie  à  S’inscrire,  Se  connecter,  Consulter  mon  espace, 
+Télécharger  badge.  L’Administrateur  se  relie  à  Authentifier,  Gérer  inscriptions, 
+Consulter statistiques, Gérer messages, Scanner badge. Le cas « Changer statut »  
+inclut « Envoyer e-mail », réalisé avec le Système de notification.
+Figure 4: Modèle conceptuel de données 
+31

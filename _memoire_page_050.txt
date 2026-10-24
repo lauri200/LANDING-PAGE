@@ -1,0 +1,28 @@
+Le dashboard, protégé par session Supabase Auth, affiche quatre indicateurs : total des  
+inscriptions, approuvées, en attente ( PENDING ou statut vide), messages reçus. Un  
+onglet Inscriptions offre la vue tabulaire, le détail, l’approbation et le refus unitaires, et  
+le traitement par lot. Une fonction handleResendEmail existe dans le code mais n’est 
+reliée à aucun bouton . L’icône de suppression ( Trash2) est importée sans action de  
+suppression.  Un  onglet  Statistiques  affiche  un  histogramme  par  profil  et  un 
+camembert des cinq premières régions ; la répartition par statut est calculée (statusData) 
+mais non tracée. Un onglet Messages liste les demandes du formulaire de contact.
+3.2.3.5. Module scan et contrôle d’accès
+Le scanner s’appuie sur html5-qrcode. Le QR du badge est un JSON. Après décodage,  
+l’inscription  est  relue  en  base  :  un  statut  APPROVED  déclenche  une  validation 
+visuelle ; tout autre statut déclenche un avertissement. Aucune vérification de session 
+n’est effectuée dans Scanner.tsx, contrairement au dashboard. Le manifeste Android ne 
+déclare pas la permission CAMERA : le scan dans l’apk dépend du WebView et peut  
+échouer  selon  l’appareil.  Ce  module  relie  néanmoins,  sur  le  principe,  la 
+communication numérique au contrôle d’accès physique.
+3.2.3.6. Module partenariats
+La page sponsors expose quatre packages en FCFA : Platinum (15 000 000), Gold (8  
+000 000), Silver (4 000 000), Bronze (2 000 000), avec stands, visibilité et avantages.  
+Le bouton d’action renvoie vers  /contact : il n’y a  ni paiement en ligne ni dossier  
+sponsor en base . Les mentions « matching intelligent », « analytics temps réel » et «  
+messagerie  B2B  »  relèvent  de  l’argumentaire  commercial,  non  de  modules 
+implémentés.
+3.2.3.7. Module notifications
+La  fonction  Vercel  reçoit  le  type  APPROVAL,  REJECTION ou  
+PASSWORD_RECOVERY, construit un HTML, joint le PDF le cas échéant, et envoie  
+via Resend. L’expéditeur actuel du code est onboarding@resend.dev (domaine de test).  
+39

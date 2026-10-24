@@ -1,0 +1,1845 @@
+===== PAGE 1 =====
+Année académique : 2025-2026
+REPUBLIQUE TOGOLAISE
+Travail – Liberté - Patrie
+MINISTÈRE DE L’ENSEIGNEMENT SUPÉRIEUR ET 
+DE LA RECHERCHE (M.E.S.R)
+Ecole Supérieure d’Informatique et de Gestion
+ESIG GLOBAL SUCCESS
+Domaine : Sciences et technologies
+Mention : Informatique
+Spécialité : Développement d’application
+Mémoire pour l’obtention de la licence professionnelle :
+Conception et développement d’une plateforme web de couverture 
+du Festival d’Innovation Agroalimentaire et Agritech (FIAA)
+Réalisé par :
+M. ATIOPOU Kovi Olivier
+Matricule : ESIG-02229-2023
+Directeur de mémoire : M. N’SOUGAN
+Maître de stage : DAGNON Edmund
+Thème :
+Promotion : 2023-2026
+===== PAGE 2 =====
+
+===== PAGE 3 =====
+
+===== PAGE 4 =====
+DÉDICACE
+À mes parents, pour leur soutien constant et leurs sacrifices.
+À monsieur DAGNON Edmund, pour la confiance et l’encadrement reçus au cours du  
+stage.
+i
+===== PAGE 5 =====
+REMERCIEMENTS : 
+J’adresse mes sincères remerciements à Monsieur SEDJRO Robert, Directeur Général  
+de  l’ESIG,  pour  la  qualité  de  la  formation  et  l’environnement  favorable  à  notre 
+apprentissage.
+Je remercie vivement Monsieur DAGNON Edmund, Directeur de la startup APTIC-R  
+et maître de stage, pour m’avoir accueilli au sein de son entreprise, pour sa confiance,  
+sa disponibilité et l’accompagnement qui m’a permis de développer mes compétences  
+techniques  et  professionnelles.  Ma  gratitude  s’étend  également  à  toute  l’équipe 
+d’APTIC-R pour son accueil et ses échanges enrichissants.
+Mes remerciements vont à Monsieur N’SOUGAN, mon directeur de mémoire, pour  
+son encadrement, sa rigueur scientifique et le temps consacré à ce travail.
+Je  remercie  l’ensemble  de  mes  enseignants  de  l’ESIG  pour  les  connaissances 
+transmises et leur engagement.
+J’adresse une pensée particulière à ma grand-mère, Madame EKLOU Abra Enyonam,  
+pour son amour, ses prières et son soutien indéfectible ; à ma mère, SEMEGNA Awo  
+Elom, pour ses sacrifices, ses encouragements et sa confiance ; et à ma sœur jumelle,  
+ATIOPOU Akouélé Olivéra, pour sa présence et sa motivation au quotidien.
+Enfin,  je  remercie  mes  camarades  de  promotion,  mes  amis,  ainsi  que  toutes  les 
+personnes qui, de près ou de loin, ont contribué à la réalisation de ce mémoire.
+ii
+===== PAGE 6 =====
+SOMMAIRE : 
+DÉDICACE...................................................................................................................................... i
+REMERCIEMENTS :....................................................................................................................... ii
+SOMMAIRE :.................................................................................................................................iii
+LISTE DES TABLEAUX :................................................................................................................. v
+LISTE DES FIGURES :................................................................................................................... vi
+SIGLES ET ABRÉVIATIONS :....................................................................................................... vii
+RÉSUMÉ :....................................................................................................................................viii
+ABSTRACT :.................................................................................................................................. ix
+INTRODUCTION GÉNÉRALE....................................................................................................... 1
+PREMIÈRE PARTIE : CADRE THÉORIQUE ET ORGANISATIONNEL.......................................... 4
+CHAPITRE 1 : GÉNÉRALITÉS SUR LA THÉMATIQUE ET ENVIRONNEMENT D’ÉTUDE............5
+CHAPITRE 2 : REVUE DE LITTÉRATURE.................................................................................... 14
+PARTIE 2 : CADRE EMPIRIQUE ET RÉSULTATS........................................................................20
+CHAPITRE 3 : MÉTHODOLOGIE ET MISE EN ŒUVRE DE LA RÉALISATION..........................21
+CHAPITRE 4 : RÉSULTATS DE L’ÉTUDE.....................................................................................42
+CONCLUSION GÉNÉRALE :....................................................................................................... 54
+BIBLIOGRAPHIE...........................................................................................................................II
+ANNEXES.......................................................................................................................................V
+TABLE DES MATIÈRES................................................................................................................ XI
+iii
+===== PAGE 7 =====
+LISTE DES TABLEAUX : 
+Tableau 1: Comparaison des principales familles de solutions.......................................... 18
+Tableau 2: Besoins fonctionnels de la plateforme FIAA.......................................................23
+Tableau 3: Besoins non fonctionnels......................................................................................24
+Tableau 4: Justification des choix technologiques................................................................ 35
+Tableau 5: Modules développés et correspondance avec les besoins...............................37
+Tableau 6: Cas de tests réalisés et résultats.......................................................................... 47
+Tableau 7: Écarts entre les attentes initiales et les livrables................................................49
+Tableau 8: Incohérences d’identité observées dans le code............................................... 50
+Tableau 9: Plan de mise en œuvre des suggestions.............................................................53
+iv
+===== PAGE 8 =====
+LISTE DES FIGURES :
+Figure 1: Organigramme fonctionnel d’APTIC-R..................................................................... 9
+Figure 2: Architecture de FIAA................................................................................................. 29
+Figure 3: Diagramme de cas d’utilisation de FIAA................................................................ 30
+Figure 4: Modèle conceptuel de données..............................................................................31
+Figure 5: Diagramme de séquence : validation administrative...........................................32
+Figure 6: Modèle conceptuel de données (MCD) pour l’inscription....................................33
+Figure 7: Diagramme de séquence : inscription................................................................... 34
+Figure 8: Page d’accueil de la plateforme FIAA 2026............................................................43
+Figure 9: Page d’inscription : choix du profil..........................................................................44
+Figure 10: Page programme....................................................................................................44
+Figure 11: Page de connexion administrateur...................................................................... 45
+Figure 12: Page de connexion participant............................................................................. 45
+Figure 13: Accueil en affichage mobile...................................................................................46
+v
+===== PAGE 9 =====
+SIGLES ET ABRÉVIATIONS : 
+API : Application Programming Interface
+B2B : Business to Business
+BaaS : Backend as a Service
+CMS : Content Management System
+CSS : Cascading Style Sheets
+ESIG : Ecole Supérieure d’Informatique et de Gestion
+FAO : Food and Agriculture Organization of the United Nations
+FIAA : Festival des Innovations Agricole et Agritech
+HTML : HyperText Markup Language
+IoT : Internet of Things
+ISO : International Organization for Standardization
+JSON : JavaScript Object Notation
+MCD : Modèle Conceptuel de Données
+PDF : Portable Document Format
+QR : Quick Response
+REST : Representational State Transfer
+SPA : Single Page Application
+SQL : Structured Query Language
+TIC : Technologies de l’Information et de la Communication
+UML : Unified Modeling Language
+vi
+===== PAGE 10 =====
+RÉSUMÉ : 
+Le présent mémoire professionnel porte sur la conception et le développement d’une  
+plateforme  web  de  couverture  du  Festival  des  Innovations  Agricole  et  Agritech 
+(FIAA), réalisés au sein d’APTIC-R du 5 décembre 2025 au 15 mai 2026. Face à la  
+dispersion  de  l’information  événementielle  et  à  l’absence  d’un  canal  unique 
+d’inscription, de badges et de contrôle d’accès, l’objectif était de livrer un système  
+structuré et interactif, de la promotion à la gestion des participants. La démarche a  
+combiné analyse des besoins, modélisation UML et MERISE, puis développement  
+itératif d’une application React, TypeScript et Supabase, déclinée en Android. Les  
+résultats comprennent une vitrine, un programme, une inscription par profil, un espace  
+participant, un back-office, des badges QR et un scanner. La couverture éditoriale  
+(actualités, galerie) n’est pas encore livrée. Les perspectives portent d’abord sur la  
+sécurité des comptes et l’unification de l’identité de l’événement.
+Mots clés : plateforme web ; couverture événementielle ; agritech ; FIAA ; APTIC-R ;  
+React ; Supabase.
+vii
+===== PAGE 11 =====
+ABSTRACT :
+This professional dissertation reports on the design and development of a web platform 
+covering the Festival of Agricultural and Agritech Innovations (FIAA), carried out at  
+APTIC-R from 5 December 2025 to 15 May 2026. The work addresses scattered event  
+information  and  the  lack  of  a  single  channel  for  registration,  badges  and  access 
+control. Needs analysis, UML and MERISE modelling, then iterative development of a 
+React, TypeScript and Supabase application, also packaged for Android, produced a  
+public site, a programme, profile-based registration, a participant area, an admin back  
+office, QR badges and a scanner. Editorial modules (news, gallery) remain future  
+work. Priority next steps are account security and a single source of event identity.
+Keywords: web  platform;  event  coverage;  agritech;  FIAA;  APTIC-R;  React; 
+Supabase.
+viii
+===== PAGE 12 =====
+INTRODUCTION GÉNÉRALE
+Les événements professionnels occupent une place croissante dans les stratégies de  
+développement  économique  et  sectoriel.  Foires,  salons  et  festivals  constituent  des 
+espaces de rencontre, de visibilité et de transfert de connaissances. Dans le domaine  
+agricole, ces rendez-vous mettent en relation des producteurs, des innovateurs, des  
+institutions,  des  investisseurs  et  des  médias,  autour  d’enjeux  de  souveraineté 
+alimentaire, de transformation locale et de modernisation des pratiques.
+Cette dynamique n’échappe pas à l’Afrique de l’Ouest, où l’agriculture demeure un  
+pilier de l’emploi et de la sécurité alimentaire. Au Togo, le secteur agricole constitue  
+un levier prioritaire des politiques publiques. L’émergence de l’agritech technologies  
+numériques,  mécaniques  et  organisationnelles  appliquées  à  l’agriculture  ouvre  des 
+perspectives : agriculture de précision, traçabilité, finance rurale, logistique et accès  
+aux marchés. Encore faut-il que ces solutions soient montrées, expliquées et mises en  
+relation avec les producteurs.
+C’est dans cette perspective qu’a été conçu le Festival des Innovations Agricole et  
+Agritech (FIAA), dont la première édition est prévue en 2026 à Badja, dans la région  
+Maritime du Togo. Le festival se présente comme un rendez-vous de trois jours,  
+destiné à : « connecter la Terre et la Tech pour une Agriculture Africaine d’Avenir »,  
+avec une jauge d’environ six cents participants. Il combine cérémonie d’ouverture,  
+village  d’innovation,  ateliers  techniques,  sessions  d’affaires,  concours  de  pitch, 
+démonstrations de terrain et remise de prix.
+Un événement de cette ambition ne peut plus se limiter à des affiches, des groupes de  
+messagerie instantanée et des publications ponctuelles sur les réseaux sociaux. Le  
+public  attend  une  information  centralisée,  lisible  sur  téléphone  :  programme, 
+inscriptions, badges, contacts et suivi de dossier. Les organisateurs ont besoin d’outils  
+de validation, de statistiques et de contrôle d’accès. Les médias souhaitent un canal  
+d’accréditation.  Les  partenaires  attendent  une  vitrine  claire  des  formules  de 
+sponsoring.
+1
+===== PAGE 13 =====
+Les événements d’envergure comme le FIAA souffrent souvent d’une visibilité 
+numérique limitée : informations éparpillées, absence de centralisation des contenus, et 
+faible accessibilité pour le grand public avant, pendant et après l’événement. Face à ce 
+constat, comment concevoir et développer une plateforme web permettant une 
+couverture complète, structurée et interactive du FIAA, de sa promotion jusqu’à son 
+compte rendu post-événement ? Cette question se décline en interrogations 
+opérationnelles. Quels acteurs et quels usages faut-il prendre en compte ? Quelles 
+fonctionnalités minimales garantissent une couverture réellement utile, et non un 
+simple site vitrine ? Quelle architecture technique permet de concilier délai de stage, 
+maintenabilité, sécurité et usage mobile ? Comment relier communication publique et 
+gestion interne sans fragmenter l’expérience ? 
+L’objectif général est de concevoir et de développer, dans le cadre du stage effectué à 
+APTIC-R, une plateforme web de couverture du FIAA, capable d’informer le public, 
+de gérer les inscriptions selon les profils, d’appuyer l’organisation sur le terrain et de 
+poser les bases d’une mémoire numérique de l’événement.
+Les objectifs spécifiques sont les suivants :
+• analyser les pratiques de couverture événementielle numérique et identifier les  
+lacunes des solutions existantes au regard du FIAA ;
+• recenser et formaliser les besoins fonctionnels et non fonctionnels des acteurs  
+(visiteurs, agriculteurs, startups, partenaires, médias, organisateurs) ;
+• concevoir l’application (cas d’utilisation, modèle de données, architecture) de  
+manière à assurer cohérence et évolutivité ;
+•  développer  les  modules  essentiels  :  vitrine,  programme,  inscription 
+différenciée,  espace  participant,  administration,  badges  QR,  scan  d’accès, 
+contact et partenariats ;
+• tester, valider et discuter les résultats au regard des attentes, des contraintes du  
+stage et des perspectives d’évolution.
+2
+===== PAGE 14 =====
+Le sujet se justifie d’abord par un besoin opérationnel d’APTIC-R et du FIAA : doter 
+la première édition d’un canal numérique unique, professionnel et exploitable. Il se 
+justifie ensuite sur le plan pédagogique : il permet de passer des enseignements de 
+licence (analyse, conception, développement web, bases de données, tests) à une 
+réalisation concrète, menée sous encadrement professionnel. Il se justifie enfin sur le 
+plan sectoriel : outiller un festival agricole, c’est contribuer, modestement, à la 
+diffusion de l’innovation auprès de publics hétérogènes, y compris des producteurs peu 
+familiers des outils numériques. 
+Le mémoire s’organise en deux parties. La première partie pose le cadre théorique et 
+organisationnel ; le chapitre 1 présente les généralités sur la couverture d’événements 
+par le web, puis la structure d’accueil APTIC-R, le déroulement du stage et la 
+justification du sujet et le chapitre 2 définit les concepts clés et propose une revue des 
+travaux et solutions similaires. La seconde partie est consacrée au cadre empirique ; le 
+chapitre 3 expose la méthodologie, l’analyse des besoins, puis la conception et la mise 
+en œuvre et enfin le chapitre 4 présente les résultats, les discutes, identifie les limites 
+et formule des suggestions. Une conclusion générale rappelle la problématique, 
+synthétise les apports, précise les limites et ouvre des perspectives.
+3
+===== PAGE 15 =====
+PREMIÈRE PARTIE : CADRE THÉORIQUE ET 
+ORGANISATIONNEL 
+4
+===== PAGE 16 =====
+CHAPITRE 1 : GÉNÉRALITÉS SUR LA THÉMATIQUE ET 
+ENVIRONNEMENT D’ÉTUDE
+Introduction du chapitre
+Le  travail  de  conception  logicielle  s’inscrit  dans  un  double  environnement  :  un 
+environnement  de  connaissances,  qui  fournit  les  notions  du  domaine,  et  un 
+environnement  organisationnel,  qui  définit  le  commanditaire,  les  contraintes  et  le 
+terrain d’application. Ce  premier  chapitre  pose  ces deux ancrages. La  section 1.1 
+présente les généralités sur la couverture d’événements par le web. La section 1.2  
+décrit APTIC-R, le déroulement du stage et les raisons du choix du sujet.
+1.1. GÉNÉRALITÉS SUR LA COUVERTURE D’ÉVÉNEMENTS 
+PAR LE WEB
+1.1.1. Notion de couverture événementielle numérique
+La couverture événementielle désigne l’ensemble des dispositifs d’information, de  
+narration et de documentation qui permettent à un public, présent ou distant, de suivre  
+un événement. Traditionnellement, elle relevait de la presse écrite, de la radio et de la  
+télévision.  L’essor  d’Internet,  puis  du  web  mobile,  a  transformé  ce  paysage  : 
+l’organisateur  n’est  plus  seulement  un  producteur  d’événement,  il  devient  un 
+producteur de contenus et un gestionnaire de relation avec les publics (Getz, 2008 ;  
+Goldblatt, 2014).
+Nous entendons par couverture événementielle numérique l’ensemble des services en  
+ligne qui accompagnent le cycle de vie d’un événement. Ce cycle peut être décomposé  
+en trois phases (Masterman et Wood, 2006) :
+•  la  phase  amont  :  promotion,  information,  inscription,  accréditation  et 
+recherche de partenaires ;
+• la phase in situ : orientation, programme, contrôle d’accès et facilitation des  
+interactions ;
+• la phase aval : compte rendu, galerie, statistiques, fidélisation et capitalisation  
+des données.
+5
+===== PAGE 17 =====
+Cette  couverture  n’est  pas  réductible  à  la  publication  d’articles.  Elle  combine 
+communication, services transactionnels (inscription, badge) et outils d’exploitation  
+(back-office, scan, tableaux de bord). Autrement dit, elle relève autant du système  
+d’information que du marketing.
+Plusieurs caractéristiques distinguent une couverture numérique réussie. La première  
+est  la  centralisation  :  un  point  d’entrée  unique  évite  la  dispersion  entre  affiches, 
+groupes de messagerie et pages de réseaux sociaux. La deuxième est la structuration :  
+le  programme,  les  profils  et  les  contacts  doivent  être  lisibles.  La  troisième  est 
+l’interactivité  :  l’utilisateur  s’inscrit,  télécharge  un  badge  et  suit  le  statut  de  son 
+dossier. La quatrième est la continuité : le site ne s’éteint pas le lendemain de la  
+clôture ; il devient archive et vitrine de l’édition suivante.
+Dans le contexte togolais, ces exigences prennent une dimension particulière. L’accès  
+à l’information passe massivement par le téléphone mobile. Les débits, les coûts de  
+connexion et l’hétérogénéité des équipements imposent des interfaces légères. Les  
+publics d’un festival agricole sont hétérogènes : un agriculteur, une startup, un cadre  
+d’institution  et  un  journaliste  n’ont  ni  les  mêmes  attentes  ni  le  même  niveau  de 
+familiarité  avec  les  outils  numériques.  Une  couverture  pertinente  doit  donc  être 
+inclusive (Nielsen, 2012 ; ISO, 2018).
+1.1.2. Rôle des plateformes web dans la communication événementielle
+Une plateforme web n’est pas un simple site vitrine. Elle constitue un socle de services  
+partagés, accessible par navigateur, éventuellement décliné en application mobile, et  
+adossé à une base de données. Dans la communication événementielle, elle remplit au  
+moins cinq fonctions (Kotler et Keller, 2016 ; Bowdin et al., 2011) :
+•  une  fonction  informationnelle  :  présenter  l’événement,  son  identité,  son 
+programme et ses publics ;
+• une fonction relationnelle : permettre l’inscription, le contact et le suivi de  
+dossier ;
+6
+===== PAGE 18 =====
+• une fonction transactionnelle : gérer, le cas échéant, paiements, stands ou  
+accréditations  ;  même  sans  paiement,  l’inscription  est  déjà  une  transaction 
+informationnelle ;
+• une fonction opérationnelle : outiller les organisateurs (validation, badges,  
+scan, statistiques) ;
+• une fonction mémorielle : archiver l’édition et préparer la suivante.
+Le  web  présente,  par  rapport  aux  applications  natives  exclusives,  un  avantage 
+d’universalité : aucune installation n’est requise et les liens se partagent facilement.  
+Les applications mobiles conservent un intérêt pour le scan et l’usage sur le terrain.  
+C’est  pourquoi  de  nombreuses  organisations  adoptent  une  stratégie  hybride  :  une 
+application web encapsulée dans un conteneur natif afin de disposer d’un apk Android  
+sans dupliquer la logique métier (Malavolta et al., 2017).
+Enfin, le rôle des plateformes s’apprécie à l’aune de la confiance. Un formulaire qui  
+perd les données, un badge illisible ou un back-office inaccessible le jour J ruinent la  
+crédibilité de l’événement. La qualité logicielle — fiabilité, sécurité, utilisabilité —  
+fait partie de la communication (ISO/IEC 25010, 2011 ; Pressman et Maxim, 2014).
+1.2. PRÉSENTATION DE LA STRUCTURE D’ACCUEIL
+1.2.1. Cadre organisationnel
+1.2.1.1. Historique de la structure
+APTIC-R est une structure togolaise spécialisée dans le domaine des Technologies de  
+l’Information et de la Communication (TIC). Elle s’inscrit dans une dynamique de  
+promotion du numérique et d’accompagnement des populations, des organisations et  
+des entreprises dans l’adoption des outils technologiques.
+La structure a été créée dans l’objectif de contribuer à la réduction de la fracture  
+numérique,  notamment  par  la  démocratisation  de  l’accès  aux  technologies,  la 
+sensibilisation  aux  usages  du  numérique  et  le  développement  des  compétences 
+informatiques. Son orientation s’inscrit dans un contexte où la transformation digitale  
+représente un levier important pour le développement économique et social du Togo et  
+de l’Afrique.
+7
+===== PAGE 19 =====
+C’est dans ce cadre qu’APTIC-R a accueilli le projet de plateforme de couverture du  
+FIAA, événement consacré à l’innovation agricole et agritech. Le festival trouve ainsi  
+un porteur technique capable de relier expertise TIC et enjeu sectoriel.
+1.2.1.2. Organisation administrative
+APTIC-R fonctionne selon une organisation orientée autour des métiers du numérique  
+et de l’accompagnement technologique. Bien que son organigramme officiel complet  
+ne soit pas publié, la structure regroupe différents profils techniques intervenant dans  
+les domaines du développement informatique, du support technique et de la formation.
+Son fonctionnement repose généralement sur plusieurs pôles.
+La Direction et l’administration assurent :
+• la définition des orientations stratégiques ;
+• la gestion administrative de la structure ;
+• la coordination des différents projets et activités.
+Le pôle développement informatique est chargé de :
+• la conception et le développement d’applications web et mobiles ;
+• la création de solutions numériques adaptées aux besoins des clients ;
+• la maintenance et l’amélioration des applications existantes.
+Le pôle réseaux et maintenance informatique intervient dans :
+• l’installation et la configuration des équipements informatiques ;
+• la maintenance des systèmes ;
+• l’assistance technique aux utilisateurs.
+Le pôle formation et accompagnement numérique participe à :
+• la formation des utilisateurs aux outils informatiques ;
+• l’initiation aux technologies numériques ;
+• l’accompagnement des structures souhaitant intégrer le numérique dans leurs  
+activités.
+8
+===== PAGE 20 =====
+Cette organisation permet à APTIC-R de répondre aux besoins liés à la transformation  
+digitale tout en favorisant le développement des compétences numériques. Le stage  
+s’est déroulé au sein du pôle développement, sous la supervision du Directeur général.
+Figure 1: Organigramme fonctionnel d’APTIC-R
+1.2.1.3. Activités de la structure
+APTIC-R intervient principalement dans le secteur des technologies numériques. Ses  
+activités couvrent plusieurs domaines.
+a) Développement de solutions numériques. La structure accompagne les organisations 
+dans  la  création  de  solutions  informatiques  telles  que  des  applications  web,  des 
+plateformes numériques et des outils de gestion informatisés. Ces solutions permettent  
+aux utilisateurs d’améliorer leurs processus de travail et d’optimiser la gestion de leurs  
+activités. La plateforme FIAA s’inscrit dans cette ligne : il s’agit d’une application  
+web métier, et non d’un simple site vitrine.
+b) Services informatiques et maintenance. APTIC-R propose également des services  
+liés à l’infrastructure informatique, notamment l’installation et la configuration de  
+matériels, ainsi que la maintenance des équipements.
+9
+
+===== PAGE 21 =====
+c) Formation aux outils numériques. La formation constitue une activité importante.  
+Elle vise à renforcer les compétences numériques des utilisateurs à travers la formation 
+bureautique, l’initiation à l’informatique et l’apprentissage des outils numériques.
+d) Communication et présence digitale. APTIC-R accompagne certains acteurs dans  
+leur développement numérique à travers la conception de sites web et le web design.  
+La vitrine du FIAA relève aussi de cette compétence, tout en la dépassant par les  
+modules d’inscription, de badges et d’administration.
+1.2.1.4. Services proposés
+Les principaux services proposés par APTIC-R peuvent être regroupés comme suit :
+• le développement d’applications web et mobiles ;
+• la conception de plateformes numériques et d’outils de gestion ;
+•  l’installation,  la  configuration  et  la  maintenance  d’équipements  
+informatiques ;
+• la formation bureautique et l’initiation aux TIC ;
+• la conception de sites web et le web design.
+Ces  services  permettent  à  APTIC-R  d’accompagner  différents  acteurs  dans  leur 
+processus  de  modernisation  grâce  aux  technologies  numériques.  Le  projet  FIAA 
+mobilise surtout le développement d’applications et, de manière complémentaire, la  
+présence digitale de l’événement.
+1.2.1.5. Marché et environnement d’intervention
+APTIC-R  évolue  dans  le  secteur  des  Technologies  de  l’Information  et  de  la 
+Communication,  un  domaine  en  pleine  croissance  au  Togo  et  en  Afrique.  Le 
+développement  des  services  numériques,  l’utilisation  croissante  d’Internet  et  les 
+besoins des organisations en matière de digitalisation représentent des opportunités  
+importantes pour les structures spécialisées dans les TIC.
+Son marché cible comprend principalement :
+•  les  petites  et  moyennes  entreprises  souhaitant  intégrer  des  solutions 
+numériques ;
+10
+===== PAGE 22 =====
+•  les  institutions  et  organisations  ayant  besoin  d’un  accompagnement 
+informatique ;
+• les porteurs d’événements et de projets sectoriels, comme le FIAA, qui ont  
+besoin d’une visibilité et d’outils de gestion.
+Dans un environnement marqué par la transformation digitale, APTIC-R contribue  
+ainsi à faciliter l’accès aux technologies et à accompagner les acteurs locaux dans  
+l’adoption des outils numériques. Le FIAA illustre ce positionnement : un festival  
+agricole  n’est  pas,  a  priori,  une  entreprise  TIC  ;  il  a  néanmoins  besoin  d’une 
+plateforme professionnelle pour exister durablement auprès de ses publics.
+1.2.2. Déroulement du stage
+Le stage qui constitue le fondement de ce mémoire professionnel s’est déroulé au sein  
+d’APTIC-R, sur une période de six mois, du 5 décembre 2025 au 15 mai 2026.
+Durant cette période, nous avons été intégré au pôle de développement des solutions,  
+sous la supervision directe de monsieur DAGNON Edmund, Directeur général. Les  
+principales missions confiées s’inscrivaient dans le cadre du développement d’une  
+plateforme  agritech pour l’événement  FIAA (Festival  des Innovations Agricole  et 
+Agritech).
+Plus précisément, les activités ont inclus :
+•  l’analyse  des  besoins  des  utilisateurs  cibles  à  travers  des  échanges  avec 
+l’encadrement  et  l’observation  des  parcours  types  (agriculteur,  startup, 
+partenaire, visiteur, média) ;
+• la conception de l’architecture fonctionnelle et technique de la plateforme ;
+•  le  développement  du  frontend  sous  forme  d’application  web  (React, 
+TypeScript) ;
+•  le  développement  du  backend  sous  forme  d’API  REST  (Supabase  / 
+PostgreSQL) et de fonctions serverless pour les courriels ;
+• les tests fonctionnels, les correctifs et le déploiement, ainsi que le packaging  
+Android via Capacitor.
+11
+===== PAGE 23 =====
+Le travail s’est organisé en plusieurs phases, conformément à une démarche itérative :  
+immersion et analyse ; conception (acteurs, cas d’utilisation, modèle de données) ;  
+développement par incréments (vitrine, inscription, badges, administration, e-mails,  
+scanner) ; tests, correctifs d’identité (logo, lieu, intitulé) et mise en production.
+Cette expérience a permis de mettre en pratique les connaissances théoriques acquises  
+durant  le  cursus  à  l’ESIG,  tout  en  développant  des  compétences  techniques  et 
+professionnelles dans le développement web : diagnostic d’incidents (routage SPA,  
+CORS, génération PDF), arbitrage de périmètre et exigence de qualité perçue.
+1.2.3. Justification du choix du sujet
+Le choix du sujet est directement lié à l’expérience vécue durant le stage. Au cours de  
+l’immersion  au  sein  d’APTIC-R,  il  est  apparu  qu’un  festival  de  première  édition 
+comme  le  FIAA  ne  pouvait  pas  s’appuyer  uniquement  sur  des  canaux  dispersés. 
+L’information devait être centralisée ; les inscriptions, différenciées selon les profils ;  
+les badges, produits de manière homogène ; le contrôle d’accès, outillé.
+Les échanges avec  l’encadrement  ont  confirmé  un besoin réel  d’accompagnement 
+numérique intégré : une vitrine professionnelle, un parcours d’inscription, un back-
+office de validation et un dispositif de scan le jour J. Les outils génériques (formulaires 
+en ligne, pages de réseaux sociaux) ont été jugés trop fragmentés et insuffisamment  
+adaptés  au  métier  de  l’événement  (profils,  badges  colorés,  accréditation  presse, 
+packages sponsors).
+Par ailleurs, le sujet permet de mobiliser l’ensemble des compétences développées à  
+l’ESIG : analyse des besoins, conception UML et MERISE, développement web, bases 
+de données, tests et documentation. Il constitue une démonstration concrète de la  
+capacité à mener un projet de génie logiciel de bout en bout, de l’idée à un prototype  
+fonctionnel déployable, dans une structure réelle et sous encadrement professionnel.
+Enfin, le sujet s’inscrit dans un enjeu plus large que l’outil lui-même : donner une  
+existence  numérique  crédible  à  un  festival  agricole  togolais,  accessible  depuis  un 
+téléphone, y compris pour des publics peu « digitaux ». C’est cette rencontre entre  
+TIC, événementiel et agritech qui justifie le thème retenu.
+12
+===== PAGE 24 =====
+Conclusion du chapitre
+Ce chapitre a permis de clarifier le cadre du mémoire. La couverture événementielle  
+numérique  a  été  définie  comme  un  dispositif  continu,  structuré  et  interactif,  qui 
+dépasse la simple publication d’informations. APTIC-R, structure togolaise de TIC, a  
+fourni  l’environnement  professionnel  :  organisation  en  pôles,  activités  de 
+développement, de maintenance, de formation et de présence digitale, marché tourné  
+vers la transformation numérique des acteurs locaux. Le stage, de six mois, s’est  
+déroulé au pôle développement sous la direction de monsieur DAGNON Edmund,  
+autour de la plateforme FIAA. Le choix du sujet répond à un besoin opérationnel, à un  
+enjeu pédagogique et à un ancrage sectoriel. Il convient à présent d’approfondir les  
+concepts et d’examiner les travaux similaires.
+13
+===== PAGE 25 =====
+CHAPITRE 2 : REVUE DE LITTÉRATURE
+Introduction du chapitre
+Une revue de littérature a pour fonction de préciser le vocabulaire, de situer le travail  
+dans un champ de connaissances et d’identifier ce qui a déjà été tenté, avec quels  
+apports et quelles limites (Hart, 2018). Ce chapitre s’organise en deux temps. Nous  
+définissons d’abord les concepts clés mobilisés tout au long du mémoire : plateforme  
+web, CMS, couverture événementielle, innovation agroalimentaire et agritech. Nous  
+proposons  ensuite  une  synthèse  des  solutions  et  travaux  similaires,  afin  de  faire 
+apparaître les lacunes auxquelles le projet FIAA entend répondre.
+2.1. Définition des concepts clés
+2.1.1. Plateforme web, CMS, couverture événementielle
+Plateforme  web. Dans  le  langage  courant,  le  terme  «  plateforme  »  est  souvent 
+employé de manière vague, comme synonyme de site Internet. En ingénierie logicielle, 
+une plateforme désigne un socle technique et fonctionnel sur lequel plusieurs services,  
+plusieurs types d’utilisateurs et plusieurs flux de données coexistent (Tiwana, 2014).  
+Une plateforme web se caractérise par : un accès via le navigateur ; une architecture  
+client-serveur ; une persistance des données ; des interfaces distinctes selon les rôles ;  
+des possibilités d’évolution par modules. Dans le cas du FIAA, la plateforme n’est pas  
+une  page  unique  de  présentation  :  elle  articule  un  front  office  public,  un  espace 
+participant  authentifié,  un  back-office  administrateur  et  des  services  annexes 
+(génération de PDF, envoi d’e-mails, scan QR, application Android).
+On distingue classiquement les sites statiques, les applications web dynamiques et les  
+applications  monopages  (SPA).  Un  site  statique  convient  à  une  brochure.  Une 
+application dynamique, historiquement développée en PHP, ASP ou JSP, génère les  
+pages  côté  serveur.  Une  SPA,  souvent  développée  avec  React,  Vue  ou  Angular, 
+déplace une partie de la logique vers le navigateur et communique avec le serveur par  
+API (Osmani, 2017). Le choix entre ces familles n’est pas idéologique : il dépend du  
+14
+===== PAGE 26 =====
+besoin d’interactivité, de l’équipe, du délai et de l’hébergement. Nous y reviendrons au 
+chapitre 3.
+CMS  (Content  Management  System). Un  CMS  est  un  système  de  gestion  de 
+contenus qui permet à des non-informaticiens de créer, modifier et publier des pages,  
+des articles, des médias, sans écrire de code (Boiko, 2005). WordPress, Drupal ou  
+Joomla  illustrent  cette  famille. Pour  un festival, un CMS est  séduisant  :  l’équipe 
+communication  peut  publier  des  actualités  et  une  galerie  sans  dépendre  du 
+développeur. Toutefois, un CMS généraliste couvre mal, à lui seul, des processus  
+métier spécifiques : workflow de validation d’inscriptions, badges PDF personnalisés,  
+scan  d’accès,  packages  sponsors,  statistiques  par  profil.  Deux  stratégies  s’offrent 
+alors : étendre un CMS par des plugins, au risque de la complexité et de la dette  
+technique ; ou développer une application métier, éventuellement enrichie plus tard  
+d’un  module  éditorial.  C’est  la  seconde  voie  qui  a  été  retenue,  le  CMS  éditorial 
+(actualités, galerie) étant reporté aux perspectives.
+Couverture événementielle.  Nous avons défini cette notion au chapitre 1. Pour la  
+revue  de  littérature,  il  importe  de  la  distinguer  de  trois  concepts  voisins.  La 
+communication événementielle désigne les actions de promotion (publicité, relations  
+presse, réseaux sociaux). Le live streaming désigne la retransmission audiovisuelle. Le  
+knowledge  management  post-événement  désigne  l’archivage  et  la  réutilisation des 
+contenus. La couverture, telle que nous l’entendons, englobe ces dimensions mais y  
+ajoute les services numériques de participation : s’inscrire, obtenir un badge, être  
+scanné  à  l’entrée,  suivre  son  dossier.  C’est  cette  acception  large  qui  justifie  un 
+développement applicatif, et non seulement un blog.
+2.1.2. Innovation agroalimentaire et Agritech
+Innovation  agroalimentaire. L’innovation,  au  sens  de  Schumpeter  repris  par 
+l’OCDE, n’est pas l’invention isolée : c’est l’introduction d’un produit, d’un procédé,  
+d’une organisation ou d’un marketing nouveaux, susceptibles de créer de la valeur  
+(OECD/Eurostat, 2018). Dans l’agroalimentaire, elle recouvre la transformation des  
+produits locaux, l’amélioration de la qualité et de la conservation, le conditionnement,  
+15
+===== PAGE 27 =====
+la certification, la logistique du froid, la réduction des pertes post-récolte et la création  
+de chaînes de valeur (FAO, 2022). Pour un pays comme le Togo, dont une part  
+importante  de  la  production  agricole  est  encore  commercialisée  à  l’état  brut, 
+l’innovation agroalimentaire est un levier de souveraineté, d’emplois et d’exportations.
+Agritech (ou agtech).  Le terme désigne l’ensemble des technologies appliquées à  
+l’agriculture : capteurs et IoT, drones, imagerie, logiciels de conseil agronomique,  
+marketplaces, fintech rurale, biotechnologies, mécanisation adaptée, traçabilité par QR  
+ou blockchain (Trendov et al., 2019 ; World Bank, 2019). L’agritech n’est pas une fin  
+en  soi.  Son  utilité  se  mesure  à  l’adoption  par  les  producteurs,  à  l’accessibilité 
+économique, à la formation et à l’adéquation aux contextes locaux (faible connectivité,  
+parcelles  de  petite  taille,  diversité  des  cultures).  Un  festival  comme  le  FIAA  a 
+précisément vocation à réduire le fossé entre l’offre technologique et la demande des  
+agriculteurs, en organisant la rencontre, la démonstration et la formation.
+Le  croisement  de  ces  deux  champs  —  agroalimentaire  et  agritech  —  n’est  pas 
+anecdotique. Beaucoup de salons agricoles historiques mettent l’accent sur les intrants,  
+les machines ou les produits du terroir. Les forums tech, de leur côté, parlent parfois  
+d’agriculture sans producteurs. Le FIAA cherche à tenir les deux bouts : la terre et la  
+tech, la transformation et le numérique. La plateforme web doit refléter cette dualité  
+dans son identité, ses profils d’inscription et son programme.
+2.2. Synthèse des travaux similaires
+2.2.1. Études antérieures, modèles théoriques et solutions existantes
+Plusieurs familles de solutions visent, de près ou de loin, la couverture et la gestion  
+d’événements.
+Les plateformes généralistes de billetterie et d’inscription.  Eventbrite, Billetweb,  
+Evenbrite-like  africains  ou  Google  Forms  permettent  de  collecter  des  inscriptions 
+rapidement.  Leur  force  est  la  simplicité  et,  parfois,  le  paiement  en  ligne.  Leur 
+faiblesse,  pour  un  festival  multi-profils,  est  le  caractère  générique  :  difficulté  à 
+différencier agriculteurs, startups et médias, à produire des badges métier, à scanner  
+16
+===== PAGE 28 =====
+les accès, à offrir un espace participant riche et un back-office aligné sur le workflow  
+de l’organisateur (Eventbrite, 2023).
+Les applications d’événement (event apps). Whova, Swapcard, Brella ou EventMobi 
+proposent programme interactif, networking, notifications et, parfois, matchmaking  
+B2B. Elles sont puissantes pour les congrès internationaux, mais leur coût, leur courbe  
+d’apprentissage et leur dépendance vis-à-vis d’un éditeur étranger les rendent peu  
+adaptées à une première édition togolaise, dont le budget et l’équipe sont contraints.  
+De plus, elles externalisent la donnée et la marque.
+Les  CMS  et  sites  vitrines. De  nombreux  festivals  africains  disposent  d’un  site 
+WordPress présentant les éditions passées, un formulaire de contact et une galerie.  
+C’est le cas, à des degrés divers, de salons agricoles de la sous-région. Ces sites  
+remplissent la fonction informationnelle, rarement la fonction opérationnelle (badges,  
+scan,  validation).  La  couverture  s’arrête  souvent  à  la  promotion,  sans  continuum 
+pendant et après l’événement.
+Les grands salons de référence. Le Salon International de l’Agriculture (SIA) à Paris, 
+le SARA à Abidjan ou le SIA à Bamako disposent de dispositifs numériques aboutis,  
+fruit  d’années  d’institutionnalisation  et  de  moyens  importants  :  sites  multilingues, 
+applications mobiles, accréditations presse, plans interactifs, replay. Ils constituent des  
+modèles d’inspiration, non des solutions reproductibles à l’identique pour un festival  
+naissant (SARA, 2023).
+Les travaux académiques.  La littérature en génie logiciel documente de nombreux  
+mémoires et projets de « plateforme de gestion d’événements » : inscription en ligne,  
+paiement,  planning,  notifications.  Ces  travaux  confirment  l’intérêt  d’UML,  des 
+architectures trois-tiers et des tests fonctionnels (Sommerville, 2016). Ils montrent  
+aussi un écueil fréquent : un trop grand nombre de modules promis, un trop faible  
+niveau de finition, et une absence de lien avec un événement réel. Notre travail se  
+distingue par son ancrage : un festival identifié, des profils métier, un badge opérable,  
+un scanner, un déploiement effectif.
+Le tableau 1 synthétise cette comparaison.
+17
+===== PAGE 29 =====
+Tableau 1: Comparaison des principales familles de solutions
+Famille Forces Limites pour le FIAA
+Billetterie générique (Eventbrite, 
+formulaires)
+Rapidité, faible coût Peu de métier, badges et scan 
+limités, marque diluée
+Event apps internationales Réseautage, notifications, 
+programme riche
+Coût, dépendance, inadaptation au 
+contexte local
+CMS vitrine (WordPress) Éditorial, galerie, autonomie 
+communication
+Faible couverture opérationnelle
+Grands salons (SIA, SARA) Couverture complète, notoriété Non transposable en l’état (moyens, 
+maturité)
+Développement spécifique Alignement métier, maîtrise des 
+données, image
+Charge de développement, 
+maintenance
+2.2.2. Identification des lacunes ou limitations des travaux existants
+Premièrement,  le  fossé  entre  communication  et  opération.  Beaucoup  de  sites 
+d’événements informent, mais ne gèrent pas. Or, pour le FIAA, l’inscription n’est pas  
+un détail : elle conditionne le badge, le contrôle d’accès, les statistiques et la relation  
+avec les médias.
+Deuxièmement, l’indifférenciation des publics. Un formulaire unique « nom, e-mail,  
+téléphone » ignore que l’agriculteur, la startup et le journaliste n’ont pas les mêmes  
+données à fournir, ni les mêmes droits. L’opportunité est de concevoir un parcours par  
+profil, matérialisé par un badge coloré.
+Troisièmement, la faible prise en compte du mobile et du terrain . Un back-office  
+utilisable uniquement sur ordinateur de bureau est insuffisant le jour de l’événement.  
+Le scan des badges, l’accès Android et la lisibilité sur petit écran sont des exigences,  
+non des options.
+Quatrièmement,  la discontinuité temporelle . Les sites s’animent avant l’événement  
+puis s’éteignent. Une couverture complète suppose d’anticiper, dès la conception, les  
+18
+===== PAGE 30 =====
+modules d’après (galerie, actualités, compte rendu), même s’ils ne sont pas tous livrés  
+dans la première itération.
+Cinquièmement,  la souveraineté numérique . Recourir exclusivement à des outils  
+étrangers fermés expose à des coûts récurrents, à des ruptures de service et à une perte  
+de maîtrise des données personnelles des participants. Un développement spécifique,  
+hébergé de manière maîtrisée, constitue une opportunité de formation et d’autonomie  
+pour la structure.
+Ces lacunes définissent le positionnement de notre plateforme : une application métier,  
+légère, mobile-first, centrée sur les profils du FIAA, combinant vitrine, inscription,  
+badges, administration et contrôle d’accès, tout en laissant ouvertes les extensions  
+éditoriales (actualités, galerie, live).
+Conclusion du chapitre
+La revue de littérature a permis de stabiliser le vocabulaire et de situer le projet. Une  
+plateforme web est un socle multi-services, distinct d’un simple site. Un CMS est  
+précieux pour l’éditorial, mais insuffisant pour le métier événementiel. La couverture  
+numérique recouvre l’avant, le pendant et l’après. L’innovation agroalimentaire et  
+l’agritech fournissent le contenu et la raison d’être du festival. Les solutions existantes  
+— billetteries, event apps, CMS, grands salons — laissent un espace : celui d’un  
+système spécifique, adapté au FIAA, à ses publics et à ses contraintes. C’est cet espace  
+que la méthodologie et la mise en œuvre du chapitre suivant s’emploient à occuper.
+19
+===== PAGE 31 =====
+PARTIE 2 : CADRE EMPIRIQUE ET RÉSULTATS
+20
+===== PAGE 32 =====
+CHAPITRE 3 : MÉTHODOLOGIE ET MISE EN ŒUVRE DE 
+LA RÉALISATION
+Introduction du chapitre
+Après avoir posé le cadre théorique et organisationnel, il convient de rendre compte de  
+la  manière  dont  le  système  a  été  conçu  et  réalisé.  Ce  chapitre  constitue  le  cœur 
+technique du mémoire. Il présente d’abord l’approche méthodologique, l’analyse des  
+besoins et la justification des choix. Il décrit ensuite la conception (UML, MCD,  
+architecture),  la  pile  technologique  retenue,  puis  le  développement  effectif  des 
+modules.
+3.1. Méthodologie
+3.1.1. Approche et méthodes adoptées
+Le développement d’un logiciel de couverture événementielle, dans un temps de stage  
+limité et avec des spécifications encore mouvantes (identité, lieu, intitulés), se prête  
+mal à un cycle en cascade intégral, où l’on figerait toutes les exigences avant d’écrire  
+la première ligne de code (Royce, 1970 ; Sommerville, 2016). Nous avons donc adopté 
+une approche hybride, combinant :
+• une  analyse préalable  inspirée de MERISE et d’UML, afin de clarifier les  
+acteurs, les données et les cas d’utilisation ;
+• un développement itératif et incrémental , proche de l’esprit agile (Beck et  
+al.,  2001),  avec  des  livraisons  successives  :  vitrine,  inscription,  backend, 
+badges, administration, e-mails, scanner, application Android.
+Cette hybridation n’est pas un relâchement méthodologique. Elle reconnaît que, dans  
+un  festival  de  première  édition,  certains  besoins  n’apparaissent  qu’au  contact  du 
+prototype (par exemple la récupération de mot de passe, les actions groupées sur les  
+inscriptions, ou un espace participant distinct du back-office).
+Sur le plan de la recherche, le travail relève d’une  recherche-action appliquée  :  
+l’étudiant n’observe pas un système déjà là ; il le construit avec la structure d’accueil,  
+21
+===== PAGE 33 =====
+en  boucles  de  diagnostic,  conception,  implémentation  et  évaluation  (Reason  & 
+Bradbury, 2008). Les données mobilisées sont des spécifications orales et écrites, des  
+maquettes, le code source, les tests, et les retours d’encadrement.
+Les méthodes de modélisation utilisées sont :
+•  UML pour les cas d’utilisation, les classes et les séquences (Booch et al.,  
+2005) ;
+• MERISE / MCD pour la vue conceptuelle des données (Tardieu et al., 2000) ;
+• des user stories simplifiées pour prioriser le backlog (Cohn, 2004) ;
+• des tests fonctionnels manuels et des scénarios d’acceptation.
+Le cycle de vie retenu peut se schématiser ainsi : cadrage → analyse des besoins →  
+conception → implémentation d’un incrément → test → déploiement → retour →  
+nouvel incrément.
+3.1.2. Analyse des besoins fonctionnels et non fonctionnels
+L’analyse des besoins a été menée par identification des acteurs, recueil des attentes et  
+traduction  en  exigences.  Les  acteurs  principaux  sont  :  le  visiteur  anonyme,  le 
+participant  (agriculteur,  startup,  partenaire,  visiteur,  média),  l’administrateur,  et  le 
+système d’envoi d’e-mails.
+22
+===== PAGE 34 =====
+Tableau 2: Besoins fonctionnels de la plateforme FIAA
+Code Besoin Acteur Priorité
+BF01 Consulter l’identité, le 
+lieu, les dates et les 
+publics du festival
+Visiteur Essentielle
+BF02 Consulter le programme 
+jour par jour
+Visiteur Essentielle
+BF03 S’inscrire selon un profil 
+(agriculteur, startup, 
+partenaire, visiteur, média)
+Participant Essentielle
+BF04 Fournir des données 
+spécifiques au profil 
+(superficie, pitch deck, 
+etc.)
+Participant Importante
+BF05 Obtenir un badge PDF 
+avec QR code
+Participant Essentielle
+BF06 Suivre le statut du dossier 
+(en attente, approuvé, 
+refusé)
+Participant Essentielle
+BF07 Contacter l’organisation Visiteur Importante
+BF08 Consulter les packages 
+sponsors
+Partenaire Importante
+BF09 Authentifier les 
+administrateurs
+Admin Essentielle
+BF10 Lister, filtrer, approuver 
+ou refuser les inscriptions
+Admin Essentielle
+BF11 Envoyer un e-mail de 
+validation avec badge, ou 
+un e-mail de refus
+Admin / Système Essentielle
+BF12 Consulter des statistiques 
+(profils, statuts, régions)
+Admin Importante
+BF13 Scanner un badge et 
+vérifier le statut d’accès
+Admin / Accueil Essentielle
+BF14 Gérer les messages de 
+contact
+Admin Importante
+BF15 Publier des actualités Communication Souhaitable
+BF16 Publier une galerie et un 
+compte rendu post-
+Communication Souhaitable
+23
+===== PAGE 35 =====
+événement
+BF17 Récupérer l’accès à 
+l’espace participant
+Participant Importante
+Les besoins BF15 et BF16, mentionnés dans le cadrage initial de la couverture «  
+complète » (actualités, galerie), ont été classés souhaitables : ils relèvent du CMS  
+éditorial, non du cœur métier de la première itération. Ils sont traités au chapitre 4  
+comme perspectives, afin d’éviter un éparpillement qui aurait nui à la qualité des  
+modules essentiels.
+Tableau 3: Besoins non fonctionnels
+Code Catégorie (ISO 25010) Exigence
+BNF01 Utilisabilité Interface en français, lisible sur 
+mobile, parcours d’inscription guidé
+BNF02 Performance Temps de chargement acceptable 
+sur réseau 3G/4G
+BNF03 Fiabilité Persistance des inscriptions, 
+messages d’erreur compréhensibles
+BNF04 Sécurité Authentification admin, séparation 
+des rôles, pas d’exposition des clés 
+secrètes
+BNF05 Maintenabilité Code modulaire, composants 
+réutilisables, typage
+BNF06 Portabilité Accès navigateur ; déclinaison 
+Android
+BNF07 Compatibilité Fonctionnement sur les navigateurs 
+courants
+BNF08 Accessibilité Contrastes, tailles de police, 
+navigation clavier partielle
+Certains besoins de sécurité n’ont été que partiellement couverts dans le temps du  
+stage (hachage des mots de passe participants, politique RGPD complète). Ils sont  
+discutés honnêtement au chapitre 4.
+24
+===== PAGE 36 =====
+3.1.3. Justification des choix méthodologiques
+Le choix d’une approche hybride se justifie par trois arguments.
+D’abord, l’incertitude du métier . Un festival de première édition n’a pas encore de  
+procédures stables. Figer un cahier des charges exhaustif au jour 1 aurait produit un  
+document vite obsolète (changement de lieu, d’intitulé, de logo). L’itération a permis  
+d’absorber ces évolutions.
+Ensuite, la nécessité d’un livrable démontrable . La structure d’accueil a besoin de  
+voir, de cliquer, de juger l’image. Les maquettes UML, indispensables, ne suffisent  
+pas à valider un badge ou un parcours mobile. D’où l’importance des incréments  
+exécutables.
+Enfin,  l’alignement  pédagogique.  UML  et  MERISE  restent  des  langages  de 
+communication avec le jury et avec l’encadrement. L’agilité, de son côté, correspond à  
+la pratique réelle du développement web contemporain. Les combiner, c’est relier le  
+cadre académique et le terrain (Sommerville, 2016 ; Booch et al., 2005).
+Nous n’avons pas retenu un processus lourd de type RUP complet, trop coûteux pour  
+un stage individuel. Nous n’avons pas non plus retenu le « code d’abord sans modèle  
+», qui aurait nui à la cohérence des données et à la qualité du mémoire.
+3.2. Mise en œuvre
+3.2.1. Conception (diagrammes UML, MCD, architecture)
+Acteurs et cas d’utilisation
+Les acteurs identifiés sont :
+• Visiteur : consulte le site sans compte ;
+• Participant : s’inscrit, se connecte à son espace (email + mot de passe stockés  
+dans la table inscription), télécharge son badge, peut demander une récupération 
+d’identifiants ;
+25
+===== PAGE 37 =====
+•  Administrateur : authentifié via  Supabase Auth  (JWT) pour le tableau de  
+bord ; le scanner d’accès, en l’état du code, n’applique pas cette garde ;
+• Système de notification : acteur technique chargé de l’envoi des e-mails.
+Il existe donc deux mécanismes d’authentification distincts , ce qui est un choix de  
+conception à documenter : l’admin relève d’un service d’identité ; le participant relève  
+d’une  comparaison  directe  sur  la  table  métier.  Cette  séparation  a  accéléré  le 
+développement ; elle est aussi la principale dette de sécurité du projet.
+Les cas d’utilisation principaux du visiteur / participant sont : consulter l’accueil,  
+consulter  le  programme,  consulter  les  sponsors,  s’inscrire,  se  connecter,  voir  son 
+dossier, télécharger le badge, envoyer un message. Ceux de l’administrateur sont : se  
+connecter, lister les inscriptions, changer un statut, traiter en lot, renvoyer un e-mail,  
+consulter les statistiques, lire les messages, scanner un QR.
+Le système « Plateforme FIAA » est entouré de quatre acteurs. Le Visiteur se relie à  
+Consulter accueil, Consulter programme, Consulter sponsors, Contacter. Le Participant 
+hérite  du  Visiteur  et  se  relie  à  S’inscrire,  Se  connecter,  Consulter  mon  espace, 
+Télécharger  badge.  L’Administrateur  se  relie  à  Authentifier,  Gérer  inscriptions, 
+Consulter statistiques, Gérer messages, Scanner badge. Le cas « Changer statut »  
+inclut « Envoyer e-mail », réalisé avec le Système de notification.
+Diagramme de classes et MCD
+Les principales classes / entités sont :
+• Inscription : id (UUID), nom, prenom, email, telephone, region, organisation,  
+fonction, besoins, profile, password, specific_data (JSON), status, badge_id,  
+email_sent, email_sent_at, created_at ;
+• Contact : id, nom, email, sujet, message, created_at ;
+• AdminUser : géré par le service d’authentification (email, session) ;
+• Badge : vue dérivée de l’inscription (identité, profil, QR contenant l’id) ;
+26
+===== PAGE 38 =====
+• ProgrammeJour / Evenement : pour cette itération, données de présentation  
+(côté client), destinées à être persistées dans une itération ultérieure.
+Le champ  specific_data (superficie, production, stage, pitchDeck) évite d’exploser le  
+schéma  en tables trop nombreuses dès la  première  version, tout  en conservant  la 
+richesse métier. Le statut prend les valeurs PENDING, APPROVED, REJECTED. En  
+pratique, l’insert d’inscription ne pose pas explicitement status : l’absence de valeur est 
+traitée comme « en attente » dans le dashboard (!status assimilé à PENDING).
+Deux  attributs  du  MCD  sont  prévus  mais  mal  branchés  dans  l’interface :  le 
+sélecteur de région n’écrit pas dans l’état React, si bien que region part vide ; le champ  
+fonction est envoyé mais n’a pas de saisie à l’écran. Le sujet du formulaire contact  
+présente le même défaut de liaison. Ces écarts conception / implémentation sont des  
+résultats de l’analyse du code ; ils figurent au chapitre 4 parmi les limites.
+INSCRIPTION (id, nom, prenom, email, telephone, region, organisation,
+            fonction, besoins, profile, password, specific_data,
+            status, badge_id, email_sent, email_sent_at, created_at)
+CONTACT (id, nom, email, sujet, message, created_at)
+ADMIN (géré par le prestataire d’authentification)
+Un administrateur TRAITE 0,n INSCRIPTION
+Une INSCRIPTION est TRAITÉE par 0,1 administrateur (via le statut)
+Un visiteur ENVOIE 0,n CONTACT
+La  cardinalité  importante  est  celle  du  cycle  de  vie  :  une  inscription  naît  à  l’état 
+PENDING, peut être APPROVED (déclenchant badge + e-mail) ou REJECTED (e-
+mail d’information). Le badge n’est pas une table séparée : il est généré à la volée à  
+partir de l’inscription, ce qui évite les incohérences (un badge toujours à jour du statut  
+et de l’identité).
+Le participant choisit un profil, saisit le formulaire, le client envoie un INSERT vers la  
+table inscriptions. En cas de succès, l’écran de confirmation propose le téléchargement  
+d’un badge provisoire. Dans le code actuel, cet appel force status: 'APPROVED' pour 
+27
+===== PAGE 39 =====
+le PDF, alors que le dossier en base n’est pas encore validé. En cas d’échec, un toast  
+d’erreur s’affiche.
+Validation administrative (figure 6).  L’administrateur, déjà authentifié, clique sur  
+Approuver. Le client met à jour le statut, génère un blob PDF, appelle la fonction  
+serverless  /api/send-email (type APPROVAL) , qui s’appuie sur Resend. Le champ  
+email_sent est  alors  positionné  à  vrai.  Le  refus  unitaire  déclenche  un  e-mail 
+REJECTION. L’approbation groupée met à jour les statuts sans envoyer les e-mails.
+Connexion participant. Le client interroge inscriptions avec .eq('email').eq('password'), 
+puis stocke l’objet dans  sessionStorage ( current_user). La récupération d’accès relit le  
+mot de passe et l’envoie en clair par e-mail (PASSWORD_RECOVERY).
+Scan (figure 10).  L’opérateur ouvre  /admin/scan (sans contrôle de session dans le  
+composant),  la  caméra  décode  le  QR  (JSON  contenant  l’id),  le  client  interroge 
+inscriptions par id, et affiche le statut : accès autorisé si APPROVED, avertissement  
+sinon. Aucun journal de scan n’est persisté.
+Architecture
+L’architecture retenue est une architecture client-serveur en trois couches logiques , 
+déployée de manière moderne :
+1. Présentation : application React (SPA) + interface Android Capacitor ;
+2. Services : API Supabase (PostgreSQL + Auth admin) et fonction serverless  
+Vercel api/send-email.ts (le client appelle /api/send-email). Une fonction Netlify  
+existe aussi  (netlify/functions/send-email.ts) mais elle est  incomplète (pas de  
+type PASSWORD_RECOVERY) ;
+3.  Données : base PostgreSQL hébergée (tables  inscriptions et contacts ). Les  
+politiques RLS ne sont pas versionnées dans le dépôt.
+28
+===== PAGE 40 =====
+Figure 2: Architecture de FIAA
+Cette  architecture  présente  l’avantage  de  limiter  l’administration  serveur  tout  en 
+conservant une séparation claire des responsabilités. Le client ne contient pas la clé  
+d’API Resend ; seul le backend serverless la possède.
+Les cas d’utilisation principaux du visiteur / participant sont : consulter l’accueil,  
+consulter  le  programme,  consulter  les  sponsors,  s’inscrire,  se  connecter,  voir  son 
+dossier, télécharger le badge, envoyer un message. Ceux de l’administrateur sont : se  
+connecter, lister les inscriptions, changer un statut, traiter en lot, renvoyer un e-mail,  
+consulter les statistiques, lire les messages, scanner un QR
+29
+
+===== PAGE 41 =====
+Figure 3: Diagramme de cas d’utilisation de FIAA
+30
+
+===== PAGE 42 =====
+Le système « Plateforme FIAA » est entouré de quatre acteurs. Le Visiteur se relie à  
+Consulter accueil, Consulter programme, Consulter sponsors, Contacter. Le Participant 
+hérite  du  Visiteur  et  se  relie  à  S’inscrire,  Se  connecter,  Consulter  mon  espace, 
+Télécharger  badge.  L’Administrateur  se  relie  à  Authentifier,  Gérer  inscriptions, 
+Consulter statistiques, Gérer messages, Scanner badge. Le cas « Changer statut »  
+inclut « Envoyer e-mail », réalisé avec le Système de notification.
+Figure 4: Modèle conceptuel de données 
+31
+
+===== PAGE 43 =====
+Figure 5:  Diagramme de séquence : validation administrative
+Diagramme de classes et MCD
+Les principales classes / entités sont :
+•  Inscription :  id  (UUID),  nom,  prenom,  email,  telephone,  region, 
+organisation,  fonction,  besoins,  profile,  password,  specific_data  (JSON), 
+status, badge_id, email_sent, email_sent_at, created_at ;
+• Contact : id, nom, email, sujet, message, created_at ;
+• AdminUser : géré par le service d’authentification (email, session) ;
+• Badge : vue dérivée de l’inscription (identité, profil, QR contenant l’id) ;
+•  ProgrammeJour  /  Evenement :  pour  cette  itération,  données  de 
+présentation  (côté  client),  destinées  à  être  persistées  dans  une  itération 
+ultérieure.
+32
+
+===== PAGE 44 =====
+Le champ  specific_data (superficie, production, stage, pitchDeck) évite  
+d’exploser  le  schéma  en  tables  trop  nombreuses  dès  la  première  version,  tout  en 
+conservant la richesse métier. Le statut prend les valeurs PENDING, APPROVED,  
+REJECTED. En pratique, l’insert d’inscription ne pose pas explicitement  status :  
+l’absence de valeur est traitée comme « en attente » dans le dashboard ( !status 
+assimilé à PENDING).
+Deux attributs du MCD sont prévus mais mal branchés dans l’interface  : le  
+sélecteur de région n’écrit pas dans l’état React, si bien que  region part vide ; le  
+champ fonction est envoyé mais n’a pas de saisie à l’écran. Le sujet du formulaire  
+contact présente le même défaut de liaison. Ces écarts conception / implémentation  
+sont des résultats de l’analyse du code ; ils figurent au chapitre 4 parmi les limites.
+Figure 6: Modèle conceptuel de données (MCD) pour l’inscription
+MCD simplifié
+INSCRIPTION (id, nom, prenom, email, telephone, region, organisation,
+            fonction, besoins, profile, password, specific_data,
+            status, badge_id, email_sent, email_sent_at, created_at)
+CONTACT (id, nom, email, sujet, message, created_at)
+33
+
+===== PAGE 45 =====
+ADMIN (géré par le prestataire d’authentification)
+Un administrateur TRAITE 0,n INSCRIPTION
+Une INSCRIPTION est TRAITÉE par 0,1 administrateur (via le statut)
+Un visiteur ENVOIE 0,n CONTACT
+La  cardinalité  importante  est  celle  du  cycle  de  vie  :  une  inscription  naît  à  l’état 
+PENDING, peut être APPROVED (déclenchant badge + e-mail) ou REJECTED (e-
+mail d’information). Le badge n’est pas une table séparée : il est généré à la volée à  
+partir de l’inscription, ce qui évite les incohérences (un badge toujours à jour du statut  
+et de l’identité).
+Figure 7:  Diagramme de séquence : inscription
+3.2.2. Technologies et outils utilisés
+Le plan académique évoque classiquement HTML, CSS et PHP. Ces technologies  
+restent le socle du web : le HTML structure les pages, le CSS les habille, et un langage  
+serveur (historiquement PHP) persiste les données. Dans ce projet, HTML et CSS sont  
+34
+
+===== PAGE 46 =====
+bien présents, mais générés et organisés via une pile contemporaine, plus adaptée à  
+une SPA interactive. PHP n’a pas été retenu comme langage d’implémentation, au  
+profit de JavaScript/TypeScript côté client et de services managés côté serveur. Ce  
+choix est assumé et justifié ci-dessous.
+Tableau 4: Justification des choix technologiques
+Couche Choix Justification
+Langage UI TypeScript, React 18 Composants réutilisables, typage, 
+écosystème, SPA fluide
+Build Vite Démarrage rapide, build de 
+production
+Styles Tailwind CSS, shadcn/ui Design cohérent, mobile-first, gain 
+de temps
+Routage React Router Navigation multi-pages dans la SPA
+Animations Framer Motion Qualité perçue de la vitrine
+Données client fetch Supabase direct TanStack Query est installé et un 
+QueryClient enveloppe l’app, mais 
+les pages métier n’utilisent pas ce 
+cache
+Backend Supabase (PostgreSQL + Auth 
+admin)
+BaaS, délais de stage, SQL réel
+PDF / QR PDFKit standalone, qrcode Badges A6 ; polyfills Node (vite-
+plugin-node-polyfills) pour le 
+navigateur
+Scan html5-qrcode Caméra du navigateur
+E-mail Resend via /api/send-email Types APPROVAL, REJECTION, 
+PASSWORD_RECOVERY
+Mobile Capacitor 8 (Android com.fiaa.app) Un code web, un apk ; permission 
+CAMERA absente du manifeste
+Hébergement Vercel (principal) + config Netlify SPA + serverless ; URL de prod 
+citée : fiaa-nine.vercel.app
+Qualité ESLint, Git Revue, historique, collaboration
+35
+===== PAGE 47 =====
+HTML5 et CSS3 demeurent le langage de rendu du navigateur. React ne les remplace  
+pas : il les compose. Le CSS utilitaire de Tailwind compile vers du CSS classique.  
+Dire que le projet « n’utilise pas HTML/CSS » serait donc inexact.
+Le rejet de PHP (Laravel, Symfony ou PHP natif) n’est pas un jugement de valeur.  
+PHP reste pertinent pour de nombreux CMS et sites institutionnels. Il a été écarté ici  
+pour trois raisons : l’équipe et le prototype initial s’inscrivaient déjà dans l’écosystème  
+JavaScript  ;  le  besoin  d’interfaces  riches  (dashboard,  scan,  animations)  s’accorde 
+naturellement avec React ; Supabase fournissait Auth + PostgreSQL sans nécessiter  
+l’écriture  d’un  backend  PHP  complet  dans  le  temps  imparti.  Un  équivalent  PHP 
+(Laravel + Blade ou Inertia) aurait été viable ; il n’était pas le chemin le plus court  
+compte tenu du contexte.
+Les outils d’environnement ont compris Git pour le versionnage, un éditeur de code,  
+les tableaux de bord Supabase, Vercel et Resend, et Android Studio / Gradle pour le  
+build natif. Le serveur de développement Vite écoute le port 8080. Des bibliothèques  
+présentes dans  package.json (TanStack Query, react-hook-form, zod) ne sont pas le  
+cœur des pages métier : les formulaires sont des états React locaux et les appels  
+Supabase sont directs.
+36
+===== PAGE 48 =====
+3.2.3. Développement des modules
+Tableau 5: Modules développés et correspondance avec les besoins
+Module Routes / composants Besoins couverts
+Vitrine / accueil /, Hero, Profiles, Program, Zones, 
+CTA
+BF01
+Programme /programme BF02
+Inscription /inscription BF03, BF04, BF05
+Sponsors /sponsors BF08
+Contact /contact BF07, BF14
+Espace participant /login, /mon-espace BF06, BF05, BF17
+Administration /admin, /admin/dashboard BF09 à BF12, BF14
+Scanner /admin/scan BF13
+Notifications api/send-email.ts BF11, BF17
+Application Android Capacitor com.fiaa.app BNF06
+.
+3.2.3.1. Module vitrine et programme
+La page d’accueil construit le récit du festival : visuel agricole, slogan, informations  
+clés (trois jours, Badja, 600 participants), barre de statistiques (startups, agriculteurs  
+formés, partenariats, investissements), publics cibles, aperçu du programme, zones du  
+village, appel à l’inscription. Le header fixe assure la navigation (Accueil, Programme,  
+S’inscrire, Sponsors, Espace participant, Contact). Le footer reprend l’identité, les  
+liens,  contact@fiaa2026.tg et deux liens légaux ( /mentions-legales,  /confidentialite)  sans 
+pages correspondantes dans le routeur — ils aboutissent à la page 404.
+Le module programme présente trois onglets (Jour 1 Ouverture, Jour 2 Innovation,  
+Jour 3 Clôture). Chaque séance indique horaire, titre, description, type (cérémonie,  
+atelier, B2B, etc.) et lieu. Les données sont codées en dur dans Programme.tsx (détail) 
+et ProgramSection.tsx (résumé d’accueil) : il n’existe pas de table evenements.
+37
+===== PAGE 49 =====
+3.2.3.2. Module inscriptions et accréditations
+C’est le module central. Le parcours comporte trois étapes.
+1.  Choix  du  profil. Cinq  cartes  :  Agriculteur,  Startup  Agritech,  
+Partenaire/Sponsor,  Visiteur,  Média/Presse.  Le  profil  média  matérialise 
+l’accréditation presse, souvent traitée à part dans les grands salons.
+2. Saisie des informations. Champs communs (identité, e-mail, téléphone, mot  
+de  passe  d’espace,  région,  organisation,  attentes)  et  champs  spécifiques 
+(agriculteur : superficie, production ; startup : stade, lien pitch deck).
+3. Confirmation. Message de succès, possibilité de télécharger un badge.
+Les données sont persistées dans Supabase. Un identifiant de badge ( badge_id) est  
+associé à l’enregistrement. Le générateur PDF ( badgeGenerator.ts) produit un document 
+A6 paysage, aux couleurs du profil, avec nom, organisation et QR JSON  { id } . Le  
+pied du badge imprime encore « 15–20 AVRIL 2026 • LOMÉ, TOGO », alors que le  
+site public indique Badja et trois jours : reliquat d’une version antérieure de l’identité,  
+non aligné.
+3.2.3.3. Module espace participant
+La connexion ( UserLogin.tsx) compare e-mail et mot de passe en base, puis mémorise  
+le participant dans sessionStorage. L’espace ( MySpace.tsx) rafraîchit les données par id 
+afin de refléter une validation admin. Trois onglets : vue d’ensemble (statut, blocs  
+spécifiques agriculteur / startup / partenaire), profil (coordonnées, attentes), activités 
+(placeholder : « Aucune activité récente »). Le badge n’est téléchargeable ici que si 
+status === 'APPROVED' . Pour un profil partenaire, trois indicateurs (vues stand, leads,  
+scans) sont affichés avec la mention explicite « données simulées pour la démo ». Un  
+dialogue « mot de passe oublié » déclenche l’e-mail PASSWORD_RECOVERY.
+3.2.3.4. Module administration
+38
+===== PAGE 50 =====
+Le dashboard, protégé par session Supabase Auth, affiche quatre indicateurs : total des  
+inscriptions, approuvées, en attente ( PENDING ou statut vide), messages reçus. Un  
+onglet Inscriptions offre la vue tabulaire, le détail, l’approbation et le refus unitaires, et  
+le traitement par lot. Une fonction handleResendEmail existe dans le code mais n’est 
+reliée à aucun bouton . L’icône de suppression ( Trash2) est importée sans action de  
+suppression.  Un  onglet  Statistiques  affiche  un  histogramme  par  profil  et  un 
+camembert des cinq premières régions ; la répartition par statut est calculée (statusData) 
+mais non tracée. Un onglet Messages liste les demandes du formulaire de contact.
+3.2.3.5. Module scan et contrôle d’accès
+Le scanner s’appuie sur html5-qrcode. Le QR du badge est un JSON. Après décodage,  
+l’inscription  est  relue  en  base  :  un  statut  APPROVED  déclenche  une  validation 
+visuelle ; tout autre statut déclenche un avertissement. Aucune vérification de session 
+n’est effectuée dans Scanner.tsx, contrairement au dashboard. Le manifeste Android ne 
+déclare pas la permission CAMERA : le scan dans l’apk dépend du WebView et peut  
+échouer  selon  l’appareil.  Ce  module  relie  néanmoins,  sur  le  principe,  la 
+communication numérique au contrôle d’accès physique.
+3.2.3.6. Module partenariats
+La page sponsors expose quatre packages en FCFA : Platinum (15 000 000), Gold (8  
+000 000), Silver (4 000 000), Bronze (2 000 000), avec stands, visibilité et avantages.  
+Le bouton d’action renvoie vers  /contact : il n’y a  ni paiement en ligne ni dossier  
+sponsor en base . Les mentions « matching intelligent », « analytics temps réel » et «  
+messagerie  B2B  »  relèvent  de  l’argumentaire  commercial,  non  de  modules 
+implémentés.
+3.2.3.7. Module notifications
+La  fonction  Vercel  reçoit  le  type  APPROVAL,  REJECTION ou  
+PASSWORD_RECOVERY, construit un HTML, joint le PDF le cas échéant, et envoie  
+via Resend. L’expéditeur actuel du code est onboarding@resend.dev (domaine de test).  
+39
+===== PAGE 51 =====
+Les e-mails citent encore Lomé et les dates du 15 au 20 avril 2026, et trois intitulés  
+coexistent  (Festival  des  Innovations…,  Festival  International…,  Forum  
+International…).  Ce  découplage  serverless  a  nécessité  plusieurs  itérations  (CORS, 
+HTTP 405, variables d’environnement), documentées dans Git.
+3.2.3.8. Application Android
+Capacitor  encapsule  le  dist web  dans  com.fiaa.app ( BridgeActivity).  L’intérêt  est 
+pratique : le staff peut ouvrir une icône FIAA. Le code métier n’est pas dupliqué. Les  
+limites (caméra, scan non protégé) restent celles du web encapsulé.
+Les modules actualités, galerie, CMS, paiement, matching B2B, journal de scans  
+et  pages  légales n’existent  pas  dans  le  dépôt.  react-hook-form et  zod sont  des 
+dépendances non utilisées par les pages métier, qui s’appuient sur des formulaires  
+React contrôlés classiques.
+3.2.3.9. Qualité du code et organisation du dépôt
+Le code est organisé par responsabilités : src/pages pour les vues, src/components pour 
+l’interface réutilisable (layout, accueil, primitives UI), src/lib pour le client Supabase et 
+les notifications,  src/utils pour la génération des badges. Cette séparation facilite la  
+maintenance et la relecture. L’historique Git documente les incréments (backend, e-
+mails,  dashboard,  scan,  identité  visuelle)  et  les  correctifs  (routage  SPA,  CORS, 
+PDFKit). Ce n’est pas un détail : dans un mémoire de licence, la traçabilité du travail  
+est un critère de sérieux, autant que le diagramme UML.
+Le  déploiement  distingue  les  variables  d’environnement  de  développement  et  de 
+production. Un client Supabase de repli évite le crash de l’interface si les clés sont  
+absentes, tout en journalisant une erreur explicite. Cette précaution, née d’incidents  
+réels de configuration, illustre le passage d’un prototype « ça marche sur ma machine  
+» à un livrable déployable.
+Conclusion du chapitre
+40
+===== PAGE 52 =====
+La méthodologie hybride a permis de concilier rigueur de conception et adaptation au 
+terrain. Les besoins ont été formalisés, priorisés, et traduits en modèles UML et MCD. 
+L’architecture SPA + BaaS + serverless a été choisie pour sa rapidité de livraison et sa 
+maintenabilité. HTML et CSS restent le socle de rendu ; React, TypeScript, Tailwind, 
+Supabase, Capacitor et Resend en constituent l’outillage contemporain. Les modules 
+livrés couvrent le cycle inscription–validation–badge–accès, ainsi que la vitrine, le 
+programme, les sponsors et le contact. Il reste à présenter les résultats obtenus, à les 
+tester et à les discuter.
+41
+===== PAGE 53 =====
+CHAPITRE 4 : RÉSULTATS DE L’ÉTUDE
+Introduction du chapitre
+Un logiciel n’a de valeur que s’il répond, de manière vérifiable, aux besoins identifiés.  
+Ce chapitre présente les livrables (interfaces et fonctionnalités), rend compte des tests  
+et de la validation, discute les résultats au regard des attentes, expose les limites et  
+difficultés, puis formule des suggestions et des perspectives.
+4.1. Présentation et analyse des résultats
+4.1.1. Interfaces et fonctionnalités livrées
+La  plateforme  livrée  est  une  application  web  responsive,  déclinée  en  application 
+Android, déployable sur un hébergeur de SPA. Elle s’organise en deux univers :  
+l’univers public (couverture et participation) et l’univers interne (pilotage).
+Univers public. L’accueil donne immédiatement l’identité du FIAA 2026 : première  
+édition,  slogan,  lieu  (Badja),  durée,  jauge.  Les  sections  suivantes  répondent  à  la 
+question « pour qui ? » par cinq profils, puis « quoi ? » par le programme de trois jours  
+et le village en quatre zones. L’appel à l’action principal demeure l’inscription. Cette  
+architecture de page suit les recommandations d’utilisabilité : information essentielle  
+au-dessus, progression narrative, CTA répétés (Nielsen, 2012).
+Le  programme  détaillé,  sur  une  page  dédiée,  permet  de  planifier  sa  venue.  Les 
+sponsors rendent visibles les niveaux de partenariat. Le contact offre un formulaire  
+(nom, e-mail, sujet, message) enregistré en base, avec un délai de réponse annoncé de  
+48 heures, et les coordonnées (Badja, région Maritime, Togo).
+L’inscription, en trois étapes, constitue le résultat le plus structurant. Elle matérialise  
+l’accréditation différenciée (cinq profils opérationnels). Un badge PDF est proposé dès  
+la confirmation,  avant validation admin — point que nous discutons comme limite.  
+L’espace participant referme la boucle une fois le statut rafraîchi depuis la base : le  
+dossier n’est plus une information opaque.
+42
+===== PAGE 54 =====
+Univers interne. Le dashboard fournit une vision de pilotage : volumes, inscriptions,  
+messages,  graphiques  (profils,  top  régions).  Les  actions  groupées  répondent  à  un 
+besoin  d’échelle,  mais  sans  notification  e-mail.  Le  scanner  relie  le  système 
+d’information au contrôle d’accès, sous réserve des limites d’authentification et de  
+permission caméra.
+Application Android. Le packaging Capacitor permet au staff de disposer d’une icône 
+FIAA sur téléphone, particulièrement utile pour le scan.
+Figure 8: Page d’accueil de la plateforme FIAA 2026
+43
+
+===== PAGE 55 =====
+Figure 9: Page d’inscription : choix du profil
+Figure 10:  Page programme
+44
+
+===== PAGE 56 =====
+Figure 11: Page de connexion administrateur
+Figure 12:  Page de connexion participant
+45
+
+===== PAGE 57 =====
+Figure 13: Accueil en affichage mobile
+46
+
+===== PAGE 58 =====
+Collectivement, ces livrables couvrent les trois temps de la couverture, à des degrés  
+divers.  Avant :  promotion,  programme,  inscription,  sponsors,  contact.  Pendant :  
+programme, badge, scan, espace participant. Après : les données restent, le site peut  
+servir  de  vitrine  de  l’édition  ;  en  revanche,  le  compte  rendu  éditorial  (galerie, 
+actualités, replay) n’est pas encore un module à part entière.
+4.1.2. Tests et validation
+Les tests ont été principalement fonctionnels et exploratoires, complémentaires d’une 
+validation de build ( npm run build ) et d’un linting ESLint. L’absence d’une batterie  
+automatisée complète (tests unitaires React Testing Library, tests E2E Cypress ou  
+Playwright) est une limite, compensée par des scénarios manuels répétés à chaque  
+incrément.
+Tableau 6: Cas de tests réalisés et résultats
+N° Scénario Résultat attendu Résultat observé
+T01 Affichage de l’accueil sur 
+mobile et desktop
+Mise en page lisible, CTA 
+visibles
+Conforme
+T02 Navigation entre les pages 
+du header
+Changement de vue sans 
+rechargement complet
+Conforme
+T03 Rafraîchissement d’une 
+URL profonde 
+(/programme)
+Pas d’erreur 404 Conforme après mise en 
+place des redirects SPA
+T04 Inscription agriculteur 
+avec champs spécifiques
+Enregistrement + étape 
+confirmation
+Conforme
+T05 Inscription startup avec 
+stade et pitch
+JSON specific_data 
+renseigné
+Conforme
+T06 Inscription incomplète (e-
+mail manquant)
+Blocage HTML5 required Conforme
+T07 Téléchargement du badge PDF A6, QR lisible Conforme
+T08 Connexion admin 
+identifiants erronés
+Toast d’erreur Conforme
+T09 Connexion admin valides Accès dashboard Conforme
+T10 Accès dashboard sans Redirection /admin Conforme
+47
+===== PAGE 59 =====
+session
+T11 Approbation d’une 
+inscription
+Statut APPROVED + e-
+mail
+Conforme (sous réserve 
+des clés Resend)
+T12 Refus d’une inscription Statut REJECTED + e-
+mail
+Conforme
+T13 Actions groupées Mise à jour de n lignes Conforme sans envoi d’e-
+mails
+T14 Scan d’un badge 
+APPROVED
+Message de succès, 
+identité affichée
+Conforme (parcours 
+caméra)
+T15 Scan d’un badge non 
+approuvé
+Avertissement Conforme
+T16 Scan d’un QR invalide Message d’erreur, reprise 
+du scan
+Conforme
+T17 Envoi du formulaire 
+contact
+Ligne dans contacts Conforme, sujet vide 
+(select non lié)
+T18 Espace participant sans 
+session
+Redirection /login Conforme
+T19 Build de production Vite Compilation sans erreur Conforme
+T20 Variables Supabase 
+absentes
+L’app ne crash pas ; log 
+d’erreur
+Conforme (client de repli)
+T21 Saisie d’une région à 
+l’inscription
+region persistée Échec : select non bindé
+T22 Accès /admin/scan sans 
+session
+Refus ou redirection Échec : page ouverte
+T23 Badge à l’inscription vs 
+statut en base
+Badge seulement si validé Écart : PDF provisoire 
+forcé APPROVED
+T24 Liens mentions légales / 
+confidentialité
+Pages dédiées Échec : 404
+T25 Récupération mot de passe Lien de réinitialisation Écart : mot de passe 
+renvoyé en clair
+T26 Cohérence lieu / dates site 
+vs badge vs e-mail
+Même identité partout Échec : Badja / 3 jours vs 
+Lomé / 15–20 avril
+T27 html lang et page 404 Français Écart : lang="en", 404 en 
+anglais
+T28 Analytics sponsor dans 
+Mon espace
+Données réelles Écart : valeurs simulées
+Source : élaboration personnelle (2026).
+48
+===== PAGE 60 =====
+La relecture du code a donc servi de  revue de recette  : elle confirme les parcours  
+heureux et documente des défauts que des tests de surface (simple clic « ça s’affiche ») 
+auraient laissés de côté. Les correctifs d’identité (logo, lieu Badja sur le site, intitulé)  
+ont été intégrés en fin de projet sur la vitrine, sans être répercutés  partout (badge, e-
+mails). La validation n’est pas seulement technique : elle est aussi institutionnelle.
+4.2. Discussion des résultats
+4.2.1. Interprétation et comparaison avec les attentes
+La  problématique  demandait  une  plateforme  permettant  une  couverture  complète, 
+structurée et interactive, de la promotion au compte rendu.
+Tableau 7: Écarts entre les attentes initiales et les livrables
+Attente Niveau de couverture Commentaire
+Promotion / vitrine Atteint Accueil, identité, zones, CTA
+Programme structuré Atteint partiellement Trois jours lisibles, mais données 
+statiques
+Inscription interactive Atteint Parcours par profil ; région non 
+enregistrée
+Accréditations médias Atteint partiellement Profil media + badge ; pas de 
+workflow presse
+Administration Atteint partiellement Dashboard et stats utiles ; pas de 
+suppression ni de renvoi d’e-mail 
+exposé ; lots sans mail
+Contrôle d’accès Atteint partiellement QR + scanner ; scan non authentifié 
+; pas de journal
+Couverture pendant l’événement Atteint partiellement Programme + scan ; onglet 
+Activités vide ; pas de live
+Actualités / galerie / CMS Non livré Priorisés souhaitables
+Paiement sponsors / matching Non livré Argumentaire commercial 
+seulement
+Pages légales Non livré Liens morts
+Compte rendu post-événement Non livré comme module Les données persistent ; l’éditorial 
+manque
+49
+===== PAGE 61 =====
+L’interprétation  que  nous  proposons  est  la  suivante.  Le  projet  répond  à  la 
+problématique  sur  le  plan  systémique :  il  centralise  l’information,  structure  les 
+contenus essentiels et rend l’interaction possible (inscription, suivi, badge, contact,  
+pilotage). Il ne répond pas encore à une définition maximaliste de la « couverture  
+complète  »,  qui  inclurait  rédaction  en  continu,  photothèque,  vidéos  et  livre  post-
+événement. Cette distinction est importante pour ne pas sur-promettre.
+Comparé aux familles du chapitre 2, le livrable se situe entre le CMS vitrine (qu’il  
+dépasse par le métier) et l’event app internationale (qu’il n’égale pas en networking).  
+C’est précisément la niche identifiée : un outil souverain, adapté au FIAA, livrable  
+dans un stage.
+Les attentes de qualité perçue (badge « de conférence », dashboard, e-mails HTML)  
+ont  été  largement  satisfaites,  au  prix  d’un  effort  d’itération  (PDFKit  standalone, 
+CORS, fonctions serverless). Les attentes de volume éditorial n’ont pas été le focus,  
+par  choix  de  priorisation  (MoSCoW  :  Must  pour  inscription/badge,  Should  pour 
+stats/scan, Could pour galerie/actualités).
+L’analyse du dépôt fait en outre apparaître une  dette d’identité . Le tableau 8 la  
+synthétise.
+Tableau 8: Incohérences d’identité observées dans le code
+Élément Vitrine (site) Badge PDF / e-mails
+Intitulé Festival des Innovations Agricole et 
+Agritech
+Festival International… / Forum 
+International…
+Lieu Badja, région Maritime Lomé
+Durée / dates 3 jours 15–20 avril 2026 (six jours)
+Profils Institutions (accueil) Visiteur (inscription)
+Ces  écarts  s’expliquent  par  l’histoire  du  projet  (commits  de  changement  de  lieu 
+Agbélouvé → Badja, de nom, de logo) : les surfaces « marketing » ont été mises à jour  
+en dernier, les artefacts générés (PDF, HTML d’e-mail) plus tôt. Pour un jury, cela  
+50
+===== PAGE 62 =====
+illustre le coût réel de la non-centralisation des constantes d’événement (un fichier de  
+configuration unique aurait évité la divergence).
+4.2.2. Limites et difficultés rencontrées
+Plusieurs limites doivent être énoncées.
+Limites  fonctionnelles. Pas  de  module  actualités  ni  galerie.  Programme  encore 
+entièrement statique. Pas de paiement des packages sponsors. Matching B2B, analytics  
+sponsors  et  messagerie,  promis  sur  la  page  partenaires,  non  implémentés  (sauf 
+indicateurs fictifs pour le profil partenaire). Onglet Activités de l’espace participant  
+vide. Liens légaux vers des routes inexistantes. Sélecteurs région et sujet non reliés au  
+state. Champ fonction absent du formulaire. Graphique des statuts et renvoi d’e-mail  
+non exposés dans l’UI.
+Limites  techniques  et  de  sécurité. Deux  systèmes  d’auth  (Supabase  Auth  pour 
+l’admin, couple email/mot de passe en clair dans inscriptions pour le participant). La  
+récupération  d’accès  renvoie  le  secret  par  courriel.  Le  scanner  n’exige  pas  de 
+session.  Le  manifeste  Android  ne  déclare  pas  CAMERA.  Les  politiques  RLS  de 
+Supabase ne sont pas dans le dépôt. L’expéditeur Resend reste un domaine de test.  
+index.html déclare  lang="en".  React  Query,  react-hook-form  et  zod  sont  des 
+dépendances peu ou pas exploitées par le métier. L’accessibilité WCAG n’a pas fait  
+l’objet d’un audit formel.
+Limites  méthodologiques. Peu  de  tests  automatisés.  Recueil  des  besoins  surtout 
+auprès  de  l’encadrement,  moins  auprès  d’un  échantillon  d’agriculteurs  réels.  Pas 
+d’étude d’usage terrain le jour de l’événement, celui-ci n’ayant pas encore eu lieu au  
+moment de la rédaction.
+Difficultés rencontrées. Spécifications mouvantes (nom officiel, lieu Agbélouvé puis  
+Badja,  identité  visuelle).  Intégration  e-mail  :  bascule  Netlify  Functions  /  Vercel, 
+erreurs 405, CORS, variables d’environnement ; la fonction Netlify n’a pas suivi  
+toutes  les  évolutions  (récupération  de  mot  de  passe).  Génération  PDF  dans  le 
+navigateur (bundle PDFKit). Routage SPA (404 au refresh, HashRouter puis redirects  
+Vercel).  Tentative  puis  abandon  d’un  système  bilingue,  au  profit  d’une  interface 
+51
+===== PAGE 63 =====
+exclusivement  française.  Charge  de  travail  d’un  développement  full  stack  mené 
+essentiellement en individuel.
+Ces difficultés n’ont pas été stériles : elles ont constitué un apprentissage professionnel 
+(diagnostic, recherche de causes, correctif, redéploiement), au cœur des compétences  
+visées par la formation.
+4.3. Suggestions et perspectives
+Nous formulons des suggestions actionnables, assorties d’un horizon.
+Suggestion 1 — Module CMS léger (actualités et galerie).  Ajouter les tables articles 
+et  medias, un éditeur dans le dashboard, et des pages publiques  /actualites et  /galerie. 
+Horizon : avant l’ouverture des inscriptions grand public, pour animer la phase amont  
+et documenter la phase aval. C’est le chaînon manquant de la couverture « complète ».
+Suggestion 2 — Programme dynamique. Migrer le programme en base, avec CRUD  
+admin, afin que l’équipe puisse déplacer une séance sans déploiement. Horizon : court  
+terme.
+Suggestion  3  —  Sécurité  des  comptes  et  du  scan. Unifier  l’authentification 
+participant sur Supabase Auth (ou un hash bcrypt), remplacer la récupération en clair  
+par  un  lien  à  usage  unique,  protéger  /admin/scan comme  le  dashboard,  déclarer 
+CAMERA dans le manifeste Android. Horizon :  immédiat, avant toute montée en  
+charge réelle.
+Suggestion 4 — Source unique d’identité de l’événement.  Extraire nom, lieu, dates,  
+slogan et coordonnées dans un module de configuration unique, consommé par la  
+vitrine, le badge et les e-mails. Horizon : immédiat (correctif d’image).
+Suggestion 5 — Politique de données et pages légales.  Créer  /mentions-legales et  
+/confidentialite, un consentement explicite à l’inscription, une durée de conservation  
+(CNIL, 2021).
+Suggestion 6 — Tests automatisés, CI et correctifs de formulaires.  Lier les selects  
+région  et  sujet,  exposer  le  renvoi  d’e-mail,  tracer  les  statuts,  tester  les  parcours 
+d’inscription. Horizon : court terme.
+52
+===== PAGE 64 =====
+Suggestion  7  —  Couverture  live. Fil  d’actualités  et  galerie  modérée  le  jour  J, 
+s’appuyant sur le CMS de la suggestion 1.
+Suggestion  8  —  Mesure  d’impact. Journaliser  les  scans,  croiser  inscriptions  et 
+entrées, enquête de satisfaction après l’édition.
+Tableau 9: Plan de mise en œuvre des suggestions
+Horizon Actions Priorité
+Immédiat Auth unifiée, scan protégé, source 
+unique d’identité, formulaires 
+région/sujet
+Haute
+Court terme Programme en base, pages légales, 
+tests automatisés
+Haute
+Moyen terme CMS actualités et galerie, journal 
+des scans
+Moyenne
+Long terme Live, mesure d’impact, langue 
+internationale si besoin
+Souhaitable
+Le plan de mise en œuvre suggéré est incrémental : sécurité et cohérence d’identité  
+d’abord, puis programme dynamique et formulaires, puis CMS éditorial, puis live et  
+impact.
+Conclusion du chapitre
+Les résultats montrent qu’une plateforme métier, centrée sur les profils, les badges et  
+le pilotage, peut être livrée dans le cadre d’un stage et constituer déjà une couverture  
+structurée  et  interactive  du  FIAA.  Les  tests  valident  les  parcours  critiques  et 
+documentent des écarts (sécurité, identité, formulaires). L’écart avec une couverture  
+éditoriale complète est réel, assumé, et convertible en feuille de route. Les suggestions  
+visent d’abord à sécuriser et à unifier l’identité, puis à faire grandir le système avec le  
+festival.
+53
+===== PAGE 65 =====
+CONCLUSION GÉNÉRALE :
+Au départ de ce mémoire, une constatation s’imposait : les événements d’envergure  
+comme le Festival d’Innovation Agroalimentaire et Agritech souffrent souvent d’une  
+visibilité numérique limitée, d’informations éparpillées et d’une faible accessibilité  
+pour le public, avant, pendant et après l’événement. La question posée était donc  
+précise  :  comment  concevoir  et  développer  une  plateforme  web  permettant  une 
+couverture complète, structurée et interactive du FIAA, de sa promotion jusqu’à son  
+compte rendu post-événement ?
+Pour y répondre, le travail a été mené au sein d’APTIC-R, du 5 décembre 2025 au 15  
+mai 2026, sous l’encadrement de monsieur DAGNON Edmund. Nous avons d’abord  
+situé  le  problème  dans  son  cadre  théorique  et  organisationnel.  La  couverture 
+événementielle numérique a été définie comme un dispositif continu, qui ne se réduit  
+ni à un site vitrine ni à un fil de réseaux sociaux. Les plateformes web y jouent un rôle  
+d’information,  de  relation,  de  transaction,  d’opération  et  de  mémoire.  Le  FIAA, 
+première  édition  prévue  à  Badja  en  2026,  offre  un  terrain  exigeant  :  publics 
+hétérogènes,  besoin  de  légitimité,  contrainte  de  moyens,  enjeu  agricole  et 
+technologique. La revue de littérature a montré que les billetteries génériques, les  
+event apps internationales et les CMS classiques laissent un espace : celui d’une  
+application métier, adaptée aux profils du festival.
+Dans le cadre empirique, une méthodologie hybride a été retenue : modélisation UML  
+et MERISE pour la clarté, itérations agiles pour l’adaptation. L’analyse des besoins a  
+priorisé l’inscription différenciée, le badge, l’administration et le scan, tout en classant  
+actualités  et  galerie  comme  extensions.  La  mise  en  œuvre  s’est  appuyée  sur  une 
+architecture  contemporaine  React,  TypeScript,  Tailwind,  Supabase,  fonctions 
+serverless, Capacitor dans laquelle HTML et CSS demeurent le langage de rendu. Les  
+modules livrés couvrent la vitrine, le programme, l’inscription et l’accréditation par  
+profil, l’espace participant, les sponsors, le contact, le back-office, les e-mails et le  
+contrôle d’accès par QR.
+La réponse que nous apportons à la problématique est donc la suivante.  Oui, une  
+plateforme  web  peut  assurer  une  couverture  structurée  et  interactive  du  FIAA,  à 
+54
+===== PAGE 66 =====
+condition  de  traiter  ensemble  communication  publique  et  système  d’information 
+(inscriptions, badges, accès).  Cette couverture n’est complète, au sens éditorial du  
+terme, que si l’on y ajoute les modules de publication (actualités, galerie, compte  
+rendu). Le présent travail livre le socle opérationnel (vitrine, inscription par profil,  
+espace  participant, back-office, e-mails, scan). Il  laisse  aussi  une  dette  explicite  : 
+sécurité des comptes, cohérence d’identité (Badja / Lomé, trois jours / 15–20 avril),  
+formulaires mal liés, pages légales manquantes.
+Les  limites  n’invalident  pas  le  résultat  ;  elles  définissent  le  travail  restant.  Les 
+perspectives s’organisent en trois horizons. À court terme, sécuriser l’authentification,  
+protéger  le  scan,  unifier  nom,  lieu  et  dates  dans  une  source  unique,  corriger  les 
+formulaires. À moyen terme, doter l’équipe communication d’un CMS léger. À plus  
+long  terme,  mesurer  l’impact  de  l’édition  et,  le  cas  échéant,  internationaliser 
+l’interface. Ainsi, le FIAA disposera non seulement d’un site de promotion, mais  
+d’une plateforme capable de grandir avec le festival lui-même.
+Ce stage aura été, pour nous, le lieu d’une confrontation féconde entre les méthodes  
+enseignées  et  la  réalité  d’un  projet  :  spécifications  qui  bougent,  intégrations  qui 
+résistent, exigence d’une image professionnelle. Concevoir pour un festival agricole,  
+c’est aussi se souvenir que le premier utilisateur peut être un producteur muni d’un  
+téléphone,  et  que  la  qualité  d’un  badge  scanné  à  l’entrée  fait  autant  partie  de  la 
+couverture que la beauté d’une page d’accueil.
+55
+===== PAGE 67 =====
+I
+===== PAGE 68 =====
+BIBLIOGRAPHIE
+.
+Beck, K., Beedle, M., van Bennekum, A., Cockburn, A., Cunningham, W., Fowler,  
+M., Grenning, J., Highsmith, J., Hunt, A., Jeffries, R., Kern, J., Marick, B., Martin, R.  
+C., Mellor, S., Schwaber, K., Sutherland, J., & Thomas, D. (2001). Manifesto for agile  
+software development. https://agilemanifesto.org
+Boiko, B. (2005). Content management bible (2nd ed.). Wiley.
+Booch, G., Rumbaugh, J., & Jacobson, I. (2005). The unified modeling language user  
+guide (2nd ed.). Addison-Wesley.
+Bowdin,  G.,  Allen,  J.,  O’Toole,  W.,  Harris,  R.,  &  McDonnell,  I.  (2011).  Events 
+management (3rd ed.). Routledge.
+CNIL.  (2021).  Guide  du  développeur  :  la  sécurité  des  données  personnelles. 
+Commission nationale de l’informatique et des libertés.
+Cohn, M. (2004). User stories applied: For agile software development. Addison-
+Wesley.
+Eventbrite.  (2023).  Event  marketing  and  ticketing  platform.  
+https://www.eventbrite.com
+FAO.  (2022).  The  state  of  food  and  agriculture  2022:  Leveraging  automation  in 
+agriculture for transforming agrifood systems. Food and Agriculture Organization of  
+the United Nations.
+Getz,  D.  (2008).  Event  tourism:  Definition,  evolution,  and  research.  Tourism 
+Management, 29(3), 403–428. https://doi.org/10.1016/j.tourman.2007.07.017
+Goldblatt,  J.  (2014).  Special  events:  Creating  and  sustaining  a  new  world  for 
+celebration (7th ed.). Wiley.
+Hart, C. (2018). Doing a literature review: Releasing the research imagination (2nd  
+ed.). Sage.
+II
+===== PAGE 69 =====
+ISO/IEC  25010:2011.  (2011).  Systems  and  software  engineering  —  Systems  and 
+software  quality  requirements  and  evaluation  (SQuaRE)  —  System  and  software 
+quality models. International Organization for Standardization.
+ISO  9241-11:2018.  (2018).  Ergonomics  of  human-system  interaction  —  Part  11: 
+Usability: Definitions and concepts. International Organization for Standardization.
+Kotler, P., & Keller, K. L. (2016). Marketing management (15th ed.). Pearson.
+Malavolta, I., Procaccianti, G., Noorland, P., & Vukmirovic, P. (2017). Assessing the  
+impact  of  service  workers  on  the  energy  efficiency  of  progressive  web  apps. 
+Proceedings of the 4th International Conference on Mobile Software Engineering and  
+Systems, 35–44.
+Masterman,  G.,  &  Wood,  E.  H.  (2006).  Innovative  marketing  communications: 
+Strategies for the events industry. Elsevier.
+Nielsen, J. (2012). Usability 101: Introduction to usability. Nielsen Norman Group.  
+https://www.nngroup.com/articles/usability-101-introduction-to-usability/
+OECD/Eurostat. (2018). Oslo manual 2018: Guidelines for collecting, reporting and  
+using data on innovation (4th ed.). OECD Publishing.
+Osmani, A. (2017). Learning JavaScript design patterns. O’Reilly.
+Pressman,  R.  S.,  &  Maxim,  B.  R.  (2014).  Software  engineering:  A  practitioner’s 
+approach (8th ed.). McGraw-Hill.
+Reason, P., & Bradbury, H. (Eds.). (2008). The Sage handbook of action research (2nd  
+ed.). Sage.
+Royce,  W.  W.  (1970).  Managing  the  development  of  large  software  systems. 
+Proceedings of IEEE WESCON, 1–9.
+SARA.  (2023).  Salon  international  de  l’agriculture  et  des  ressources  animales 
+d’Abidjan. https://www.sara-africa.com
+Sommerville, I. (2016). Software engineering (10th ed.). Pearson.
+III
+===== PAGE 70 =====
+Tardieu, H., Rochfeld, A., & Colletti, R. (2000). La méthode MERISE : principes et  
+outils (rééd.). Éditions d’Organisation.
+Tiwana,  A.  (2014).  Platform  ecosystems:  Aligning  architecture,  governance,  and 
+strategy. Morgan Kaufmann.
+Trendov, N. M., Varas, S., & Zeng, M. (2019). Digital technologies in agriculture and  
+rural areas: Status report. FAO.
+World Bank. (2019). Future of food: Harnessing digital technologies to improve food  
+system outcomes. World Bank.
+IV
+===== PAGE 71 =====
+ANNEXES
+Annexe A. Cahier des charges synthétique
+Objet. Concevoir et développer une plateforme web de couverture du FIAA 2026.
+Publics. Agriculteurs  et  coopératives,  startups  agritech,  partenaires  et  sponsors, 
+visiteurs et institutions, médias.
+Fonctions minimales. Vitrine, programme, inscription par profil, badges QR, espace  
+participant, administration, scan d’accès, contact, page sponsors.
+Contraintes. Interface en français, usage mobile, délai de stage, hébergement cloud,  
+identité visuelle du festival (vert, or, photographies agricoles).
+Hors  périmètre  de  la  première  itération. Paiement  en  ligne,  matching  B2B 
+automatique, CMS éditorial complet, application iOS native distincte.
+Annexe B. Dictionnaire de données
+Attribut Entité Type Obligatoire Description
+id inscriptions UUID oui Identifiant unique
+nom inscriptions texte oui Nom de famille
+prenom inscriptions texte oui Prénom
+email inscriptions texte oui Courriel de contact 
+et de login
+telephone inscriptions texte oui Numéro, format libre 
+(+228…)
+region inscriptions texte non Select UI non lié : 
+toujours vide en 
+base
+organisation inscriptions texte non Structure 
+d’appartenance
+fonction inscriptions texte non Aucun champ de 
+saisie dans le 
+formulaire
+besoins inscriptions texte non Attentes vis-à-vis de 
+l’événement
+profile inscriptions texte oui agriculteur / startup / 
+partenaire / visiteur / 
+V
+===== PAGE 72 =====
+media
+password inscriptions texte oui Stocké et comparé 
+en clair
+specific_data inscriptions JSON non superficie, 
+production, stage, 
+pitchDeck
+status inscriptions texte non à l’insert PENDING (ou vide) 
+/ APPROVED / 
+REJECTED
+badge_id inscriptions texte oui (côté DB) Identifiant imprimé / 
+QR
+email_sent inscriptions booléen non Relance e-mail déjà 
+effectuée
+created_at inscriptions horodatage oui Date de soumission
+nom, email, sujet, 
+message
+contacts texte oui sauf sujet sujet toujours vide 
+(select non lié)
+.
+Annexe C. Routes de l’application
+Chemin Accès Description
+/ public Accueil
+/programme public Programme des trois jours
+/sponsors public Packages de partenariat
+/contact public Formulaire et coordonnées
+/inscription public Parcours d’inscription
+/login public Connexion participant
+/mon-espace participant Suivi du dossier et badge
+/admin public Connexion administrateur
+/admin/dashboard admin Pilotage
+/admin/scan public (défaut) Scanner QR — garde admin 
+absente
+/mentions-legales — Lien footer, page absente (404)
+/confidentialite — Lien footer, page absente (404)
+* public Page 404 (texte anglais)
+VI
+===== PAGE 73 =====
+Annexe D. Charte des badges
+Profil Couleur Code approximatif Usage
+Agriculteur Émeraude #10b981 Producteurs, coopératives
+Startup Bleu #3b82f6 Exposants, pitch
+Partenaire Ambre / or #f59e0b Sponsors
+Visiteur Violet #8b5cf6 Grand public, invités
+Média Jaune #eab308 Accréditation presse
+Format du badge : PDF A6, orientation paysage, QR JSON { id: <uuid> }.
+Annexe E. Scénario d’utilisation — jour d’ouverture
+1. Le participant présente son badge papier ou mobile à l’entrée.
+2. Le staff ouvre l’application FIAA, menu Scanner.
+VII
+
+===== PAGE 74 =====
+3. La caméra lit le QR.
+4. Le système affiche nom, prénom, profil, organisation et statut.
+5.  Si  APPROVED,  l’accès  est  autorisé  ;  sinon,  orientation  vers  le  point 
+inscription.
+6.  Les  statistiques  du  dashboard  se  mettent  à  jour  au  fil  des  validations 
+d’inscription  effectuées  en  amont,  pas  nécessairement  au  fil  des  scans 
+(évolution possible : journaliser chaque scan).
+Annexe F. Extrait du modèle d’e-mail d’approbation
+Objet : FIAA 2026 - Inscription Validée !
+Le message félicite le participant, confirme la validation, joint le badge PDF, rappelle  
+les  informations  pratiques  et  invite  à  conserver  le  document  sur  téléphone  ou  à 
+l’imprimer. L’expéditeur transactionnel est configuré via Resend. Dans le code actuel,  
+l’adresse  d’envoi  est  encore  onboarding@resend.dev.  Les  e-mails  d’approbation 
+mentionnent Lomé et les dates du 15 au 20 avril 2026.
+Annexe G. Stack technique récapitulative
+Frontend : React 18, TypeScript, Vite, React Router 6, Tailwind CSS, shadcn/ui,  
+Framer Motion, Recharts, html5-qrcode, PDFKit, qrcode.
+Backend / services : Supabase (PostgreSQL, Auth), Vercel/Netlify Functions, Resend.
+Mobile : Capacitor 8, application Android com.fiaa.app.
+Qualité : ESLint, Git.
+Annexe H. Guide de reprise (pour l’équipe FIAA)
+1. Cloner le dépôt et installer Node.js.
+2.  Créer  un  fichier  .env avec  VITE_SUPABASE_URL et  
+VITE_SUPABASE_ANON_KEY.
+3. Configurer les tables inscriptions et contacts dans Supabase.
+4. Définir RESEND_API_KEY sur l’hébergeur.
+5. npm install puis npm run dev en local, npm run build pour la production.
+VIII
+===== PAGE 75 =====
+6. Pour Android : npx cap sync android puis ouverture dans Android Studio.
+Annexe I. Maquettes et captures (à insérer dans la version Word)
+Les captures d’écran suivantes sont à coller dans la version imprimée, une par page ou  
+deux par page, avec légende :
+• Figure A. Page d’accueil (hero FIAA 2026)
+• Figure B. Sélection du profil d’inscription
+• Figure C. Formulaire d’inscription
+• Figure D. Badge PDF généré
+• Figure E. Programme jour 2
+• Figure F. Tableau de bord administrateur
+• Figure G. Scanner de badge
+• Figure H. Espace participant
+• Figure I. Page sponsors
+• Figure J. Application Android (icône et écran d’accueil)
+*Consigne : lancer l’application ( npm run dev ), parcourir chaque écran, capturer (outil  
+Capture d’écran) et coller ici en haute résolution.*
+Annexe J. Inventaire : ce qui existe / ce qui n’existe pas
+Livré. Vitrine,  programme  statique,  inscription  5  profils,  badges  PDF+QR,  login 
+participant,  espace  participant,  dashboard  admin,  stats  (profils,  régions),  messages 
+contact,  e-mails  (validation,  refus,  récupération),  scanner,  wrapper  Android,  page 
+sponsors (vitrine), déploiement Vercel.
+Non livré.  Actualités, galerie, CMS, paiement, matching B2B, messagerie interne,  
+journal de scans, pages légales, i18n, application iOS, programme en base, analytics  
+sponsors réels.
+Présent dans le marketing, absent du code métier.  Matching intelligent, dashboard  
+analytics  sponsors,  messagerie  B2B,  base  de  données  participants  pour  les  packs 
+Gold/Platinum.
+IX
+===== PAGE 76 =====
+Annexe K. Packages sponsors (source : Sponsors.tsx)
+Pack Prix (FCFA) Stand Points saillants
+Platinum 15 000 000 20 m² Naming, analytics, base 
+complète, plénière 20 min, 
+matching illimité
+Gold 8 000 000 12 m² Bannière, analytics 
+étendu, plénière 10 min, 
+10 RDV B2B
+Silver 4 000 000 6 m² Logo, analytics basic, 5 
+RDV B2B, certificat 
+impact
+Bronze 2 000 000 6 m² Logo, certificat impact
+Source : élaboration personnelle (2026).
+CTA unique : redirection vers /contact.
+X
+===== PAGE 77 =====
+TABLE DES MATIÈRES
+DÉDICACE...................................................................................................................................... i
+REMERCIEMENTS :....................................................................................................................... ii
+SOMMAIRE :.................................................................................................................................iii
+LISTE DES TABLEAUX :................................................................................................................. v
+LISTE DES FIGURES :................................................................................................................... vi
+SIGLES ET ABRÉVIATIONS :....................................................................................................... vii
+RÉSUMÉ :....................................................................................................................................viii
+ABSTRACT :.................................................................................................................................. ix
+INTRODUCTION GÉNÉRALE....................................................................................................... 1
+PREMIÈRE PARTIE : CADRE THÉORIQUE ET ORGANISATIONNEL.......................................... 4
+CHAPITRE 1 : GÉNÉRALITÉS SUR LA THÉMATIQUE ET ENVIRONNEMENT D’ÉTUDE............5
+1.1. GÉNÉRALITÉS SUR LA COUVERTURE D’ÉVÉNEMENTS PAR LE WEB........................... 5
+1.1.1. Notion de couverture événementielle numérique............................................. 5
+1.1.2. Rôle des plateformes web dans la communication événementielle................ 6
+1.2. PRÉSENTATION DE LA STRUCTURE D’ACCUEIL............................................................7
+1.2.1. Cadre organisationnel............................................................................................ 7
+1.2.1.1. Historique de la structure.............................................................................. 7
+1.2.1.2. Organisation administrative.......................................................................... 8
+1.2.1.3. Activités de la structure.................................................................................. 9
+1.2.1.4. Services proposés..........................................................................................10
+1.2.1.5. Marché et environnement d’intervention.................................................. 10
+1.2.2. Déroulement du stage..........................................................................................11
+1.2.3. Justification du choix du sujet..............................................................................12
+CHAPITRE 2 : REVUE DE LITTÉRATURE.................................................................................... 14
+2.1. Définition des concepts clés........................................................................................ 14
+2.1.1. Plateforme web, CMS, couverture événementielle...........................................14
+2.1.2. Innovation agroalimentaire et Agritech.............................................................15
+XI
+===== PAGE 78 =====
+2.2. Synthèse des travaux similaires.................................................................................. 16
+2.2.1. Études antérieures, modèles théoriques et solutions existantes...................16
+2.2.2. Identification des lacunes ou limitations des travaux existants..................... 18
+PARTIE 2 : CADRE EMPIRIQUE ET RÉSULTATS........................................................................20
+CHAPITRE 3 : MÉTHODOLOGIE ET MISE EN ŒUVRE DE LA RÉALISATION..........................21
+3.1. Méthodologie................................................................................................................ 21
+3.1.1. Approche et méthodes adoptées........................................................................21
+3.1.2. Analyse des besoins fonctionnels et non fonctionnels.................................... 22
+3.1.3. Justification des choix méthodologiques........................................................... 25
+3.2. Mise en œuvre............................................................................................................... 25
+3.2.1. Conception (diagrammes UML, MCD, architecture)......................................... 25
+3.2.2. Technologies et outils utilisés..............................................................................34
+3.2.3. Développement des modules..............................................................................37
+3.2.3.1. Module vitrine et programme..................................................................... 37
+3.2.3.2. Module inscriptions et accréditations........................................................ 38
+3.2.3.3. Module espace participant...........................................................................38
+3.2.3.4. Module administration................................................................................. 38
+3.2.3.5. Module scan et contrôle d’accès................................................................. 39
+3.2.3.6. Module partenariats..................................................................................... 39
+3.2.3.7. Module notifications..................................................................................... 39
+3.2.3.8. Application Android...................................................................................... 40
+3.2.3.9. Qualité du code et organisation du dépôt................................................. 40
+CHAPITRE 4 : RÉSULTATS DE L’ÉTUDE.....................................................................................42
+4.1. Présentation et analyse des résultats.........................................................................42
+4.1.1. Interfaces et fonctionnalités livrées....................................................................42
+4.1.2. Tests et validation................................................................................................. 47
+4.2. Discussion des résultats...............................................................................................49
+4.2.1. Interprétation et comparaison avec les attentes..............................................49
+4.2.2. Limites et difficultés rencontrées........................................................................51
+XII
+===== PAGE 79 =====
+4.3. Suggestions et perspectives........................................................................................ 52
+CONCLUSION GÉNÉRALE :....................................................................................................... 54
+BIBLIOGRAPHIE...........................................................................................................................II
+ANNEXES.......................................................................................................................................V
+Annexe A. Cahier des charges synthétique.........................................................................V
+Annexe B. Dictionnaire de données.....................................................................................V
+Annexe C. Routes de l’application....................................................................................... VI
+Annexe D. Charte des badges............................................................................................ VII
+Annexe E. Scénario d’utilisation — jour d’ouverture....................................................... VII
+Annexe F. Extrait du modèle d’e-mail d’approbation.....................................................VIII
+Annexe G. Stack technique récapitulative....................................................................... VIII
+Annexe H. Guide de reprise (pour l’équipe FIAA)........................................................... VIII
+Annexe I. Maquettes et captures (à insérer dans la version Word)................................IX
+Annexe J. Inventaire : ce qui existe / ce qui n’existe pas.................................................. IX
+Annexe K. Packages sponsors (source : Sponsors.tsx)...................................................... X
+TABLE DES MATIÈRES................................................................................................................ XI
+XIII

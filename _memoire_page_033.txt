@@ -1,0 +1,18 @@
+en  boucles  de  diagnostic,  conception,  implémentation  et  évaluation  (Reason  & 
+Bradbury, 2008). Les données mobilisées sont des spécifications orales et écrites, des  
+maquettes, le code source, les tests, et les retours d’encadrement.
+Les méthodes de modélisation utilisées sont :
+•  UML pour les cas d’utilisation, les classes et les séquences (Booch et al.,  
+2005) ;
+• MERISE / MCD pour la vue conceptuelle des données (Tardieu et al., 2000) ;
+• des user stories simplifiées pour prioriser le backlog (Cohn, 2004) ;
+• des tests fonctionnels manuels et des scénarios d’acceptation.
+Le cycle de vie retenu peut se schématiser ainsi : cadrage → analyse des besoins →  
+conception → implémentation d’un incrément → test → déploiement → retour →  
+nouvel incrément.
+3.1.2. Analyse des besoins fonctionnels et non fonctionnels
+L’analyse des besoins a été menée par identification des acteurs, recueil des attentes et  
+traduction  en  exigences.  Les  acteurs  principaux  sont  :  le  visiteur  anonyme,  le 
+participant  (agriculteur,  startup,  partenaire,  visiteur,  média),  l’administrateur,  et  le 
+système d’envoi d’e-mails.
+22

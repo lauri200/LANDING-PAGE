@@ -1,0 +1,36 @@
+media
+password inscriptions texte oui Stocké et comparé 
+en clair
+specific_data inscriptions JSON non superficie, 
+production, stage, 
+pitchDeck
+status inscriptions texte non à l’insert PENDING (ou vide) 
+/ APPROVED / 
+REJECTED
+badge_id inscriptions texte oui (côté DB) Identifiant imprimé / 
+QR
+email_sent inscriptions booléen non Relance e-mail déjà 
+effectuée
+created_at inscriptions horodatage oui Date de soumission
+nom, email, sujet, 
+message
+contacts texte oui sauf sujet sujet toujours vide 
+(select non lié)
+.
+Annexe C. Routes de l’application
+Chemin Accès Description
+/ public Accueil
+/programme public Programme des trois jours
+/sponsors public Packages de partenariat
+/contact public Formulaire et coordonnées
+/inscription public Parcours d’inscription
+/login public Connexion participant
+/mon-espace participant Suivi du dossier et badge
+/admin public Connexion administrateur
+/admin/dashboard admin Pilotage
+/admin/scan public (défaut) Scanner QR — garde admin 
+absente
+/mentions-legales — Lien footer, page absente (404)
+/confidentialite — Lien footer, page absente (404)
+* public Page 404 (texte anglais)
+VI

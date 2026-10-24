@@ -1,0 +1,32 @@
+événement
+BF17 Récupérer l’accès à 
+l’espace participant
+Participant Importante
+Les besoins BF15 et BF16, mentionnés dans le cadrage initial de la couverture «  
+complète » (actualités, galerie), ont été classés souhaitables : ils relèvent du CMS  
+éditorial, non du cœur métier de la première itération. Ils sont traités au chapitre 4  
+comme perspectives, afin d’éviter un éparpillement qui aurait nui à la qualité des  
+modules essentiels.
+Tableau 3: Besoins non fonctionnels
+Code Catégorie (ISO 25010) Exigence
+BNF01 Utilisabilité Interface en français, lisible sur 
+mobile, parcours d’inscription guidé
+BNF02 Performance Temps de chargement acceptable 
+sur réseau 3G/4G
+BNF03 Fiabilité Persistance des inscriptions, 
+messages d’erreur compréhensibles
+BNF04 Sécurité Authentification admin, séparation 
+des rôles, pas d’exposition des clés 
+secrètes
+BNF05 Maintenabilité Code modulaire, composants 
+réutilisables, typage
+BNF06 Portabilité Accès navigateur ; déclinaison 
+Android
+BNF07 Compatibilité Fonctionnement sur les navigateurs 
+courants
+BNF08 Accessibilité Contrastes, tailles de police, 
+navigation clavier partielle
+Certains besoins de sécurité n’ont été que partiellement couverts dans le temps du  
+stage (hachage des mots de passe participants, politique RGPD complète). Ils sont  
+discutés honnêtement au chapitre 4.
+24

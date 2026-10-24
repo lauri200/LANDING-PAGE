@@ -1,0 +1,27 @@
+Les e-mails citent encore Lomé et les dates du 15 au 20 avril 2026, et trois intitulés  
+coexistent  (Festival  des  Innovations…,  Festival  International…,  Forum  
+International…).  Ce  découplage  serverless  a  nécessité  plusieurs  itérations  (CORS, 
+HTTP 405, variables d’environnement), documentées dans Git.
+3.2.3.8. Application Android
+Capacitor  encapsule  le  dist web  dans  com.fiaa.app ( BridgeActivity).  L’intérêt  est 
+pratique : le staff peut ouvrir une icône FIAA. Le code métier n’est pas dupliqué. Les  
+limites (caméra, scan non protégé) restent celles du web encapsulé.
+Les modules actualités, galerie, CMS, paiement, matching B2B, journal de scans  
+et  pages  légales n’existent  pas  dans  le  dépôt.  react-hook-form et  zod sont  des 
+dépendances non utilisées par les pages métier, qui s’appuient sur des formulaires  
+React contrôlés classiques.
+3.2.3.9. Qualité du code et organisation du dépôt
+Le code est organisé par responsabilités : src/pages pour les vues, src/components pour 
+l’interface réutilisable (layout, accueil, primitives UI), src/lib pour le client Supabase et 
+les notifications,  src/utils pour la génération des badges. Cette séparation facilite la  
+maintenance et la relecture. L’historique Git documente les incréments (backend, e-
+mails,  dashboard,  scan,  identité  visuelle)  et  les  correctifs  (routage  SPA,  CORS, 
+PDFKit). Ce n’est pas un détail : dans un mémoire de licence, la traçabilité du travail  
+est un critère de sérieux, autant que le diagramme UML.
+Le  déploiement  distingue  les  variables  d’environnement  de  développement  et  de 
+production. Un client Supabase de repli évite le crash de l’interface si les clés sont  
+absentes, tout en journalisant une erreur explicite. Cette précaution, née d’incidents  
+réels de configuration, illustre le passage d’un prototype « ça marche sur ma machine  
+» à un livrable déployable.
+Conclusion du chapitre
+40

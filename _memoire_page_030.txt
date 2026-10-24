@@ -1,0 +1,21 @@
+modules d’après (galerie, actualités, compte rendu), même s’ils ne sont pas tous livrés  
+dans la première itération.
+Cinquièmement,  la souveraineté numérique . Recourir exclusivement à des outils  
+étrangers fermés expose à des coûts récurrents, à des ruptures de service et à une perte  
+de maîtrise des données personnelles des participants. Un développement spécifique,  
+hébergé de manière maîtrisée, constitue une opportunité de formation et d’autonomie  
+pour la structure.
+Ces lacunes définissent le positionnement de notre plateforme : une application métier,  
+légère, mobile-first, centrée sur les profils du FIAA, combinant vitrine, inscription,  
+badges, administration et contrôle d’accès, tout en laissant ouvertes les extensions  
+éditoriales (actualités, galerie, live).
+Conclusion du chapitre
+La revue de littérature a permis de stabiliser le vocabulaire et de situer le projet. Une  
+plateforme web est un socle multi-services, distinct d’un simple site. Un CMS est  
+précieux pour l’éditorial, mais insuffisant pour le métier événementiel. La couverture  
+numérique recouvre l’avant, le pendant et l’après. L’innovation agroalimentaire et  
+l’agritech fournissent le contenu et la raison d’être du festival. Les solutions existantes  
+— billetteries, event apps, CMS, grands salons — laissent un espace : celui d’un  
+système spécifique, adapté au FIAA, à ses publics et à ses contraintes. C’est cet espace  
+que la méthodologie et la mise en œuvre du chapitre suivant s’emploient à occuper.
+19

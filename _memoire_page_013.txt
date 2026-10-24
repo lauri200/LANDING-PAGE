@@ -1,0 +1,28 @@
+Les événements d’envergure comme le FIAA souffrent souvent d’une visibilité 
+numérique limitée : informations éparpillées, absence de centralisation des contenus, et 
+faible accessibilité pour le grand public avant, pendant et après l’événement. Face à ce 
+constat, comment concevoir et développer une plateforme web permettant une 
+couverture complète, structurée et interactive du FIAA, de sa promotion jusqu’à son 
+compte rendu post-événement ? Cette question se décline en interrogations 
+opérationnelles. Quels acteurs et quels usages faut-il prendre en compte ? Quelles 
+fonctionnalités minimales garantissent une couverture réellement utile, et non un 
+simple site vitrine ? Quelle architecture technique permet de concilier délai de stage, 
+maintenabilité, sécurité et usage mobile ? Comment relier communication publique et 
+gestion interne sans fragmenter l’expérience ? 
+L’objectif général est de concevoir et de développer, dans le cadre du stage effectué à 
+APTIC-R, une plateforme web de couverture du FIAA, capable d’informer le public, 
+de gérer les inscriptions selon les profils, d’appuyer l’organisation sur le terrain et de 
+poser les bases d’une mémoire numérique de l’événement.
+Les objectifs spécifiques sont les suivants :
+• analyser les pratiques de couverture événementielle numérique et identifier les  
+lacunes des solutions existantes au regard du FIAA ;
+• recenser et formaliser les besoins fonctionnels et non fonctionnels des acteurs  
+(visiteurs, agriculteurs, startups, partenaires, médias, organisateurs) ;
+• concevoir l’application (cas d’utilisation, modèle de données, architecture) de  
+manière à assurer cohérence et évolutivité ;
+•  développer  les  modules  essentiels  :  vitrine,  programme,  inscription 
+différenciée,  espace  participant,  administration,  badges  QR,  scan  d’accès, 
+contact et partenariats ;
+• tester, valider et discuter les résultats au regard des attentes, des contraintes du  
+stage et des perspectives d’évolution.
+2

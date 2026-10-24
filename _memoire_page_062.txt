@@ -1,0 +1,30 @@
+illustre le coût réel de la non-centralisation des constantes d’événement (un fichier de  
+configuration unique aurait évité la divergence).
+4.2.2. Limites et difficultés rencontrées
+Plusieurs limites doivent être énoncées.
+Limites  fonctionnelles. Pas  de  module  actualités  ni  galerie.  Programme  encore 
+entièrement statique. Pas de paiement des packages sponsors. Matching B2B, analytics  
+sponsors  et  messagerie,  promis  sur  la  page  partenaires,  non  implémentés  (sauf 
+indicateurs fictifs pour le profil partenaire). Onglet Activités de l’espace participant  
+vide. Liens légaux vers des routes inexistantes. Sélecteurs région et sujet non reliés au  
+state. Champ fonction absent du formulaire. Graphique des statuts et renvoi d’e-mail  
+non exposés dans l’UI.
+Limites  techniques  et  de  sécurité. Deux  systèmes  d’auth  (Supabase  Auth  pour 
+l’admin, couple email/mot de passe en clair dans inscriptions pour le participant). La  
+récupération  d’accès  renvoie  le  secret  par  courriel.  Le  scanner  n’exige  pas  de 
+session.  Le  manifeste  Android  ne  déclare  pas  CAMERA.  Les  politiques  RLS  de 
+Supabase ne sont pas dans le dépôt. L’expéditeur Resend reste un domaine de test.  
+index.html déclare  lang="en".  React  Query,  react-hook-form  et  zod  sont  des 
+dépendances peu ou pas exploitées par le métier. L’accessibilité WCAG n’a pas fait  
+l’objet d’un audit formel.
+Limites  méthodologiques. Peu  de  tests  automatisés.  Recueil  des  besoins  surtout 
+auprès  de  l’encadrement,  moins  auprès  d’un  échantillon  d’agriculteurs  réels.  Pas 
+d’étude d’usage terrain le jour de l’événement, celui-ci n’ayant pas encore eu lieu au  
+moment de la rédaction.
+Difficultés rencontrées. Spécifications mouvantes (nom officiel, lieu Agbélouvé puis  
+Badja,  identité  visuelle).  Intégration  e-mail  :  bascule  Netlify  Functions  /  Vercel, 
+erreurs 405, CORS, variables d’environnement ; la fonction Netlify n’a pas suivi  
+toutes  les  évolutions  (récupération  de  mot  de  passe).  Génération  PDF  dans  le 
+navigateur (bundle PDFKit). Routage SPA (404 au refresh, HashRouter puis redirects  
+Vercel).  Tentative  puis  abandon  d’un  système  bilingue,  au  profit  d’une  interface 
+51

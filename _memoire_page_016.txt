@@ -1,0 +1,29 @@
+CHAPITRE 1 : GÉNÉRALITÉS SUR LA THÉMATIQUE ET 
+ENVIRONNEMENT D’ÉTUDE
+Introduction du chapitre
+Le  travail  de  conception  logicielle  s’inscrit  dans  un  double  environnement  :  un 
+environnement  de  connaissances,  qui  fournit  les  notions  du  domaine,  et  un 
+environnement  organisationnel,  qui  définit  le  commanditaire,  les  contraintes  et  le 
+terrain d’application. Ce  premier  chapitre  pose  ces deux ancrages. La  section 1.1 
+présente les généralités sur la couverture d’événements par le web. La section 1.2  
+décrit APTIC-R, le déroulement du stage et les raisons du choix du sujet.
+1.1. GÉNÉRALITÉS SUR LA COUVERTURE D’ÉVÉNEMENTS 
+PAR LE WEB
+1.1.1. Notion de couverture événementielle numérique
+La couverture événementielle désigne l’ensemble des dispositifs d’information, de  
+narration et de documentation qui permettent à un public, présent ou distant, de suivre  
+un événement. Traditionnellement, elle relevait de la presse écrite, de la radio et de la  
+télévision.  L’essor  d’Internet,  puis  du  web  mobile,  a  transformé  ce  paysage  : 
+l’organisateur  n’est  plus  seulement  un  producteur  d’événement,  il  devient  un 
+producteur de contenus et un gestionnaire de relation avec les publics (Getz, 2008 ;  
+Goldblatt, 2014).
+Nous entendons par couverture événementielle numérique l’ensemble des services en  
+ligne qui accompagnent le cycle de vie d’un événement. Ce cycle peut être décomposé  
+en trois phases (Masterman et Wood, 2006) :
+•  la  phase  amont  :  promotion,  information,  inscription,  accréditation  et 
+recherche de partenaires ;
+• la phase in situ : orientation, programme, contrôle d’accès et facilitation des  
+interactions ;
+• la phase aval : compte rendu, galerie, statistiques, fidélisation et capitalisation  
+des données.
+5

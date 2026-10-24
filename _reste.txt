@@ -1,0 +1,41 @@
+
+
+APTIC-R  ·  International Volunteers
+Reste à faire
+Liste des tâches encore ouvertes par rapport au cahier des charges
+Document au 29 septembre 2026  ·  Site encore en local (http://localhost:8443)
+Ce document ne reprend que ce qui n’est pas encore livré. Le site public (pages FR / EN / DE, formulaires volontaire et partenaire, FAQ, éligibilité, guide, cookies), le back-office (dossiers, statuts, notes, CSV, rendez-vous, e-mails) et le SEO de base (URLs par langue, hreflang, robots.txt, sitemap) sont déjà en place.
+1. À fournir par APTIC-R (contenu et identité)
+Sans ces éléments, le site reste techniquement fonctionnel mais pas « officiel ».
+Logo officiel APTIC-R (fichier vectoriel ou PNG haute définition, fond transparent).  —  APTIC-R
+Photos authentiques du Togo / d’Agbélouvé (mission, communautés, terrain). Aujourd’hui : images Unsplash.  —  APTIC-R
+Vrais témoignages de volontaires (nom, prénom, photo, texte, éventuellement organisation d’envoi). Aujourd’hui : Jonas, Claire, Thomas (exemples).  —  APTIC-R
+URLs réelles des réseaux : Facebook, LinkedIn, Instagram, YouTube (aujourd’hui : pages d’accueil génériques).  —  APTIC-R
+Téléphone de contact (le champ est vide ; seul contact@aptic-r.org est renseigné).  —  APTIC-R
+Tableau « Ce qui est inclus » chiffré : hébergement, repas, transport local, assurance, billet, visa, indemnité, accompagnement. Aujourd’hui : « À préciser avant départ / selon le programme ».  —  APTIC-R
+Guide volontaire en PDF officiel (aujourd’hui : fichier texte généré depuis le site).  —  APTIC-R / optionnel
+Image de partage réseaux (Open Graph, 1200 × 630 px) pour Facebook / LinkedIn.  —  APTIC-R / optionnel
+2. À exécuter dans Supabase (si ce n’est pas déjà fait)
+À coller dans Supabase → SQL Editor → Run. Sans cela, certaines fonctions admin ou e-mails ne marchent pas.
+supabase/executer.sql — politiques d’insertion, e-mails de statut (Resend), rendez-vous.  —  Technique
+supabase/analytics.sql — table des événements visiteurs et compteurs du tableau de bord.  —  Technique
+Vérifier que olgaafangnigan@gmail.com est bien dans admin_users et qu’elle peut se connecter à /admin.  —  Technique
+Vérifier le domaine d’expédition Resend. Tant que aptic-r.org n’est pas validé chez Resend, les e-mails ne partent que vers le compte Resend (mode test).  —  APTIC-R + technique
+3. Mise en production (cahier des charges §40)
+Installer Git sur le poste (aujourd’hui la commande git n’est pas reconnue) et pousser le projet sur GitHub.  —  Technique
+Créer le projet Vercel, brancher le dépôt, variables d’environnement : VITE_SUPABASE_URL, VITE_SUPABASE_ANON_KEY, VITE_SITE_URL=https://aptic-r.org, éventuellement VITE_GA_ID.  —  Technique
+Ne jamais committer .env, supabase/executer.sql ni la clé Resend.  —  Technique
+Brancher le domaine aptic-r.org (URL cible : aptic-r.org/international-volunteers) avec HTTPS.  —  APTIC-R + technique
+Rediriger l’accueil langue vers /fr/volontaires-internationaux, /en/international-volunteers, /de/internationale-freiwillige.  —  Technique
+4. Mesure d’audience et référencement (après mise en ligne)
+Créer une propriété Google Analytics 4 et coller l’identifiant dans VITE_GA_ID (chargé seulement si le visiteur accepte les cookies).  —  APTIC-R + technique
+Google Search Console : ajouter la propriété, envoyer le sitemap https://aptic-r.org/sitemap.xml.  —  Technique
+Audit PageSpeed Insights : objectif du CDC &gt; 85 (mobile et desktop) une fois le site en HTTPS avec les vraies images.  —  Technique
+Mettre à jour public/sitemap.xml et public/robots.txt si l’URL de production n’est pas exactement aptic-r.org.  —  Technique
+5. Organisation et formation
+Session de formation courte pour Olga / l’équipe : tableau de bord, statuts, « Enregistrer et prévenir », rendez-vous, export CSV. Un guide écrit existe déjà sur /admin/help.  —  APTIC-R
+Décider qui répond aux candidatures, délais de réponse, et calendrier des entretiens.  —  APTIC-R
+Tester un parcours complet en production : candidature volontaire + demande partenaire + changement de statut + e-mail reçu.  —  APTIC-R + technique
+6. Hors périmètre tant que le contenu n’est pas fourni
+Les points 1 (identité, photos, montants, témoignages) bloquent la publication « officielle ». Les points 2 à 4 peuvent avancer en parallèle. Le code n’attend plus de nouvelles pages CDC : il attend des fichiers, des décisions et la mise en ligne.
+Référence : CAHIER DES CHARGES LANDING PAGE.01.pdf  ·  Projet : LANDING_PAGE (React + Vite + Supabase + Vercel).

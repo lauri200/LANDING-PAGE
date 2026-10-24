@@ -1,0 +1,29 @@
+• ProgrammeJour / Evenement : pour cette itération, données de présentation  
+(côté client), destinées à être persistées dans une itération ultérieure.
+Le champ  specific_data (superficie, production, stage, pitchDeck) évite d’exploser le  
+schéma  en tables trop nombreuses dès la  première  version, tout  en conservant  la 
+richesse métier. Le statut prend les valeurs PENDING, APPROVED, REJECTED. En  
+pratique, l’insert d’inscription ne pose pas explicitement status : l’absence de valeur est 
+traitée comme « en attente » dans le dashboard (!status assimilé à PENDING).
+Deux  attributs  du  MCD  sont  prévus  mais  mal  branchés  dans  l’interface :  le 
+sélecteur de région n’écrit pas dans l’état React, si bien que region part vide ; le champ  
+fonction est envoyé mais n’a pas de saisie à l’écran. Le sujet du formulaire contact  
+présente le même défaut de liaison. Ces écarts conception / implémentation sont des  
+résultats de l’analyse du code ; ils figurent au chapitre 4 parmi les limites.
+INSCRIPTION (id, nom, prenom, email, telephone, region, organisation,
+            fonction, besoins, profile, password, specific_data,
+            status, badge_id, email_sent, email_sent_at, created_at)
+CONTACT (id, nom, email, sujet, message, created_at)
+ADMIN (géré par le prestataire d’authentification)
+Un administrateur TRAITE 0,n INSCRIPTION
+Une INSCRIPTION est TRAITÉE par 0,1 administrateur (via le statut)
+Un visiteur ENVOIE 0,n CONTACT
+La  cardinalité  importante  est  celle  du  cycle  de  vie  :  une  inscription  naît  à  l’état 
+PENDING, peut être APPROVED (déclenchant badge + e-mail) ou REJECTED (e-
+mail d’information). Le badge n’est pas une table séparée : il est généré à la volée à  
+partir de l’inscription, ce qui évite les incohérences (un badge toujours à jour du statut  
+et de l’identité).
+Le participant choisit un profil, saisit le formulaire, le client envoie un INSERT vers la  
+table inscriptions. En cas de succès, l’écran de confirmation propose le téléchargement  
+d’un badge provisoire. Dans le code actuel, cet appel force status: 'APPROVED' pour 
+27

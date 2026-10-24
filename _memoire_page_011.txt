@@ -1,0 +1,13 @@
+ABSTRACT :
+This professional dissertation reports on the design and development of a web platform 
+covering the Festival of Agricultural and Agritech Innovations (FIAA), carried out at  
+APTIC-R from 5 December 2025 to 15 May 2026. The work addresses scattered event  
+information  and  the  lack  of  a  single  channel  for  registration,  badges  and  access 
+control. Needs analysis, UML and MERISE modelling, then iterative development of a 
+React, TypeScript and Supabase application, also packaged for Android, produced a  
+public site, a programme, profile-based registration, a participant area, an admin back  
+office, QR badges and a scanner. Editorial modules (news, gallery) remain future  
+work. Priority next steps are account security and a single source of event identity.
+Keywords: web  platform;  event  coverage;  agritech;  FIAA;  APTIC-R;  React; 
+Supabase.
+viii
