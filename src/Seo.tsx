@@ -141,6 +141,10 @@ export default function Seo() {
     upsertMeta("property", "og:type", "website");
     upsertMeta("property", "og:locale", OG_LOCALE[lang]);
     upsertMeta("property", "og:site_name", "APTIC-R International Volunteers");
+    upsertMeta("property", "og:image", `${origin}/images/og-cover.jpg`);
+    upsertMeta("property", "og:image:width", "1200");
+    upsertMeta("property", "og:image:height", "630");
+    upsertMeta("name", "twitter:image", `${origin}/images/og-cover.jpg`);
     const canonicalPath = page === "/" ? homePath(lang) : `/${lang}${page}`;
     const canonical = `${origin}${canonicalPath}`;
     upsertLink("canonical", canonical);

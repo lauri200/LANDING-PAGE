@@ -67,6 +67,7 @@ export default function Header() {
         }}
       >
         <Link to={localize(lang, "/")} onClick={close} className="flex items-center gap-2.5" aria-label="APTIC-R">
+          <img src="/favicon.svg" alt="" className="w-8 h-8" />
           <span
             className="text-xl font-bold tracking-tight"
             style={{ fontFamily: "var(--font-display)", color: "var(--color-blue)" }}
