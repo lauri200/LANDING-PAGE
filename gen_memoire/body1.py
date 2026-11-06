@@ -16,94 +16,92 @@ def introduction(doc):
            "volontaires apportent des compétences techniques — développement, "
            "données, conception — à des communautés qui ont des besoins "
            "concrets mais peu de ressources.")
-    p(doc, "Cette dynamique n’échappe pas à l’Afrique de l’Ouest, où la "
-           "fracture numérique demeure marquée entre villes et campagnes. Au "
-           "Togo, l’accès aux outils numériques progresse, mais les communautés "
-           "rurales restent peu équipées et peu formées. L’approche dite "
-           "low-tech — des solutions simples, abordables et réparables — ouvre "
-           "des perspectives : messagerie SMS, applications hors ligne, "
-           "capteurs à bas coût, tableaux de bord agricoles. Encore faut-il des "
-           "personnes pour concevoir, prototyper et transmettre ces solutions "
-           "sur le terrain.")
-    p(doc, "C’est dans cette perspective qu’APTIC-R a conçu le programme "
-           "« APTIC-R International Volunteers », destiné à accueillir à "
-           "Agbélouvé, dans la préfecture de Zio (région Maritime), des "
-           "volontaires européens — Allemands, Français, Belges et autres — "
-           "pour des missions de six à douze mois. Le programme se présente "
-           "comme une invitation à « construire des technologies pour les "
-           "communautés rurales » : diagnostic terrain, hackathons ruraux, "
-           "prototypage low-tech, formation de relais locaux et documentation "
-           "open source.")
-    p(doc, "Un programme de cette ambition ne peut pas se contenter de "
-           "publications ponctuelles sur les réseaux sociaux ou de "
-           "prospectives par courriel. Le public visé — étudiants, jeunes "
-           "diplômés et jeunes professionnels européens — attend une "
-           "information centralisée, crédible et lisible dans sa propre langue : "
-           "la mission, la vie au Togo, les conditions d’accueil, le processus "
-           "de candidature. Les organisations partenaires attendent une vitrine "
-           "claire des modalités de collaboration. L’équipe APTIC-R, de son "
-           "côté, a besoin d’outils de tri, de suivi et de pilotage des "
-           "candidatures.")
-    p(doc, "Or, la présence numérique d’une association locale est souvent "
-           "limitée : informations éparpillées, absence de canal unique de "
-           "candidature, contenus en une seule langue, aucun outil de "
-           "traitement des dossiers. Face à ce constat, comment concevoir et "
-           "développer une landing page multilingue permettant une présentation "
-           "complète, structurée et interactive du programme de volontariat "
-           "d’APTIC-R, de la découverte de la mission jusqu’au traitement "
-           "administratif des candidatures ? Cette question se décline en "
-           "interrogations opérationnelles. Quels acteurs et quels usages "
-           "faut-il prendre en compte ? Quelles sections et quels arguments "
-           "garantissent une page réellement convaincante, et non un simple "
-           "prospectus ? Quelle architecture technique permet de concilier "
-           "délai de stage, maintenabilité, sécurité, référencement et usage "
-           "mobile ? Comment relier communication publique et gestion interne "
-           "des candidatures sans fragmenter l’expérience ?")
-    p(doc, "L’objectif général est de concevoir et de développer, dans le cadre "
-           "de mon stage à APTIC-R, une landing page multilingue de recrutement "
-           "de volontaires internationaux, capable d’informer les publics "
-           "européens, de collecter les candidatures et les demandes de "
-           "partenariat, et d’appuyer l’organisation dans le traitement des "
+    p(doc, "L’Afrique de l’Ouest n’est pas en reste de ce mouvement, mais elle "
+           "y arrive avec un handicap : la fracture numérique entre villes et "
+           "campagnes. Au Togo, si l’accès aux outils numériques progresse, "
+           "les communautés rurales demeurent peu équipées et peu formées. "
+           "L’approche low-tech — des solutions simples, abordables et "
+           "réparables localement — ouvre une voie concrète : messagerie SMS, "
+           "applications hors ligne, capteurs à bas coût, tableaux de bord "
+           "agricoles. Reste à trouver les personnes capables de concevoir, "
+           "prototyper et transmettre ces solutions sur le terrain.")
+    p(doc, "Pour répondre à ce besoin, APTIC-R a imaginé le programme "
+           "« APTIC-R International Volunteers » : accueillir à Agbélouvé, "
+           "dans la préfecture de Zio (région Maritime), des volontaires "
+           "européens — Allemands, Français, Belges et autres — pour des "
+           "missions de six à douze mois. Le programme invite à « construire "
+           "des technologies pour les communautés rurales » : diagnostic "
+           "terrain, hackathons ruraux, prototypage low-tech, formation de "
+           "relais locaux et documentation open source.")
+    p(doc, "Or un tel programme ne saurait reposer sur des publications "
+           "ponctuelles en ligne ni sur de la prospection par courriel. Le "
+           "public visé — étudiants, jeunes diplômés et jeunes professionnels "
+           "européens — attend une information centralisée, crédible et rédigée "
+           "dans sa langue : la mission, la vie au Togo, les conditions "
+           "d’accueil, le processus de candidature. Les organisations "
+           "partenaires veulent, elles, une présentation claire des modalités "
+           "de collaboration, tandis que l’équipe APTIC-R a besoin d’outils "
+           "pour trier, suivre et piloter les dossiers reçus.")
+    p(doc, "La présence en ligne d’une association locale reste cependant "
+           "souvent rudimentaire : informations dispersées, pas de canal "
+           "unique de candidature, contenus dans une seule langue, aucun "
+           "outil de traitement des dossiers. De là découle la question "
+           "centrale de ce mémoire : comment concevoir et développer une "
+           "landing page multilingue offrant une présentation structurée, "
+           "complète et interactive du programme de volontariat d’APTIC-R, "
+           "depuis la découverte de la mission jusqu’au traitement "
+           "administratif des candidatures ? Plusieurs interrogations "
+           "opérationnelles en découlent. Quels acteurs convient-il de "
+           "servir, et pour quels usages ? Quelles sections et quels "
+           "arguments rendent la page réellement convaincante, au-delà d’un "
+           "simple prospectus ? Quelle architecture concilie délai de stage, "
+           "maintenabilité, sécurité, référencement et usage mobile ? Comment "
+           "articuler communication publique et gestion interne des dossiers "
+           "sans morceler l’expérience ?")
+    p(doc, "Le travail poursuit un objectif général : concevoir et développer, "
+           "dans le cadre de mon stage à APTIC-R, une landing page multilingue "
+           "de recrutement de volontaires internationaux qui informe les "
+           "publics européens, collecte candidatures et demandes de "
+           "partenariat, et outille l’organisation dans le traitement des "
            "dossiers.")
-    p(doc, "Les objectifs spécifiques sont les suivants :")
-    bullet(doc, "analyser les pratiques de recrutement de volontaires en ligne "
-                "et identifier les lacunes des solutions existantes au regard "
-                "du programme APTIC-R ;")
-    bullet(doc, "recenser et formaliser les besoins fonctionnels et non "
-                "fonctionnels des acteurs (visiteurs, candidats, organisations "
+    p(doc, "Cet objectif se décompose en cinq objectifs spécifiques :")
+    bullet(doc, "étudier les pratiques de recrutement de volontaires en ligne "
+                "et relever les insuffisances des solutions existantes face "
+                "au programme APTIC-R ;")
+    bullet(doc, "formaliser les besoins fonctionnels et non fonctionnels des "
+                "acteurs concernés (visiteurs, candidats, organisations "
                 "partenaires, administrateurs) ;")
-    bullet(doc, "concevoir l’application (cas d’utilisation, modèle de données, "
-                "architecture) de manière à assurer cohérence, sécurité et "
-                "évolutivité ;")
-    bullet(doc, "développer les modules essentiels : site multilingue, "
+    bullet(doc, "concevoir l’application — cas d’utilisation, modèle de "
+                "données, architecture — en garantissant cohérence, sécurité "
+                "et évolutivité ;")
+    bullet(doc, "réaliser les modules essentiels : site trilingue, "
                 "formulaires de candidature et de partenariat avec dépôt de "
                 "documents, back-office de traitement, notifications "
                 "automatiques, référencement et mesure d’audience ;")
-    bullet(doc, "tester, valider et discuter les résultats au regard du cahier "
-                "des charges, des contraintes du stage et des perspectives "
-                "d’évolution.")
-    p(doc, "Le sujet se justifie d’abord par un besoin opérationnel d’APTIC-R : "
-           "doter le programme international de volontariat d’un canal "
-           "numérique unique, professionnel et exploitable. Il se justifie "
-           "ensuite sur le plan pédagogique : il permet de passer des "
-           "enseignements de licence (analyse, conception, développement web, "
-           "bases de données, tests) à une réalisation concrète, menée sous "
-           "encadrement professionnel. Il se justifie enfin sur le plan "
-           "sectoriel : outiller une association togolaise pour attirer des "
-           "compétences internationales, c’est contribuer, modestement, à la "
-           "diffusion du numérique auprès de communautés rurales.")
-    p(doc, "Le mémoire s’organise en deux parties. La première partie pose le "
-           "cadre théorique et organisationnel ; le chapitre 1 présente les "
-           "généralités sur les landing pages et le recrutement de volontaires "
-           "en ligne, puis la structure d’accueil APTIC-R, le déroulement du "
-           "stage et la justification du sujet ; le chapitre 2 définit les "
-           "concepts clés et propose une revue des travaux et solutions "
-           "similaires. La seconde partie est consacrée au cadre empirique ; le "
-           "chapitre 3 expose la méthodologie, l’analyse des besoins, puis la "
-           "conception et la mise en œuvre ; le chapitre 4 présente les "
-           "résultats, les discute, identifie les limites et formule des "
-           "suggestions. Une conclusion générale rappelle la problématique, "
-           "synthétise les apports, précise les limites et ouvre des "
+    bullet(doc, "éprouver le livrable par les tests, puis en discuter les "
+                "résultats à la lumière du cahier des charges, des "
+                "contraintes du stage et des perspectives d’évolution.")
+    p(doc, "Trois ordres de raisons motivent ce sujet. Sur le plan "
+           "opérationnel, APTIC-R a besoin d’un canal numérique unique, "
+           "professionnel et exploitable pour son programme de volontariat. "
+           "Sur le plan pédagogique, le sujet offre le passage des "
+           "enseignements de licence — analyse, conception, développement "
+           "web, bases de données, tests — à une réalisation concrète sous "
+           "encadrement professionnel. Sur le plan sectoriel, enfin, outiller "
+           "une association togolaise pour attirer des compétences "
+           "internationales revient à contribuer, à son échelle, à la "
+           "diffusion du numérique dans les zones rurales.")
+    p(doc, "Le document s’articule en deux parties. La première établit le "
+           "cadre théorique et organisationnel : le chapitre 1 introduit les "
+           "notions de landing page et de recrutement en ligne avant de "
+           "présenter APTIC-R, le déroulement du stage et la justification du "
+           "sujet ; le chapitre 2 définit les concepts clés puis confronte "
+           "les solutions et travaux similaires. La seconde partie relève du "
+           "cadre empirique : le chapitre 3 expose la méthodologie, l’analyse "
+           "des besoins, la conception et la mise en œuvre ; le chapitre 4 "
+           "rend compte des résultats, en discute, en dégage les limites et "
+           "propose des suggestions. La conclusion générale revient sur la "
+           "problématique, en synthétise les apports et ouvre des "
            "perspectives.")
 
 
@@ -114,14 +112,14 @@ def partie1(doc):
 def chapitre1(doc):
     h1(doc, "CHAPITRE 1 : GÉNÉRALITÉS SUR LA THÉMATIQUE ET ENVIRONNEMENT D’ÉTUDE")
     chapter_intro(doc)
-    p(doc, "Le travail de conception logicielle s’inscrit dans un double "
-           "environnement : un environnement de connaissances, qui fournit les "
-           "notions du domaine, et un environnement organisationnel, qui "
-           "définit le commanditaire, les contraintes et le terrain "
-           "d’application. Ce premier chapitre pose ces deux ancrages. La "
-           "section 1.1 présente les généralités sur les landing pages et le "
-           "recrutement de volontaires en ligne. La section 1.2 décrit "
-           "APTIC-R, le déroulement du stage et les raisons du choix du sujet.")
+    p(doc, "Toute réalisation logicielle se situe à l’intersection de deux "
+           "référentiels : un référentiel de connaissances, qui fournit les "
+           "notions du domaine, et un référentiel organisationnel, qui "
+           "identifie le commanditaire, les contraintes et le terrain "
+           "d’application. Ce chapitre pose ces deux repères : la section 1.1 "
+           "introduit les généralités sur les landing pages et le recrutement "
+           "de volontaires en ligne ; la section 1.2 présente APTIC-R, le "
+           "déroulement du stage et les raisons du choix du sujet.")
 
     h2(doc, "1.1. GÉNÉRALITÉS SUR LES LANDING PAGES ET LE RECRUTEMENT EN LIGNE")
     h3(doc, "1.1.1. Notion de landing page et de conversion")
@@ -193,158 +191,153 @@ def chapitre1(doc):
     h2(doc, "1.2. PRÉSENTATION DE LA STRUCTURE D’ACCUEIL")
     h3(doc, "1.2.1. Cadre organisationnel")
     h3(doc, "1.2.1.1. Historique de la structure")
-    p(doc, "APTIC-R est une structure togolaise spécialisée dans le domaine des "
-           "Technologies de l’Information et de la Communication (TIC). Son "
-           "nom complet est l’Association pour la Promotion des TIC en milieu "
-           "Rural au Togo. Elle s’inscrit dans une dynamique de promotion du "
-           "numérique et d’accompagnement des populations, des organisations "
-           "et des entreprises dans l’adoption des outils technologiques.")
-    p(doc, "La structure a été créée dans l’objectif de contribuer à la "
-           "réduction de la fracture numérique, notamment par la "
-           "démocratisation de l’accès aux technologies, la sensibilisation "
-           "aux usages du numérique et le développement des compétences "
-           "informatiques. Son orientation s’inscrit dans un contexte où la "
-           "transformation digitale représente un levier important pour le "
-           "développement économique et social du Togo et de l’Afrique.")
-    p(doc, "C’est dans ce cadre qu’APTIC-R a conçu le programme international "
-           "de volontariat, qui accueille à Agbélouvé des volontaires "
-           "européens pour des missions de six à douze mois autour de "
-           "l’innovation numérique, de l’agriculture et de la technologie "
-           "low-tech. La structure trouve ainsi un prolongement naturel à sa "
-           "mission : relier expertise TIC et besoins des communautés "
-           "rurales, en attirant des compétences venues d’ailleurs.")
+    p(doc, "APTIC-R — Association pour la Promotion des TIC en milieu Rural au "
+           "Togo — est une organisation togolaise dont le champ d’action "
+           "couvre les Technologies de l’Information et de la Communication "
+           "(TIC). Sa vocation consiste à rapprocher les populations, les "
+           "organisations et les entreprises des outils numériques.")
+    p(doc, "L’association est née d’un constat : l’écart d’accès et de "
+           "maîtrise du numérique entre les centres urbains et les zones "
+           "rurales. Pour le réduire, elle agit sur trois leviers — élargir "
+           "l’accès aux technologies, sensibiliser à leurs usages et renforcer "
+           "les compétences informatiques. Cette orientation prend tout son "
+           "sens dans un pays où la digitalisation est devenue un enjeu de "
+           "développement économique et social, au Togo comme sur le "
+           "continent.")
+    p(doc, "Fort de cet ancrage, APTIC-R a lancé le programme international de "
+           "volontariat qui fait l’objet de ce mémoire : accueillir à "
+           "Agbélouvé des volontaires venus d’Europe pour des missions de six "
+           "à douze mois consacrées à l’innovation numérique, à l’agriculture "
+           "et à la low-tech. Le programme prolonge ainsi la mission de "
+           "l’association en faisant venir sur le terrain des compétences "
+           "extérieures.")
     h3(doc, "1.2.1.2. Organisation administrative")
-    p(doc, "APTIC-R fonctionne selon une organisation orientée autour des "
-           "métiers du numérique et de l’accompagnement technologique. Bien "
-           "que son organigramme officiel complet ne soit pas publié, la "
-           "structure regroupe différents profils techniques intervenant dans "
-           "les domaines du développement informatique, du support technique "
-           "et de la formation. Son fonctionnement repose généralement sur "
-           "plusieurs pôles.")
-    p(doc, "La Direction et l’administration assurent :")
-    bullet(doc, "la définition des orientations stratégiques ;")
-    bullet(doc, "la gestion administrative de la structure ;")
-    bullet(doc, "la coordination des différents projets et activités.")
-    p(doc, "Le pôle développement informatique est chargé de :")
-    bullet(doc, "la conception et le développement d’applications web et mobiles ;")
-    bullet(doc, "la création de solutions numériques adaptées aux besoins des clients ;")
-    bullet(doc, "la maintenance et l’amélioration des applications existantes.")
-    p(doc, "Le pôle réseaux et maintenance informatique intervient dans :")
-    bullet(doc, "l’installation et la configuration des équipements informatiques ;")
-    bullet(doc, "la maintenance des systèmes ;")
-    bullet(doc, "l’assistance technique aux utilisateurs.")
-    p(doc, "Le pôle formation et accompagnement numérique participe à :")
-    bullet(doc, "la formation des utilisateurs aux outils informatiques ;")
+    p(doc, "L’organisation d’APTIC-R s’articule autour des métiers du "
+           "numérique et de l’accompagnement. L’organigramme détaillé de "
+           "l’association n’est pas publié, mais la structure réunit plusieurs "
+           "profils techniques couvrant le développement informatique, le "
+           "support et la formation. On peut distinguer quatre ensembles "
+           "fonctionnels.")
+    p(doc, "La direction générale et l’administration prennent en charge :")
+    bullet(doc, "l’orientation stratégique de l’association ;")
+    bullet(doc, "la gestion administrative et financière ;")
+    bullet(doc, "le pilotage et la coordination des projets.")
+    p(doc, "Le pôle développement informatique assure :")
+    bullet(doc, "la conception et la réalisation d’applications web et mobiles ;")
+    bullet(doc, "l’adaptation des solutions numériques aux besoins exprimés par "
+                "les clients ;")
+    bullet(doc, "le suivi et l’amélioration des applications en service.")
+    p(doc, "Le pôle réseaux et maintenance couvre :")
+    bullet(doc, "l’installation et le paramétrage du matériel informatique ;")
+    bullet(doc, "l’entretien et la maintenance des systèmes ;")
+    bullet(doc, "l’assistance apportée aux utilisateurs.")
+    p(doc, "Le pôle formation et accompagnement numérique est dédié à :")
+    bullet(doc, "la montée en compétence des utilisateurs sur les outils "
+                "bureautiques ;")
     bullet(doc, "l’initiation aux technologies numériques ;")
-    bullet(doc, "l’accompagnement des structures souhaitant intégrer le numérique "
-                "dans leurs activités.")
-    p(doc, "Cette organisation permet à APTIC-R de répondre aux besoins liés à "
-           "la transformation digitale tout en favorisant le développement des "
-           "compétences numériques. Le stage s’est déroulé au sein du pôle "
-           "développement, sous la supervision du Directeur.")
-    figure(doc, "Figure 1 : Organigramme fonctionnel d’APTIC-R", height_cm=8)
+    bullet(doc, "l’appui aux structures engagées dans une démarche de "
+                "digitalisation.")
+    p(doc, "Grâce à ce découpage, APTIC-R couvre l’essentiel des besoins liés "
+           "à la transformation digitale tout en développant les compétences "
+           "numériques de ses publics. C’est au sein du pôle développement, "
+           "placé sous la supervision du Directeur, que s’est déroulé le "
+           "stage.")
+    figure(doc, "Figure 1 : Organigramme fonctionnel d’APTIC-R",
+           image="figures/fig1_organigramme.png")
     h3(doc, "1.2.1.3. Activités de la structure")
-    p(doc, "APTIC-R intervient principalement dans le secteur des technologies "
-           "numériques. Ses activités couvrent plusieurs domaines.")
-    p(doc, "a) Développement de solutions numériques. La structure accompagne "
-           "les organisations dans la création de solutions informatiques "
-           "telles que des applications web, des plateformes numériques et des "
-           "outils de gestion informatisés. Ces solutions permettent aux "
-           "utilisateurs d’améliorer leurs processus de travail et d’optimiser "
-           "la gestion de leurs activités. La landing page des volontaires "
-           "internationaux s’inscrit dans cette ligne : il s’agit d’une "
-           "application web métier adossée à une base de données, et non d’un "
-           "simple site vitrine.")
-    p(doc, "b) Services informatiques et maintenance. APTIC-R propose également "
-           "des services liés à l’infrastructure informatique, notamment "
-           "l’installation et la configuration de matériels, ainsi que la "
-           "maintenance des équipements.")
-    p(doc, "c) Formation aux outils numériques. La formation constitue une "
-           "activité importante. Elle vise à renforcer les compétences "
-           "numériques des utilisateurs à travers la formation bureautique, "
-           "l’initiation à l’informatique et l’apprentissage des outils "
+    p(doc, "L’activité d’APTIC-R se concentre sur le numérique et se décline "
+           "en quatre familles.")
+    p(doc, "a) Conception de solutions numériques. La première famille "
+           "consiste à accompagner les organisations dans la réalisation "
+           "d’applications web, de plateformes et d’outils de gestion, afin de "
+           "fluidifier leurs processus et d’améliorer le suivi de leurs "
+           "activités. La landing page des volontaires relève précisément de "
+           "cette famille : derrière la page publique se trouvent une base de "
+           "données et un back-office, ce qui en fait une application métier "
+           "et non un simple site vitrine.")
+    p(doc, "b) Services informatiques et maintenance. La seconde famille "
+           "porte sur l’infrastructure : installation et configuration de "
+           "matériels, entretien et réparation des équipements.")
+    p(doc, "c) Formation aux usages numériques. Troisième famille d’activités, "
+           "la formation vise à renforcer les compétences des utilisateurs : "
+           "bureautique, initiation à l’informatique et prise en main d’outils "
            "numériques.")
-    p(doc, "d) Communication et présence digitale. APTIC-R accompagne certains "
-           "acteurs dans leur développement numérique à travers la conception "
-           "de sites web et le web design. La vitrine du programme de "
-           "volontariat relève aussi de cette compétence, tout en la dépassant "
-           "par les formulaires, le dépôt de documents et le back-office.")
+    p(doc, "d) Communication et présence digitale. Enfin, APTIC-R conçoit des "
+           "sites web et accompagne certains acteurs dans leur visibilité en "
+           "ligne. La vitrine du programme de volontariat mobilise cette "
+           "compétence, qu’elle dépasse par ses formulaires, son dépôt de "
+           "documents et son back-office.")
     h3(doc, "1.2.1.4. Services proposés")
-    p(doc, "Les principaux services proposés par APTIC-R peuvent être regroupés "
-           "comme suit :")
-    bullet(doc, "le développement d’applications web et mobiles ;")
-    bullet(doc, "la conception de plateformes numériques et d’outils de gestion ;")
-    bullet(doc, "l’installation, la configuration et la maintenance d’équipements "
+    p(doc, "En synthèse, l’offre de services d’APTIC-R se regroupe en cinq "
+           "catégories :")
+    bullet(doc, "développement d’applications web et mobiles ;")
+    bullet(doc, "conception de plateformes numériques et d’outils de gestion ;")
+    bullet(doc, "installation, configuration et maintenance d’équipements "
                 "informatiques ;")
-    bullet(doc, "la formation bureautique et l’initiation aux TIC ;")
-    bullet(doc, "la conception de sites web et le web design.")
-    p(doc, "Ces services permettent à APTIC-R d’accompagner différents acteurs "
-           "dans leur processus de modernisation grâce aux technologies "
-           "numériques. Le projet de landing page mobilise surtout le "
-           "développement d’applications et, de manière complémentaire, la "
-           "présence digitale du programme.")
+    bullet(doc, "formation bureautique et initiation aux TIC ;")
+    bullet(doc, "création de sites web et web design.")
+    p(doc, "Cette offre permet à l’association d’accompagner des acteurs "
+           "variés dans leur modernisation numérique. Pour le projet étudié "
+           "ici, ce sont principalement le développement d’applications et, "
+           "en appoint, la présence digitale qui ont été mobilisés.")
     h3(doc, "1.2.1.5. Marché et environnement d’intervention")
-    p(doc, "APTIC-R évolue dans le secteur des Technologies de l’Information et "
-           "de la Communication, un domaine en pleine croissance au Togo et en "
-           "Afrique. Le développement des services numériques, l’utilisation "
-           "croissante d’Internet et les besoins des organisations en matière "
-           "de digitalisation représentent des opportunités importantes pour "
-           "les structures spécialisées dans les TIC.")
-    p(doc, "Son marché cible comprend principalement :")
-    bullet(doc, "les petites et moyennes entreprises souhaitant intégrer des "
+    p(doc, "APTIC-R intervient dans le secteur des TIC, un marché porteur au "
+           "Togo comme dans le reste de l’Afrique : la demande de services "
+           "numériques, la progression de l’usage d’Internet et les besoins "
+           "de digitalisation des organisations ouvrent de réelles "
+           "opportunités aux structures spécialisées.")
+    p(doc, "La clientèle visée se compose essentiellement de :")
+    bullet(doc, "petites et moyennes entreprises désireuses d’adopter des "
                 "solutions numériques ;")
-    bullet(doc, "les institutions et organisations ayant besoin d’un "
-                "accompagnement informatique ;")
-    bullet(doc, "les porteurs de programmes et de projets sectoriels, comme le "
-                "programme international de volontariat, qui ont besoin d’une "
+    bullet(doc, "institutions et organisations requérant un accompagnement "
+                "informatique ;")
+    bullet(doc, "porteurs de programmes et de projets sectoriels — à l’image "
+                "du programme international de volontariat — en quête de "
                 "visibilité et d’outils de gestion.")
-    p(doc, "Dans un environnement marqué par la transformation digitale, "
-           "APTIC-R contribue ainsi à faciliter l’accès aux technologies et à "
-           "accompagner les acteurs locaux dans l’adoption des outils "
-           "numériques. Le programme de volontariat illustre ce "
-           "positionnement : une association rurale n’a pas, a priori, les "
-           "moyens d’une campagne internationale ; elle a néanmoins besoin "
-           "d’une présence professionnelle pour exister durablement auprès de "
-           "ses publics européens.")
+    p(doc, "Dans ce contexte de transformation digitale, APTIC-R joue un rôle "
+           "de facilitateur : elle met les technologies à la portée des "
+           "acteurs locaux et les aide à les adopter. Le programme de "
+           "volontariat en est l’illustration : une association rurale ne "
+           "dispose pas, par nature, des moyens d’une campagne de recrutement "
+           "internationale ; il lui faut pourtant une présence "
+           "professionnelle pour toucher durablement les publics européens.")
 
     h3(doc, "1.2.2. Déroulement du stage")
-    p(doc, "Le stage qui constitue le fondement de ce mémoire professionnel "
-           "s’est déroulé au sein d’APTIC-R, sur une période de six mois, du 5 "
-           "décembre 2025 au 15 mai 2026.")
-    p(doc, "Durant cette période, j’ai été intégré au pôle de développement "
-           "des solutions, sous la supervision directe de monsieur DAGNON "
-           "Edmund, Directeur. Les principales missions confiées "
-           "s’inscrivaient dans le cadre du développement de la landing page "
-           "« APTIC-R International Volunteers », le point d’entrée officiel "
-           "du programme de volontariat.")
-    p(doc, "Plus précisément, les activités ont inclus :")
-    bullet(doc, "l’analyse du cahier des charges fourni par la structure et "
-                "des besoins des publics cibles (étudiants, jeunes diplômés, "
+    p(doc, "Ce mémoire trouve son origine dans un stage effectué au sein "
+           "d’APTIC-R pendant deux mois et demi, du 15 juillet 2026 au 30 "
+           "septembre 2026.")
+    p(doc, "J’ai été rattaché au pôle de développement des solutions et placé "
+           "sous la supervision directe de monsieur DAGNON Edmund, Directeur. "
+           "La mission qui m’a été confiée portait sur la réalisation de la "
+           "landing page « APTIC-R International Volunteers », destinée à "
+           "devenir le point d’entrée officiel du programme de volontariat.")
+    p(doc, "Concrètement, mon activité a couvert :")
+    bullet(doc, "l’analyse du cahier des charges remis par la structure et des "
+                "attentes des publics visés (étudiants, jeunes diplômés et "
                 "jeunes professionnels européens, organisations d’envoi) ;")
-    bullet(doc, "la conception de l’architecture fonctionnelle et technique "
+    bullet(doc, "la définition de l’architecture fonctionnelle et technique "
                 "de la page et de son back-office ;")
-    bullet(doc, "le développement du frontend sous forme d’application web "
-                "(React, TypeScript) intégralement traduite en français, "
-                "anglais et allemand ;")
-    bullet(doc, "le développement de la couche de données sur Supabase "
+    bullet(doc, "le développement du frontend en application web (React, "
+                "TypeScript) intégralement traduite en français, anglais et "
+                "allemand ;")
+    bullet(doc, "la mise en place de la couche de données sur Supabase "
                 "(PostgreSQL, authentification, stockage de fichiers, "
                 "politiques de sécurité) et des fonctions base de données "
-                "pour les courriels ;")
-    bullet(doc, "les tests fonctionnels, les correctifs et la préparation du "
-                "déploiement sur Vercel, ainsi que le référencement "
-                "(sitemap, robots, métadonnées).")
-    p(doc, "Le travail s’est organisé en plusieurs phases, conformément à une "
-           "démarche itérative : analyse du cahier des charges ; conception "
-           "(acteurs, cas d’utilisation, modèle de données) ; développement "
-           "par incréments (vitrine, internationalisation, formulaires, "
-           "back-office, e-mails, SEO) ; tests, correctifs et préparation de "
-           "la mise en production.")
-    p(doc, "Cette expérience m’a permis de mettre en pratique les connaissances "
-           "théoriques acquises durant mon cursus à l’ESIG, tout en "
-           "développant des compétences techniques et professionnelles dans le "
-           "développement web : politiques de sécurité au niveau des lignes "
-           "(RLS), envoi d’e-mails transactionnels depuis la base de données, "
-           "référencement multilingue et exigence de qualité perçue.")
+                "chargées des courriels ;")
+    bullet(doc, "les tests fonctionnels et les correctifs, puis le "
+                "déploiement de l’application sur Vercel et le travail de "
+                "référencement (sitemap, robots, métadonnées).")
+    p(doc, "Conformément à une démarche itérative, le travail a progressé par "
+           "phases : analyse du cahier des charges, puis conception (acteurs, "
+           "cas d’utilisation, modèle de données), développement par "
+           "incréments (vitrine, internationalisation, formulaires, "
+           "back-office, e-mails, SEO), et enfin tests, correctifs et mise en "
+           "ligne.")
+    p(doc, "Au-delà de la mise en pratique des enseignements reçus à l’ESIG, "
+           "cette expérience m’a apporté des compétences concrètes : "
+           "sécurisation des données au niveau des lignes (RLS), envoi "
+           "d’e-mails transactionnels depuis la base, référencement "
+           "multilingue et déploiement continu.")
 
     h3(doc, "1.2.3. Justification du choix du sujet")
     p(doc, "Le choix du sujet est directement lié à l’expérience vécue durant "
@@ -364,30 +357,31 @@ def chapitre1(doc):
            "du programme (documents de candidature, statuts de suivi, "
            "rendez-vous d’entretien, deux parcours distincts volontaire et "
            "partenaire).")
-    p(doc, "Par ailleurs, le sujet permet de mobiliser l’ensemble des "
-           "compétences développées à l’ESIG : analyse des besoins, conception "
-           "UML et MERISE, développement web, bases de données, sécurité, "
-           "tests et documentation. Il constitue une démonstration concrète de "
-           "la capacité à mener un projet de génie logiciel de bout en bout, "
-           "de l’idée à un prototype fonctionnel déployable, dans une "
-           "structure réelle et sous encadrement professionnel.")
-    p(doc, "Enfin, le sujet s’inscrit dans un enjeu plus large que l’outil "
-           "lui-même : donner une existence numérique crédible à un programme "
-           "de volontariat togolais, accessible depuis un téléphone, en "
-           "français, en anglais et en allemand. C’est cette rencontre entre "
-           "TIC, coopération internationale et innovation rurale qui justifie "
-           "le thème retenu.")
+    p(doc, "Le sujet présente aussi un intérêt pédagogique : il fait appel à "
+           "la quasi-totalité des compétences enseignées à l’ESIG — analyse "
+           "des besoins, modélisation UML et MERISE, développement web, bases "
+           "de données, sécurité, tests et documentation. Il donne ainsi "
+           "l’occasion de conduire un projet de génie logiciel dans sa "
+           "totalité, de l’idée jusqu’à une application fonctionnelle "
+           "déployée, dans un cadre professionnel réel.")
+    p(doc, "Enfin, ce sujet dépasse l’outil lui-même : il s’agit de donner à "
+           "un programme de volontariat togolais une présence numérique "
+           "crédible, consultable depuis un téléphone, en français, en anglais "
+           "et en allemand. C’est à la croisée des TIC, de la coopération "
+           "internationale et de l’innovation rurale que se situe ce "
+           "mémoire.")
     chapter_conclusion(doc)
-    p(doc, "Ce chapitre a permis de clarifier le cadre du mémoire. La landing "
-           "page a été définie comme un dispositif de conversion, structuré et "
-           "mesurable, qui dépasse la simple publication d’informations. "
-           "APTIC-R, association togolaise de promotion des TIC en milieu "
-           "rural, a fourni l’environnement professionnel : organisation en "
-           "pôles, activités de développement, de maintenance, de formation et "
-           "de présence digitale, marché tourné vers la transformation "
-           "numérique des acteurs locaux. Le stage, de six mois, s’est déroulé "
-           "au pôle développement sous la direction de monsieur DAGNON Edmund, "
-           "autour de la landing page des volontaires internationaux. Le choix "
-           "du sujet répond à un besoin opérationnel, à un enjeu pédagogique "
-           "et à un ancrage sectoriel. Il convient à présent d’approfondir les "
-           "concepts et d’examiner les travaux similaires.")
+    p(doc, "Ce premier chapitre a posé le cadre du mémoire : la landing page "
+           "y apparaît comme un dispositif de conversion structuré et "
+           "mesurable, bien au-delà d’une simple page de présentation. "
+           "L’environnement professionnel a été décrit : APTIC-R, association "
+           "togolaise de promotion des TIC en milieu rural, organisée en "
+           "pôles couvrant développement, maintenance, formation et présence "
+           "digitale, au service d’acteurs locaux en quête de transformation "
+           "numérique. Le stage de deux mois et demi, mené au pôle "
+           "développement sous "
+           "la direction de monsieur DAGNON Edmund, a porté sur la landing "
+           "page des volontaires internationaux — choix motivé par un besoin "
+           "opérationnel, un enjeu pédagogique et un ancrage sectoriel. Le "
+           "chapitre suivant précise les concepts clés et examine les "
+           "solutions existantes.")

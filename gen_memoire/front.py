@@ -33,34 +33,39 @@ def title_page(doc):
 
 def dedicace(doc):
     h1(doc, "DÉDICACE", page_break=False)
-    p(doc, "À mes parents, pour leur soutien constant et leurs sacrifices.")
-    p(doc, "À monsieur DAGNON Edmund, pour la confiance et l’encadrement reçus au cours du stage.")
+    p(doc, "À mes très chers parents, dont les sacrifices quotidiens ont rendu "
+           "ce parcours possible.")
+    p(doc, "À monsieur DAGNON Edmund, qui m’a ouvert les portes de sa "
+           "structure et a guidé chacune de mes étapes durant ce stage.")
 
 
 def remerciements(doc):
     h1(doc, "REMERCIEMENTS :")
-    p(doc, "J’adresse mes sincères remerciements à Monsieur SEDJRO Robert, Directeur "
-           "Général de l’ESIG, pour la qualité de la formation et l’environnement "
-           "favorable à notre apprentissage.")
-    p(doc, "Je remercie vivement Monsieur DAGNON Edmund, Directeur de l’association "
-           "APTIC-R et maître de stage, pour m’avoir accueilli au sein de sa structure, "
-           "pour sa confiance, sa disponibilité et l’accompagnement qui m’a permis de "
-           "développer mes compétences techniques et professionnelles. Ma gratitude "
-           "s’étend également à toute l’équipe d’APTIC-R pour son accueil et ses "
-           "échanges enrichissants.")
-    p(doc, "Mes remerciements vont à Monsieur N’SOUGAN, mon directeur de mémoire, "
-           "pour son encadrement, sa rigueur scientifique et le temps consacré à ce "
-           "travail.")
-    p(doc, "Je remercie l’ensemble de mes enseignants de l’ESIG pour les "
-           "connaissances transmises et leur engagement.")
-    p(doc, "J’adresse une pensée particulière à ma grand-mère, Madame EKLOU Abra "
-           "Enyonam, pour son amour, ses prières et son soutien indéfectible ; à ma "
-           "mère, SEMEGNA Awo Elom, pour ses sacrifices, ses encouragements et sa "
-           "confiance ; et à ma sœur jumelle, ATIOPOU Akouélé Olivéra, pour sa "
-           "présence et sa motivation au quotidien.")
-    p(doc, "Enfin, je remercie mes camarades de promotion, mes amis, ainsi que "
-           "toutes les personnes qui, de près ou de loin, ont contribué à la "
-           "réalisation de ce mémoire.")
+    p(doc, "Que Monsieur SEDJRO Robert, Directeur Général de l’ESIG, trouve "
+           "ici l’expression de ma profonde gratitude : la formation dispensée "
+           "par son établissement et le cadre d’apprentissage qu’il offre ont "
+           "rendu ce travail possible.")
+    p(doc, "Je tiens à exprimer toute ma reconnaissance à Monsieur DAGNON "
+           "Edmund, Directeur de l’association APTIC-R et maître de stage. En "
+           "m’accueillant dans son équipe et en m’accordant sa confiance, il a "
+           "directement contribué à mon progrès technique et professionnel. Je "
+           "remercie dans le même esprit l’ensemble du personnel d’APTIC-R, "
+           "dont l’accueil et les échanges ont nourri ce projet.")
+    p(doc, "Ma gratitude s’adresse également à Monsieur N’SOUGAN, directeur de "
+           "ce mémoire, dont l’encadrement exigeant et la disponibilité ont "
+           "grandement amélioré la qualité de ce document.")
+    p(doc, "Je n’oublie pas les enseignants de l’ESIG, qui ont transmis les "
+           "connaissances sur lesquelles repose ce travail.")
+    p(doc, "À mes parents, j’exprime une reconnaissance toute particulière : "
+           "leurs sacrifices, leurs encouragements et leur présence constante "
+           "ont porté chacune de mes étapes, des premières années d’études "
+           "jusqu’à l’achèvement de ce mémoire.")
+    p(doc, "Je remercie également mes amis et mes camarades de promotion, "
+           "pour leur soutien, leur présence et les moments partagés tout au "
+           "long du cursus.")
+    p(doc, "Enfin, ma gratitude s’étend à toutes les personnes qui, de près "
+           "ou de loin, ont contribué à l’achèvement de ce mémoire : que "
+           "chacune y trouve l’expression de ma sincère reconnaissance.")
 
 
 def sommaire(doc):
@@ -100,7 +105,7 @@ def liste_tableaux(doc):
         ("Tableau 5 : Modules développés et correspondance avec les besoins", "33"),
         ("Tableau 6 : Cas de tests réalisés et résultats", "43"),
         ("Tableau 7 : Écarts entre les attentes du cahier des charges et les livrables", "46"),
-        ("Tableau 8 : Éléments présents dans le code mais non branchés", "47"),
+        ("Tableau 8 : Raccordement des modules préparés", "47"),
         ("Tableau 9 : Plan de mise en œuvre des suggestions", "49"),
     ]
     for text, page in entries:
@@ -164,26 +169,29 @@ def sigles(doc):
 
 def resume(doc):
     h1(doc, "RÉSUMÉ :")
-    p(doc, "Le présent mémoire professionnel porte sur la conception et le "
-           "développement d’une landing page multilingue de recrutement de "
-           "volontaires internationaux pour APTIC-R, réalisés au sein de la "
-           "structure du 5 décembre 2025 au 15 mai 2026. Face à l’absence d’un "
-           "canal officiel de candidature pour le programme « APTIC-R "
-           "International Volunteers », l’objectif était de livrer un point "
-           "d’entrée unique, crédible et multilingue, capable de transformer des "
-           "visiteurs européens en candidatures qualifiées et en demandes de "
-           "partenariat. La démarche a combiné l’analyse du cahier des charges, "
-           "la modélisation UML et MERISE, puis le développement itératif d’une "
-           "application React, TypeScript et Supabase déployable sur Vercel. Les "
-           "résultats comprennent un site public en trois langues (français, "
-           "anglais, allemand), un formulaire de candidature avec dépôt de "
-           "documents, un formulaire de partenariat, un back-office "
+    p(doc, "Ce mémoire professionnel présente la conception et la réalisation "
+           "d’une landing page multilingue dédiée au recrutement de "
+           "volontaires internationaux pour APTIC-R, travail mené au sein de "
+           "la structure entre le 15 juillet et le 30 septembre 2026. Le "
+           "programme « APTIC-R International Volunteers » ne disposait "
+           "d’aucun canal officiel de candidature : le projet visait donc à "
+           "offrir un point d’entrée unique, crédible et trilingue, capable de "
+           "convertir des visiteurs européens en candidatures qualifiées et en "
+           "demandes de partenariat. La démarche a articulé l’analyse du "
+           "cahier des charges, la modélisation UML et MERISE, puis le "
+           "développement itératif d’une application React, TypeScript et "
+           "Supabase. Le livrable comprend un site public en français, anglais "
+           "et allemand servi par des URLs localisées, des pages d’éligibilité "
+           "et de guide du volontaire, un formulaire de candidature avec dépôt "
+           "sécurisé de documents, un formulaire de partenariat, un back-office "
            "d’administration (filtres, statuts, notes, rendez-vous, e-mails, "
-           "export CSV) et les bases du référencement et de la mesure "
-           "d’audience. La mise en production et certains contenus éditoriaux "
-           "restent à finaliser avec la structure. Les perspectives portent "
-           "d’abord sur la mise en ligne, l’activation des pages déjà préparées "
-           "et la mesure d’impact de la campagne.")
+           "export CSV) ainsi qu’un dispositif de référencement et de mesure "
+           "d’audience soumis au consentement. L’application est déployée sur "
+           "Vercel ; le rattachement au domaine aptic-r.org et la substitution "
+           "des contenus de démonstration par les contenus officiels demeurent "
+           "à achever. Les perspectives portent sur l’activation du domaine, "
+           "l’enrichissement éditorial et le pilotage statistique de la "
+           "campagne de recrutement.")
     p(doc, "Mots clés : landing page ; volontariat international ; multilingue ; "
            "APTIC-R ; React ; Supabase ; SEO.", bold=False)
 
@@ -192,8 +200,8 @@ def abstract(doc):
     h1(doc, "ABSTRACT :")
     p(doc, "This professional dissertation reports on the design and development "
            "of a multilingual landing page for recruiting international "
-           "volunteers for APTIC-R, carried out within the organisation from 5 "
-           "December 2025 to 15 May 2026. The work addresses the lack of an "
+           "volunteers for APTIC-R, carried out within the organisation from "
+           "15 July to 30 September 2026. The work addresses the lack of an "
            "official application channel for the “APTIC-R International "
            "Volunteers” programme: it delivers a single, credible, trilingual "
            "entry point able to turn European visitors into qualified "
@@ -201,12 +209,14 @@ def abstract(doc):
            "requirements analysis, UML and MERISE modelling, and the iterative "
            "development of a React, TypeScript and Supabase application "
            "deployable on Vercel. Deliverables include a public site in three "
-           "languages (French, English, German), an application form with "
+           "languages (French, English, German) served under localised URLs, "
+           "eligibility and volunteer-guide pages, an application form with "
            "document upload, a partnership form, an administration back office "
            "(filters, statuses, notes, appointments, e-mails, CSV export) and "
-           "the foundations of SEO and audience measurement. Production release "
-           "and some editorial content remain to be finalised with the "
-           "organisation. Next steps focus on going live, enabling the pages "
-           "already prepared, and measuring campaign impact.")
+           "a consent-based SEO and analytics setup. The application is "
+           "deployed on Vercel; attaching the aptic-r.org domain and replacing "
+           "demonstration content with official material remain pending. Next "
+           "steps focus on activating the domain, enriching editorial content "
+           "and monitoring recruitment campaign statistics.")
     p(doc, "Keywords: landing page; international volunteering; multilingual; "
            "APTIC-R; React; Supabase; SEO.")

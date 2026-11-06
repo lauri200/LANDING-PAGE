@@ -45,9 +45,13 @@ def chapitre4(doc):
     h3(doc, "4.1.2. Fonctionnalités effectivement disponibles")
     p(doc, "Au terme du développement, l’application offre "
            "fonctionnellement :")
-    bullet(doc, "un site public complet en trois langues, avec "
-                "navigation, sections persuasives, pages thématiques, "
-                "FAQ et page de confidentialité ;")
+    bullet(doc, "un site public complet en trois langues, servi par des "
+                "URLs localisées (/fr, /en, /de), avec navigation, "
+                "sections persuasives, pages thématiques, FAQ et page de "
+                "confidentialité ;")
+    bullet(doc, "des pages de complément en trois langues : "
+                "auto-évaluation d’éligibilité, guide du volontaire "
+                "téléchargeable et aide du back-office ;")
     bullet(doc, "un parcours de candidature volontaire avec dépôt "
                 "sécurisé de trois documents ;")
     bullet(doc, "un parcours de demande de partenariat avec document "
@@ -125,40 +129,47 @@ def chapitre4(doc):
           ["Attente du cahier des charges", "État livré"],
           [
               ["Site en production sur aptic-r.org/international-volunteers",
-               "Application prête au déploiement, mise en ligne en attente "
-               "(domaine, variables, DNS)"],
+               "Application déployée sur Vercel "
+               "(landing-page-omega-rosy-64.vercel.app) ; rattachement au "
+               "domaine aptic-r.org en attente (DNS, variables)"],
               ["Contenus authentiques (photos terrain, témoignages réels)",
                "Images d’illustration et témoignages d’exemple à remplacer "
                "par APTIC-R"],
               ["Coordonnées officielles (téléphone, réseaux sociaux)",
                "E-mail renseigné ; téléphone et URLs sociales en attente"],
               ["Guide du volontaire téléchargeable",
-               "Page et contenus prêts ; génération texte, PDF officiel "
+               "Page routée en trois langues ; export texte, PDF officiel "
                "à produire"],
               ["Test d’éligibilité en ligne",
-               "Page et questions prêtes ; non branchée au routage"],
+               "Page routée en trois langues"],
               ["Mesure d’audience complète",
-               "Instrumentée (événements, consentement) ; tableau de bord "
-               "décisionnel à construire"],
+               "Instrumentée (événements, consentement) ; propriété GA4 et "
+               "tableau de bord décisionnel à compléter"],
           ])
-    h3(doc, "4.3.2. Éléments présents dans le code mais non branchés")
-    table_caption(doc, "Tableau 8 : Éléments présents dans le code mais non "
-                       "branchés")
+    h3(doc, "4.3.2. Finalisation des modules non branchés")
+    p(doc, "Une phase de finalisation a consisté à raccorder au routeur "
+           "les éléments développés mais non branchés, et à câbler la "
+           "mesure d’audience. Le tableau suivant en rend compte.")
+    table_caption(doc, "Tableau 8 : Raccordement des modules préparés")
     table(doc,
-          ["Élément", "État", "Action requise"],
+          ["Élément", "Travail de raccordement effectué", "Reste à faire"],
           [
               ["Page « Éligibilité » (auto-évaluation en 5 questions)",
-               "Composant, traductions et SEO prêts",
-               "Ajouter la route et le lien de navigation"],
+               "Route /:lang/eligibility ajoutée, navigation localisée",
+               "Validation éditoriale du contenu"],
               ["Page « Guide du volontaire »",
-               "Composant, traductions et SEO prêts ; export texte",
-               "Ajouter la route ; produire la version PDF"],
+               "Route /:lang/guide ajoutée, entrée dans le pied de page",
+               "Version PDF officielle"],
               ["Page d’aide du back-office",
-               "Composant prêt",
-               "Ajouter la route admin"],
+               "Route /admin/help et lien dans l’interface admin", "—"],
               ["Slugs localisés (/fr, /en, /de)",
-               "Helpers de génération prêts",
-               "Brancher le routage localisé et vérifier le SEO"],
+               "Routage /:lang/*, redirections, slugs traduits, sélecteur "
+               "de langue synchronisé",
+               "Vérification SEO après activation du domaine"],
+              ["Référencement et mesure d’audience",
+               "Composant SEO, bandeau de consentement et événements "
+               "montés dans le layout",
+               "Propriété GA4 (VITE_GA_ID) en production"],
           ])
     h3(doc, "4.3.3. Apports par rapport aux objectifs")
     p(doc, "Par rapport aux objectifs fixés en introduction, les apports "
@@ -170,19 +181,19 @@ def chapitre4(doc):
            "le projet a mobilisé l’analyse, la conception, le développement "
            "full-stack, la sécurité applicative et les tests dans un cadre "
            "professionnel réel.")
-    p(doc, "La principale limite du travail n’est pas technique mais "
+    p(doc, "La principale limite du travail n’est plus technique mais "
            "organisationnelle : une landing page ne devient un outil de "
-           "recrutement qu’à sa mise en ligne effective, adossée à des "
-           "contenus authentiques et à une campagne de diffusion. Le "
-           "livré est une plateforme prête ; sa valeur dépendra de "
+           "recrutement qu’adossée à des contenus authentiques et à une "
+           "campagne de diffusion. La plateforme est en ligne ; sa valeur "
+           "dépendra désormais de l’activation du domaine et de "
            "l’appropriation par la structure.")
 
     h2(doc, "4.4. Limites et suggestions")
     h3(doc, "4.4.1. Limites du travail")
-    bullet(doc, "Mise en production non réalisée à la rédaction : le site "
-                "fonctionne en environnement de développement et de "
-                "prévisualisation ; le basculement DNS et la "
-                "configuration finale restent à effectuer ;")
+    bullet(doc, "domaine personnalisé non activé : l’application est "
+                "déployée sur Vercel sous une URL provisoire ; le "
+                "rattachement d’aptic-r.org et la configuration DNS "
+                "restent à effectuer ;")
     bullet(doc, "contenus éditoriaux provisoires : photographies "
                 "d’illustration, témoignages d’exemple, coordonnées à "
                 "compléter ;")
@@ -190,8 +201,9 @@ def chapitre4(doc):
                 "cahier des charges : pas d’espace candidat connecté, "
                 "pas de blog ni de galerie, pas de page de contact "
                 "dédiée ;")
-    bullet(doc, "pages préparées non routées (éligibilité, guide, aide "
-                "admin) ;")
+    bullet(doc, "guide du volontaire disponible en export texte ; la "
+                "version PDF officielle et la vignette de partage "
+                "(Open Graph) ne sont pas produites ;")
     bullet(doc, "envoi de courriels en configuration de test ; mesure "
                 "d’audience instrumentée mais sans tableau de bord "
                 "décisionnel ;")
@@ -202,17 +214,18 @@ def chapitre4(doc):
     table(doc,
           ["Priorité", "Suggestion", "Horizon"],
           [
-              ["1", "Finaliser la mise en production : domaine "
-                    "aptic-r.org, variables d’environnement, clé Resend "
-                    "et domaine d’envoi vérifié, DNS", "Immédiat"],
+              ["1", "Activer le domaine aptic-r.org : enregistrements DNS, "
+                    "VITE_SITE_URL, Search Console et sitemap",
+               "Immédiat"],
               ["2", "Remplacer les contenus provisoires par les photos, "
                     "témoignages et coordonnées authentiques de la "
                     "structure", "Immédiat"],
-              ["3", "Activer les pages éligibilité, guide (avec PDF "
-                    "officiel) et aide admin déjà développées", "Court "
-                    "terme"],
-              ["4", "Brancher les URLs localisées et publier sitemap et "
-                    "Search Console", "Court terme"],
+              ["3", "Vérifier le domaine d’envoi Resend et réaliser un "
+                    "test de bout en bout en production (candidature, "
+                    "partenariat, courriels)", "Immédiat"],
+              ["4", "Créer la propriété GA4, renseigner VITE_GA_ID, "
+                    "produire le PDF officiel du guide et la vignette de "
+                    "partage", "Court terme"],
               ["5", "Construire le tableau de bord d’indicateurs de "
                     "campagne (sources, pays, langues, conversions)",
                "Moyen terme"],
@@ -222,11 +235,10 @@ def chapitre4(doc):
           ])
     chapter_conclusion(doc)
     p(doc, "Les résultats montrent une application fonctionnelle, testée "
-           "et proche des exigences essentielles : vitrine trilingue, "
-           "collecte structurée, back-office opérationnel, notifications, "
-           "référencement et mesure sous consentement. Les écarts "
-           "relevés relèvent pour l’essentiel de la finalisation — mise "
-           "en ligne, contenus authentiques, activation de pages déjà "
-           "développées — et non d’un défaut de conception. La conclusion "
-           "générale qui suit synthétise la démarche et ouvre les "
-           "perspectives.")
+           "et déployée : vitrine trilingue sous URLs localisées, collecte "
+           "structurée, back-office opérationnel, notifications, "
+           "référencement et mesure sous consentement. Les écarts relevés "
+           "relèvent pour l’essentiel de la finalisation — activation du "
+           "domaine, contenus authentiques, outils de pilotage — et non "
+           "d’un défaut de conception. La conclusion générale qui suit "
+           "synthétise la démarche et ouvre les perspectives.")

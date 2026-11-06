@@ -7,15 +7,14 @@ from doc import bullet, chapter_conclusion, chapter_intro, h1, h2, h3, p, part_p
 def chapitre2(doc):
     h1(doc, "CHAPITRE 2 : REVUE DE LITTÉRATURE")
     chapter_intro(doc)
-    p(doc, "Une revue de littérature a pour fonction de préciser le vocabulaire, "
-           "de situer le travail dans un champ de connaissances et d’identifier "
-           "ce qui a déjà été tenté, avec quels apports et quelles limites "
-           "(Hart, 2018). Ce chapitre s’organise en deux temps. Je définis "
-           "d’abord les concepts clés mobilisés tout au long du mémoire : "
-           "landing page, conversion, référencement naturel, volontariat "
-           "international et low-tech. Je propose ensuite une synthèse des "
-           "solutions et travaux similaires, afin de faire apparaître les "
-           "lacunes auxquelles la landing page APTIC-R entend répondre.")
+    p(doc, "Avant d’engager la conception, il convient de clarifier les "
+           "notions utilisées et d’examiner ce qui existe déjà dans le champ "
+           "concerné (Hart, 2018). Le présent chapitre procède en deux étapes. "
+           "La première fixe le sens des concepts mobilisés dans la suite du "
+           "mémoire : landing page, conversion, référencement naturel, "
+           "volontariat international et low-tech. La seconde confronte le "
+           "projet aux solutions et travaux comparables, pour en dégager les "
+           "insuffisances que la landing page APTIC-R doit combler.")
 
     h2(doc, "2.1. Définition des concepts clés")
     h3(doc, "2.1.1. Landing page, conversion et référencement naturel")
@@ -209,17 +208,17 @@ def chapitre2(doc):
            "laissant ouvertes les extensions (espace candidat, témoignages "
            "authentiques, blog).")
     chapter_conclusion(doc)
-    p(doc, "La revue de littérature a permis de stabiliser le vocabulaire et "
-           "de situer le projet. Une landing page est un dispositif de "
-           "conversion, distinct d’un site vitrine. Le référencement et le "
-           "multilinguisme en conditionnent la portée. Le volontariat "
-           "international et la low-tech fournissent le contenu et la raison "
-           "d’être du programme. Les solutions existantes — portails d’envoi, "
-           "plateformes de volontariat, réseaux sociaux, CMS — laissent un "
-           "espace : celui d’un système spécifique, adapté à APTIC-R, à ses "
-           "publics et à ses contraintes. C’est cet espace que la "
-           "méthodologie et la mise en œuvre du chapitre suivant s’emploient "
-           "à occuper.")
+    p(doc, "Ce chapitre a fixé le vocabulaire et positionné le travail. La "
+           "landing page s’est révélée être un outil de conversion à part "
+           "entière, et non un site vitrine ; sa portée dépend du "
+           "référencement et du multilinguisme. Le volontariat international "
+           "et la low-tech constituent, eux, le contenu et la raison d’être "
+           "du programme. Quant aux solutions existantes — portails d’envoi, "
+           "plateformes de volontariat, réseaux sociaux, CMS —, elles "
+           "laissent vacante la place d’un système dédié, calibré pour "
+           "APTIC-R, ses publics et ses contraintes. La méthodologie et la "
+           "mise en œuvre présentées au chapitre suivant visent précisément "
+           "à la remplir.")
 
 
 def partie2(doc):

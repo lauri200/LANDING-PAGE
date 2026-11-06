@@ -10,7 +10,8 @@ def conclusion(doc):
     p(doc, "Ce mémoire professionnel rend compte de la conception et du "
            "développement d’une landing page multilingue de recrutement de "
            "volontaires internationaux, réalisés au sein d’APTIC-R durant "
-           "un stage de six mois. Le problème de départ était concret : le "
+           "un stage de deux mois et demi. Le problème de départ était "
+           "concret : le "
            "programme « APTIC-R International Volunteers », destiné à "
            "accueillir à Agbélouvé des volontaires européens pour des "
            "missions de six à douze mois autour du numérique, de "
@@ -34,18 +35,17 @@ def conclusion(doc):
            "automatiques et export CSV, référencement multilingue et "
            "mesure d’audience sous consentement.")
     p(doc, "Les tests fonctionnels conduits sur les principaux parcours "
-           "sont conformes, et le livrable couvre les exigences "
-           "essentielles du cahier des charges. L’exercice m’a permis de "
-           "mettre en œuvre l’ensemble de la chaîne du génie logiciel, "
-           "de l’analyse à la préparation de la mise en production, dans "
-           "des conditions professionnelles réelles.")
-    p(doc, "Le travail comporte néanmoins des limites assumées : la mise "
-           "en ligne effective, les contenus authentiques, l’activation "
-           "de pages déjà développées (éligibilité, guide, aide) et le "
-           "tableau de bord décisionnel restent à finaliser avec la "
-           "structure. À plus long terme, un espace candidat connecté et "
-           "des extensions éditoriales pourraient prolonger le "
-           "dispositif.")
+           "sont conformes, le livrable couvre les exigences essentielles "
+           "du cahier des charges et l’application est déployée sur "
+           "Vercel. L’exercice m’a permis de mettre en œuvre l’ensemble "
+           "de la chaîne du génie logiciel, de l’analyse à la mise en "
+           "ligne, dans des conditions professionnelles réelles.")
+    p(doc, "Le travail comporte néanmoins des limites assumées : le "
+           "rattachement au domaine aptic-r.org, les contenus "
+           "authentiques (photos, témoignages, coordonnées) et le tableau "
+           "de bord décisionnel restent à finaliser avec la structure. À "
+           "plus long terme, un espace candidat connecté et des "
+           "extensions éditoriales pourraient prolonger le dispositif.")
     p(doc, "Au-delà de l’outil, ce projet illustre ce qu’une association "
            "rurale peut tirer du numérique : une présence internationale "
            "crédible, des données maîtrisées, un processus de recrutement "
@@ -258,7 +258,7 @@ def table_matieres(doc):
         ("3.5.5. Back-office d’administration", "35", 2, False),
         ("3.5.6. Courriels automatiques et rendez-vous", "36", 2, False),
         ("3.5.7. Référencement, mesure et consentement", "36", 2, False),
-        ("3.5.8. Modules préparés mais non activés", "37", 2, False),
+        ("3.5.8. Éligibilité, guide et aide du back-office", "37", 2, False),
         ("CHAPITRE 4 : RÉSULTATS DE L’ÉTUDE", "38", 0, True),
         ("4.1. Présentation des résultats", "38", 1, False),
         ("4.1.1. Interfaces principales livrées", "38", 2, False),
@@ -267,8 +267,7 @@ def table_matieres(doc):
         ("4.2. Tests et validation", "42", 1, False),
         ("4.3. Discussion des résultats", "45", 1, False),
         ("4.3.1. Écarts avec le cahier des charges", "45", 2, False),
-        ("4.3.2. Éléments présents dans le code mais non branchés",
-         "47", 2, False),
+        ("4.3.2. Finalisation des modules non branchés", "47", 2, False),
         ("4.3.3. Apports par rapport aux objectifs", "48", 2, False),
         ("4.4. Limites et suggestions", "48", 1, False),
         ("CONCLUSION GÉNÉRALE :", "50", 0, True),

@@ -8,6 +8,8 @@ Reproduit la mise en forme du mémoire original :
 - pieds de page : numérotation centrée (i, ii... / 1, 2... / I, II...).
 """
 
+import os
+
 from docx import Document
 from docx.enum.section import WD_SECTION
 from docx.enum.table import WD_TABLE_ALIGNMENT
@@ -253,7 +255,17 @@ def part_page(doc, text, size=18):
     return par
 
 
-def figure(doc, caption, placeholder=True, height_cm=9):
+def figure(doc, caption, placeholder=True, height_cm=9, image=None,
+           width_cm=15):
+    if image:
+        path = os.path.join(os.path.dirname(os.path.abspath(__file__)), image)
+        if os.path.exists(path):
+            par = doc.add_paragraph()
+            par.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            par.paragraph_format.space_before = Pt(10)
+            par.paragraph_format.keep_with_next = True
+            par.add_run().add_picture(path, width=Cm(width_cm))
+            placeholder = False
     if placeholder:
         box = doc.add_paragraph()
         box.alignment = WD_ALIGN_PARAGRAPH.CENTER

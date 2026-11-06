@@ -51,17 +51,17 @@ def chapitre3(doc):
     bullet(doc, "Phase 4 — Tests et correctifs : parcours complets, tests "
                 "mobiles, contrôles de sécurité des accès, vérification des "
                 "e-mails et des statuts ;")
-    bullet(doc, "Phase 5 — Préparation de la mise en production : "
-                "compilation, variables d’environnement, configuration "
-                "Vercel, scripts SQL de déploiement, documentation.")
+    bullet(doc, "Phase 5 — Mise en production : compilation, variables "
+                "d’environnement, déploiement sur Vercel, scripts SQL et "
+                "documentation.")
     h3(doc, "3.1.3. Environnement de travail")
     p(doc, "Le développement s’est appuyé sur un poste de travail équipé de "
            "Visual Studio Code, sur la gestion de versions avec Git, et "
            "sur un environnement de prévisualisation Figma Make servant à "
            "concevoir et itérer l’interface avant l’intégration. La base "
            "de données, l’authentification et le stockage sont hébergés sur "
-           "Supabase ; le déploiement cible est Vercel, directement relié "
-           "au dépôt GitHub du projet.")
+           "Supabase ; le déploiement est assuré par Vercel, directement "
+           "relié au dépôt GitHub du projet.")
 
     # ------------------------------------------------------------- 3.2
     h2(doc, "3.2. Analyse et spécification des besoins")
@@ -190,7 +190,8 @@ def chapitre3(doc):
            "présentation et parcours côté client ; persistance, contrôle "
            "d’accès et effets de bord (e-mails) côté base ; notification "
            "et mesure côté services spécialisés.")
-    figure(doc, "Figure 2 : Architecture de la landing page APTIC-R")
+    figure(doc, "Figure 2 : Architecture de la landing page APTIC-R",
+           image="figures/fig2_architecture.png")
     h3(doc, "3.3.2. Diagramme de cas d’utilisation")
     p(doc, "Le diagramme de cas d’utilisation rassemble les services "
            "rendus aux acteurs. Le visiteur consulte le site et change de "
@@ -199,7 +200,8 @@ def chapitre3(doc):
            "partenaire soumet sa demande. L’administrateur s’authentifie, "
            "pilote les dossiers, planifie les rendez-vous, communique et "
            "exporte.")
-    figure(doc, "Figure 3 : Diagramme de cas d’utilisation")
+    figure(doc, "Figure 3 : Diagramme de cas d’utilisation",
+           image="figures/fig3_cas_utilisation.png")
     h3(doc, "3.3.3. Modèle conceptuel de données")
     p(doc, "Le modèle de données est volontairement simple, centré sur deux "
            "agrégats : la candidature et la demande de partenariat. Chacun "
@@ -208,7 +210,8 @@ def chapitre3(doc):
            "internes. Une table d’administrateurs relie les utilisateurs "
            "authentifiés ; une table d’événements alimente la mesure "
            "d’audience côté serveur.")
-    figure(doc, "Figure 4 : Modèle conceptuel de données")
+    figure(doc, "Figure 4 : Modèle conceptuel de données",
+           image="figures/fig4_mcd.png")
     p(doc, "Les principales entités du schéma relationnel sont les "
            "suivantes :")
     bullet(doc, "applications : id, statut, langue, identité, coordonnées, "
@@ -233,7 +236,7 @@ def chapitre3(doc):
            "seule condition ; un accusé s’affiche et un événement de "
            "mesure est consigné.")
     figure(doc, "Figure 5 : Diagramme de séquence : soumission d’une "
-                "candidature")
+                "candidature", image="figures/fig5_seq_candidature.png")
     p(doc, "Traitement administratif : l’administrateur se connecte via "
            "Supabase Auth ; il filtre les dossiers, ouvre une fiche, "
            "change le statut ou planifie un rendez-vous ; un trigger SQL "
@@ -241,7 +244,7 @@ def chapitre3(doc):
            "cas échéant avec une pièce jointe d’agenda (ICS) ; les "
            "fichiers joints sont téléchargés par URL signée.")
     figure(doc, "Figure 6 : Diagramme de séquence : traitement "
-                "administratif")
+                "administratif", image="figures/fig6_seq_admin.png")
 
     # ------------------------------------------------------------- 3.4
     h2(doc, "3.4. Choix des technologies et outils")
@@ -288,23 +291,32 @@ def chapitre3(doc):
     chapter_intro(doc)
     p(doc, "Cette section décrit les modules réellement implémentés dans "
            "le code livré, en distinguant ce qui est fonctionnel de ce qui "
-           "est seulement préparé.")
+           "reste soumis à validation éditoriale.")
     h3(doc, "3.5.1. Socle applicatif et routage")
     p(doc, "L’application est montée par Vite sur React 19. Le routeur "
            "sépare deux espaces : l’espace public, enveloppé dans un "
-           "layout commun (en-tête, bannière de consentement, pied de "
+           "layout commun (en-tête, bandeau de consentement, pied de "
            "page), et l’espace d’administration sous /admin, protégé par "
-           "un contrôle de session. Les routes publiques couvrent "
-           "l’accueil, la présentation, la mission, les activités, la vie "
-           "au Togo, la candidature, la FAQ, le partenariat et la "
+           "un contrôle de session. L’espace public est intégralement "
+           "localisé : chaque route existe sous /fr, /en et /de, avec un "
+           "slug traduit pour l’accueil ; un composant garde-fou "
+           "synchronise la langue du contexte avec le segment d’URL, et "
+           "la racine / redirige vers la langue détectée du visiteur. "
+           "Les routes publiques couvrent l’accueil, la présentation, la "
+           "mission, les activités, la vie au Togo, la candidature, "
+           "l’éligibilité, le guide, la FAQ, le partenariat et la "
            "confidentialité, avec une page 404 dédiée ; les routes "
-           "d’administration couvrent la connexion, le tableau de bord "
-           "et les dossiers candidats et partenaires.")
-    code_block(doc, "/  /about  /mission  /activities  /life\n"
-                    "/apply  /faq  /partners  /privacy  *\n"
+           "d’administration couvrent la connexion, le tableau de bord, "
+           "les dossiers candidats et partenaires, et une page d’aide.")
+    code_block(doc, "/  ->  /{fr|en|de}/{slug d'accueil localise}\n"
+                    "/:lang/about  /:lang/mission  /:lang/activities  "
+                    "/:lang/life\n"
+                    "/:lang/apply  /:lang/eligibility  /:lang/guide  "
+                    "/:lang/faq\n"
+                    "/:lang/partners  /:lang/privacy  *\n"
                     "/admin/login  /admin  /admin/applications  "
                     "/admin/applications/:id\n"
-                    "/admin/partners  /admin/partners/:id")
+                    "/admin/partners  /admin/partners/:id  /admin/help")
     h3(doc, "3.5.2. Site vitrine multilingue")
     p(doc, "L’accueil enchaîne les sections persuasives attendues d’une "
            "landing page de conversion : promesse (construire des "
@@ -317,11 +329,11 @@ def chapitre3(doc):
            "classiques (durée, visa, sécurité, accompagnement).")
     p(doc, "Le sélecteur de langue bascule instantanément l’ensemble des "
            "contenus — textes, boutons, titres de page, métadonnées — "
-           "grâce aux dictionnaires centralisés. Les helpers de "
-           "localisation préparent également les slugs traduits "
-           "(/fr/volontaires-internationaux, /en/international-volunteers, "
-           "/de/internationale-freiwillige) en vue des URLs localisées "
-           "annoncées par le cahier des charges.")
+           "grâce aux dictionnaires centralisés, et conduit le visiteur "
+           "vers l’équivalent localisé de la page courante. Les URLs "
+           "elles-mêmes sont traduites (/fr/volontaires-internationaux, "
+           "/en/international-volunteers, /de/internationale-freiwillige), "
+           "comme le prévoyait le cahier des charges.")
     h3(doc, "3.5.3. Formulaires de candidature et de partenariat")
     p(doc, "Le formulaire volontaire collecte l’identité, les coordonnées, "
            "la formation et le domaine, la profession, l’expérience et "
@@ -375,16 +387,19 @@ def chapitre3(doc):
            "contact, téléchargement du guide, erreurs 404) à la fois "
            "vers GA4 et vers la table interne ; le chargement de GA4 "
            "est conditionné par le bandeau de consentement.")
-    h3(doc, "3.5.8. Modules préparés mais non activés")
-    p(doc, "Deux pages existent déjà dans le code avec leurs contenus "
-           "traduits et leurs métadonnées — l’auto-évaluation "
-           "d’éligibilité en cinq questions et le guide du volontaire "
-           "téléchargeable — ainsi qu’une page d’aide du back-office. "
-           "Elles ne sont toutefois pas encore branchées dans le "
-           "routeur : elles attendent la validation éditoriale "
-           "d’APTIC-R avant mise en service. De même, le guide est "
-           "actuellement généré au format texte ; sa version PDF "
-           "officielle reste à produire.")
+    h3(doc, "3.5.8. Éligibilité, guide du volontaire et aide du "
+            "back-office")
+    p(doc, "Trois modules complètent le dispositif. La page d’éligibilité "
+           "(/:lang/eligibility) propose une auto-évaluation en cinq "
+           "questions pour préparer le visiteur avant la candidature. La "
+           "page « guide du volontaire » (/:lang/guide) présente les "
+           "informations pratiques et offre un téléchargement — "
+           "actuellement généré au format texte, en attendant la version "
+           "PDF officielle à produire avec APTIC-R. Enfin, une page "
+           "d’aide (/admin/help) documente l’usage du back-office à "
+           "l’intention des administrateurs. Les trois sont routées et "
+           "servies dans les trois langues ; leurs contenus resteront à "
+           "faire valider éditorialement par la structure.")
     chapter_conclusion(doc)
     p(doc, "Ce chapitre a montré que la réalisation n’est pas un "
            "exercice de style : elle répond à des besoins exprimés, "

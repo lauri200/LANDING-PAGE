@@ -20,6 +20,12 @@ OUTPUT = os.path.join(os.path.dirname(os.path.abspath(__file__)),
 
 
 def main():
+    try:
+        import diagrams
+        diagrams.generate_all()
+    except Exception as exc:  # Pillow absent ou erreur de dessin
+        print(f"Diagrammes non generes ({exc}) - placeholders conserves")
+
     doc = new_document()
 
     # Section 0 : page de garde (sans numéro) + front matter (i, ii, ...)
