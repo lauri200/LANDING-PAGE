@@ -45,8 +45,8 @@ export default function LoginPage() {
     >
       <form
         onSubmit={onSubmit}
-        className="w-full max-w-sm p-8 bg-white"
-        style={{ borderTop: "3px solid var(--color-blue)" }}
+        className="w-full max-w-sm p-8 bg-white rounded-3xl border shadow-sm"
+        style={{ borderColor: "var(--color-rule)" }}
       >
         <p
           className="text-xs tracking-widest uppercase mb-3"
@@ -66,7 +66,7 @@ export default function LoginPage() {
           onChange={(e) => setEmail(e.target.value)}
           required
           autoComplete="username"
-          className="w-full px-3 py-2.5 text-sm bg-white border mb-4"
+          className="w-full px-4 py-3 text-sm bg-white border rounded-2xl mb-5 outline-none"
           style={{ borderColor: "var(--color-rule)" }}
         />
         <label className="block text-xs uppercase mb-2" style={{ color: "var(--color-muted)" }}>
@@ -78,7 +78,7 @@ export default function LoginPage() {
           onChange={(e) => setPassword(e.target.value)}
           required
           autoComplete="current-password"
-          className="w-full px-3 py-2.5 text-sm bg-white border mb-4"
+          className="w-full px-4 py-3 text-sm bg-white border rounded-2xl mb-5 outline-none"
           style={{ borderColor: "var(--color-rule)" }}
         />
         {error ? (
@@ -89,7 +89,7 @@ export default function LoginPage() {
         <button
           type="submit"
           disabled={loading}
-          className="w-full py-3 text-sm font-semibold tracking-widest uppercase text-white"
+          className="w-full py-3 text-sm font-semibold tracking-widest uppercase text-white rounded-2xl"
           style={{ background: "var(--color-blue)", fontFamily: "var(--font-mono)" }}
         >
           {loading ? "Connexion…" : "Entrer"}
