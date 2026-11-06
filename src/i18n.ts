@@ -136,6 +136,10 @@ export type Dict = {
     source: string;
     submit: string;
     required: string;
+    stepInfo: string;
+    stepDocs: string;
+    continueBtn: string;
+    back: string;
     skillList: string[];
     sourceList: string[];
   };
@@ -492,6 +496,10 @@ const fr: Dict = {
     source: "Comment avez-vous entendu parler d'APTIC-R ?",
     submit: "Envoyer ma candidature",
     required: "Champs obligatoires",
+    stepInfo: "Étape 1 sur 2 — Vos informations",
+    stepDocs: "Étape 2 sur 2 — Vos documents",
+    continueBtn: "Continuer →",
+    back: "← Retour",
     skillList: [
       "Informatique",
       "Données",
@@ -977,6 +985,10 @@ const en: Dict = {
     source: "How did you hear about APTIC-R?",
     submit: "Submit my application",
     required: "Required fields",
+    stepInfo: "Step 1 of 2 — Your details",
+    stepDocs: "Step 2 of 2 — Your documents",
+    continueBtn: "Continue →",
+    back: "← Back",
     skillList: [
       "Computer science",
       "Data",
@@ -1461,6 +1473,10 @@ const de: Dict = {
     source: "Wie hast du von APTIC-R erfahren?",
     submit: "Bewerbung senden",
     required: "Pflichtfelder",
+    stepInfo: "Schritt 1 von 2 — Ihre Angaben",
+    stepDocs: "Schritt 2 von 2 — Ihre Dokumente",
+    continueBtn: "Weiter →",
+    back: "← Zuruck",
     skillList: [
       "Informatik",
       "Daten",

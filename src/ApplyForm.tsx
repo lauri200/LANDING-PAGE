@@ -7,6 +7,8 @@ import {
   InputField,
   PrimaryButton,
   Reveal,
+  scrollToId,
+  SecondaryButton,
   SectionLabel,
   SelectField,
   TextAreaField,
@@ -16,6 +18,7 @@ export default function ApplyForm() {
   const { t, lang } = useI18n();
   const [sent, setSent] = useState(false);
   const [sending, setSending] = useState(false);
+  const [step, setStep] = useState(1);
   const [error, setError] = useState("");
   const [skills, setSkills] = useState<string[]>([]);
   const [cv, setCv] = useState<File | null>(null);
@@ -42,6 +45,15 @@ export default function ApplyForm() {
   });
 
   const startedRef = useRef(false);
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const goToStep = (next: number) => {
+    if (next === 2 && formRef.current && !formRef.current.reportValidity())
+      return;
+    setStep(next);
+    scrollToId("apply");
+  };
+
   const markStarted = () => {
     if (startedRef.current) return;
     startedRef.current = true;
@@ -118,7 +130,20 @@ export default function ApplyForm() {
             <p style={{ color: "var(--color-muted)" }}>{t.success.applyBody}</p>
           </div>
         ) : (
-          <form className="flex flex-col gap-8" onSubmit={onSubmit} onFocusCapture={markStarted}>
+          <form
+            ref={formRef}
+            className="flex flex-col gap-8"
+            onSubmit={onSubmit}
+            onFocusCapture={markStarted}
+          >
+            <p
+              className="text-xs tracking-widest uppercase"
+              style={{ color: "var(--color-muted)", fontFamily: "var(--font-mono)" }}
+            >
+              {step === 1 ? t.apply.stepInfo : t.apply.stepDocs}
+            </p>
+            {step === 1 ? (
+            <>
             <fieldset className="flex flex-col gap-5">
               <legend
                 className="text-xs tracking-widest uppercase mb-2"
@@ -224,18 +249,6 @@ export default function ApplyForm() {
               onChange={set("project")}
             />
 
-            <fieldset className="flex flex-col gap-5">
-              <legend
-                className="text-xs tracking-widest uppercase mb-2"
-                style={{ color: "var(--color-blue)", fontFamily: "var(--font-mono)" }}
-              >
-                {t.apply.documents}
-              </legend>
-              <FileField label={t.apply.cv} required accept=".pdf" onChange={setCv} />
-              <FileField label={t.apply.letter} required accept=".pdf,.doc,.docx" onChange={setLetter} />
-              <FileField label={t.apply.portfolio} accept=".pdf,.zip,image/*" onChange={setPortfolio} />
-            </fieldset>
-
             <SelectField
               label={t.apply.source}
               required
@@ -250,14 +263,44 @@ export default function ApplyForm() {
             <p className="text-xs" style={{ color: "var(--color-muted)", fontFamily: "var(--font-mono)" }}>
               * {t.apply.required}
             </p>
+            <div className="flex justify-end">
+              <PrimaryButton type="button" color="blue" onClick={() => goToStep(2)}>
+                {t.apply.continueBtn}
+              </PrimaryButton>
+            </div>
+            </>
+            ) : (
+            <>
+            <fieldset className="flex flex-col gap-5">
+              <legend
+                className="text-xs tracking-widest uppercase mb-2"
+                style={{ color: "var(--color-blue)", fontFamily: "var(--font-mono)" }}
+              >
+                {t.apply.documents}
+              </legend>
+              <FileField label={t.apply.cv} required accept=".pdf" onChange={setCv} />
+              <FileField label={t.apply.letter} required accept=".pdf,.doc,.docx" onChange={setLetter} />
+              <FileField label={t.apply.portfolio} accept=".pdf,.zip,image/*" onChange={setPortfolio} />
+            </fieldset>
+
+            <p className="text-xs" style={{ color: "var(--color-muted)", fontFamily: "var(--font-mono)" }}>
+              * {t.apply.required}
+            </p>
             {error ? (
               <p className="text-sm" style={{ color: "var(--color-warm)" }}>
                 {error}
               </p>
             ) : null}
-            <PrimaryButton type="submit" color="blue" disabled={sending}>
-              {sending ? t.success.sending : t.apply.submit}
-            </PrimaryButton>
+            <div className="flex flex-wrap items-center gap-4">
+              <SecondaryButton onClick={() => goToStep(1)}>
+                {t.apply.back}
+              </SecondaryButton>
+              <PrimaryButton type="submit" color="blue" disabled={sending}>
+                {sending ? t.success.sending : t.apply.submit}
+              </PrimaryButton>
+            </div>
+            </>
+            )}
           </form>
         )}
       </div>
